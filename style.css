@@ -1,0 +1,130 @@
+@media screen {
+
+  * {
+    box-sizing:border-box !important;
+    -webkit-box-sizing:border-box;
+  }
+
+  html {
+    background: #fafafa;
+  }
+
+  body {
+    position:relative;
+    max-width: 900px;
+    margin: 2em auto;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    background-color: #fff;
+    padding: 2em;
+  }
+
+  h1 {
+    letter-spacing: -1px;
+    font-size: 300%;
+    text-align:center;
+  }
+
+  table {
+    font-size: 82.5%;
+    color: #777;
+    margin: 4em 0;
+  }
+
+  thead th {
+    border-bottom: 2px solid #ddd;
+  }
+
+  th,
+  td {
+    padding: 0.5em 1em;
+  }
+
+  th {
+    text-align:left;
+  }
+
+  nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  nav li {
+    display:inline;
+  }
+
+  nav li + li:before {
+    content: "/ ";
+    color: #eee;
+  }
+  nav a {
+    text-decoration:none;
+  }
+
+  #courtesy-nav {
+    position:absolute;
+    top:1em;
+    right:2em;
+    font-size: 82.5%;
+  }
+
+  #categories a {
+    display:block;
+    float:left;
+    width:33.3%;
+    border: 1px solid white;
+    box-sizing:border-box !important;
+    color: #fff;
+    line-height: 200px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 1.5em;
+    background-color: #555;
+  }
+
+  #categories a:hover {
+    background: #333;
+  }
+
+  html,
+  #mission,
+  #funding,
+  #people,
+  #infrastructure,
+  #pedagogy,
+  #future-plans {
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+  }
+
+  .mission {
+    background-image: url('images/mission.jpg');
+  }
+
+  /*#funding {*/
+    /*background-image: url('images/funding.jpg');*/
+  /*}*/
+  /*#people {*/
+    /*background-image: url('images/people.jpg');*/
+  /*}*/
+  /*#infrastructure {*/
+    /*background-image: url('images/infrastructure.jpg');*/
+  /*}*/
+  /*#pedagogy {*/
+    /*background-image: url('images/pedagogy.jpg');*/
+  /*}*/
+  /*#future-plans {*/
+    /*background-image: url('images/future-plans.jpg');*/
+  /*}*/
+
+  article header {
+    border: 1px dotted #ccc;
+    border-width: 1px 0;
+  }
+
+  article header h1 {
+    font-size: 200%;
+  }
+}
