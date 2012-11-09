@@ -89,11 +89,11 @@
 
   html,
   #mission,
-  #funding,
+  #support,
   #people,
-  #infrastructure,
-  #pedagogy,
-  #future-plans {
+  #structure,
+  #research,
+  #directions {
     background-size:cover;
     background-position: 50% 50%;
     background-repeat:no-repeat;
@@ -103,21 +103,21 @@
     background-image: url('images/mission.jpg');
   }
 
-  /*#funding {*/
-    /*background-image: url('images/funding.jpg');*/
-  /*}*/
-  /*#people {*/
-    /*background-image: url('images/people.jpg');*/
-  /*}*/
-  /*#infrastructure {*/
-    /*background-image: url('images/infrastructure.jpg');*/
-  /*}*/
-  /*#pedagogy {*/
-    /*background-image: url('images/pedagogy.jpg');*/
-  /*}*/
-  /*#future-plans {*/
-    /*background-image: url('images/future-plans.jpg');*/
-  /*}*/
+  .support {
+    background-image: url('images/funding.jpg');
+  }
+  .people {
+  background-image: url('images/people.jpg');
+  }
+  .structure {
+  background-image: url('images/infrastructure.jpg');
+  }
+  .research {
+  background-image: url('images/pedagogy.jpg');
+  }
+  .directions {
+  background-image: url('images/future-plans.jpg');
+  }
 
   article header {
     border: 1px dotted #ccc;
