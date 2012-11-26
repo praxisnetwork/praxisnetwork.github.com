@@ -1,0 +1,42 @@
+// Imports
+@import "compass";
+@import "compass/reset";
+@import "susy";
+@import "mixins";
+
+// Compass Variables
+$base-font-size: 16px;
+$base-line-height: 28px;
+
+// Susy Variables
+$total-columns: 8;
+$column-width: 100px;
+$gutter-width: 20px;
+$grid-padding: 0;
+$container-style: fluid;
+
+// Colors
+$dark-grey: rgba(0,0,0,0.7);
+$light-grey: rgba(0,0,0,0.5);
+$lightest-grey: rgba(0,0,0,0.2);
+
+$default-color: rgb(60,60,60);
+$default-color-light: rgba($default-color, 0.75);
+$default-color-lighter: rgba($default-color, 0.5);
+$default-color-lightest: rgba($default-color, 0.25);
+
+$accent-color: #fc0;
+
+$link-color: $accent-color;
+$link-color-light: lighten($link-color, 10%);
+$link-color-alternate: #777;
+$link-color-alternate-light: lighten($link-color-alternate, 10%);
+
+$border-shadow: rgba(0, 0, 0, .15);
+$border-highlight: rgba(255, 255, 255, .09);
+
+// Fonts
+$serif: Sanchez, Georgia, serif;
+$sans-serif: "Open Sans", Verdana, sans-serif;
+$font-family-default: $serif;
+$font-family-alternate: $serif;

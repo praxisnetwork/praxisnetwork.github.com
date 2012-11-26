@@ -1,0 +1,188 @@
+@include border-box-sizing;
+@include establish-baseline;
+
+html {
+  @include background(#555);
+  @include background-size(cover);
+}
+
+body {
+  font-family: $font-family-default;
+  @include container;
+  /*@include susy-grid-background;*/
+  background-color: #fefefe;
+  margin:0;
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(3);
+  max-width: 960px;
+  color: #555;
+  @include box-shadow(#222 0 0 40px);
+  border-top: 10px solid $accent-color;
+}
+
+p,ul,ol,dl {
+  @include rhythm(1);
+}
+
+/* Forms */
+form {
+
+  fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+  }
+
+  textarea {
+    width:100%;
+  }
+
+  textarea,
+  input,
+  select {
+    font-family: $font-family-alternate;
+    color: $default-color;
+    @include adjust-font-size-to(12px);
+    @include adjust-leading-to(1);
+  }
+
+}
+
+/* Navigation */
+nav {
+  ul,
+  ol {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+  }
+}
+
+/* Links */
+a {
+
+  text-decoration: none;
+
+  &:link {
+  color: $link-color;
+  }
+
+  &:visited {
+  color: $link-color-alternate;
+  }
+
+  &:hover,
+  &:active {
+  color:$link-color-alternate;
+  }
+
+}
+
+/* Headings */
+h1 {
+  @include adjust-font-size-to(30px);
+  @include adjust-leading-to(0.875);
+  font-weight:normal;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  @include adjust-font-size-to(24px);
+  color: $default-color-light;
+}
+
+h3 {
+  font-weight:bold;
+  color: $default-color-light;
+  @include adjust-font-size-to(20px);
+}
+
+h4 {
+  font-weight:bold;
+}
+
+h5 {
+  font-style:italic;
+}
+
+h6 {
+  font-style:italic;
+  color: $default-color-lighter;
+}
+
+#{headings(1,6)} {
+
+  a {
+  text-decoration:none;
+  }
+
+}
+
+/* Tables */
+table {
+  width:100%;
+  @include adjust-font-size-to(14px);
+  @include rhythm(2);
+
+  border: 5px solid #eee;
+  border-width: 5px 0;
+
+  th,
+  td {
+    padding: rhythm(0.5);
+    vertical-align:top;
+  }
+
+  thead {
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+  }
+
+  tr + tr {
+    border-top: 1px dotted rgba(0,0,0,0.1);
+  }
+
+  tbody {
+    th {
+      width: 20%;
+      font-weight:bold;
+    }
+  }
+
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Header */
+header[role="banner"] {
+  border-bottom:1px solid #eee;
+  @include pad(1,1);
+  @include padding-trailer(1);
+  @include trailer(2);
+  h1 {
+    @include adjust-font-size-to(28px);
+  }
+
+  nav {
+    @include horizontalnav;
+  }
+}
+
+/* Main Content */
+
+div[role="main"] {
+  @include span-columns(6);
+  @include pre(1);
+}
+
+/* Footer */
+footer[role="contentinfo"] {
+  @include margin-leader;
+  &:before {
+    margin-bottom:rhythm(1);
+  }
+}

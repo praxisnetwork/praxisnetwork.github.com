@@ -1,0 +1,40 @@
+@mixin horizontalnav {
+  li {
+    display:inline;
+
+    &:not(:first-child):before {
+      content: " · ";
+      color: $light-grey;
+      padding: 0 0.25em;
+    }
+
+  }
+  a {
+    display:inline;
+    text-decoration:none;
+  }
+
+}
+
+@mixin verticalnav {
+  li {
+    display:block;
+
+    a {
+      display:block;
+      text-decoration:none;
+    }
+
+    &:not(:first-child):before {
+      content: "";
+      padding:0;
+    }
+  }
+}
+
+@mixin kicker {
+}
+
+@mixin byline {
+}
+

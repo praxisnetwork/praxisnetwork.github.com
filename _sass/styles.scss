@@ -1,0 +1,26 @@
+@import "base";
+
+// screen
+@media only screen {
+  @import "media/screen";
+}
+
+// small
+@media only screen and (min-width: 480px) {
+  @import "media/screen_small";
+}
+
+// medium
+@media only screen and (min-width: 768px) {
+  @import "media/screen_medium";
+}
+
+// large
+@media only screen and (min-width: 992px) {
+  @import "media/screen_large";
+}
+
+// print
+@media print {
+  @import "media/print";
+}
