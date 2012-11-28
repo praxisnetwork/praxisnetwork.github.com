@@ -57,8 +57,7 @@ nav {
     padding-left:0;
   }
 
-  &#category-nav a,
-  &#program-nav a {
+  &#category-nav a {
     background-color: #333;
     background-size:cover;
     background-repeat:no-repeat;
@@ -81,12 +80,14 @@ nav {
       background-color: #444;
     }
 
-    @each $bg in mission, support, people, structure, research, directions,
-    praxis-program, chi-initiative, hope-mellon-scholars, cuny-dhi, ucldh {
+    @each $bg in mission, support, people, structure, research, directions {
       &.#{$bg} {
         background-image: url('../images/#{$bg}.jpg');
       }
     }
+  }
+
+  &#program-nav a {
   }
 }
 
