@@ -16,13 +16,13 @@
 
   <!-- Style Sheets -->
   <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/c/styles.css" type="text/css">
+  <link rel="stylesheet" href="c/styles.css" type="text/css">
 
   <!-- JavaScript -->
-  <script src="/j/modernizr.min.js"></script>
+  <script src="j/modernizr.min.js"></script>
   <!--[if lt IE 9 ]>
-  <script src="/j/respond.min.js"></script>
-  <script src="/j/selectivizr.min.js"></script>
+  <script src="j/respond.min.js"></script>
+  <script src="j/selectivizr.min.js"></script>
   <![endif]-->
 
 </head>
@@ -30,12 +30,11 @@
 <body>
 <div id="container">
     <header role="banner">
-        <h1><a href="/">{{ site.title }}</a></h1>
+        <h1><a href="index.html">{{ site.title }}</a></h1>
         <nav role="navigation" id="courtesy-nav">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
 
@@ -53,14 +52,7 @@
 </div>
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/j/jquery.min.js"><\/script>')</script>
-
-<script>
-var _gaq=[['_setAccount','UA-341377-1'],['_trackPageview'],['_trackPageLoadTime']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
+<script>window.jQuery || document.write('<script src="j/jquery.min.js"><\/script>')</script>
 
 </body>
 </html>
