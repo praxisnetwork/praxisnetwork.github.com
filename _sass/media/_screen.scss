@@ -56,6 +56,38 @@ nav {
     margin-left:0;
     padding-left:0;
   }
+
+  &#category-nav a,
+  &#program-nav a {
+    background-color: #333;
+    background-size:cover;
+    background-repeat:no-repeat;
+    @include trailer(1);
+    color: #fff;
+    text-align:center;
+    line-height: rhythm(5);
+    @include span-columns(2,6);
+    &:nth-child(3n) {
+      @include omega;
+    }
+
+    &:link,
+    &:visited {
+      background-color: #fc0;
+    }
+
+    &:hover,
+    &:active {
+      background-color: #444;
+    }
+
+    @each $bg in mission, support, people, structure, research, directions,
+    praxis-program, chi-initiative, hope-mellon-scholars, cuny-dhi, ucldh {
+      &.#{$bg} {
+        background-image: url('../images/#{$bg}.jpg');
+      }
+    }
+  }
 }
 
 /* Links */
@@ -88,6 +120,7 @@ h1 {
 
 h2 {
   @include adjust-font-size-to(24px);
+  @include leader(2);
   color: $default-color-light;
 }
 
@@ -155,6 +188,11 @@ img {
   max-width: 100%;
   width: auto;
   height: auto;
+}
+
+/* Classes */
+.intro {
+  @include adjust-font-size-to(20px);
 }
 
 /* Header */
