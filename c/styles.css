@@ -138,6 +138,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0;
     padding-left: 0;
   }
+  nav#categories a {
+    background: #333;
+    margin-bottom: 1.75em;
+    color: #fff;
+    height: 8.75em;
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+    display: inline;
+  }
+  nav#categories a:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+    #margin-left: -20px;
+    display: inline;
+  }
+  nav#categories a:link, nav#categories a:visited {
+    background: #fc0;
+  }
+  nav#categories a:hover, nav#categories a:active {
+    background: #444;
+  }
 
   /* Links */
   a {

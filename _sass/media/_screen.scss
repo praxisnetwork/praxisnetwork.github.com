@@ -56,6 +56,27 @@ nav {
     margin-left:0;
     padding-left:0;
   }
+
+  &#categories a {
+    background: #333;
+    @include trailer(1);
+    color: #fff;
+    height: rhythm(5);
+    @include span-columns(2,6);
+    &:nth-child(3n) {
+      @include omega;
+    }
+
+    &:link,
+    &:visited {
+      background: #fc0;
+    }
+
+    &:hover,
+    &:active {
+      background: #444;
+    }
+  }
 }
 
 /* Links */
