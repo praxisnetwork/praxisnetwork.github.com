@@ -272,9 +272,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   /* Classes */
-  .intro {
+  .intro, .program-category-intro {
     font-size: 1.25em;
     line-height: 1.4em;
+  }
+
+  .program-category-intro {
+    color: rgba(60, 60, 60, 0.5);
   }
 
   /* Header */

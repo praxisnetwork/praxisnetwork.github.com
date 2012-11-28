@@ -196,6 +196,11 @@ img {
   @include adjust-font-size-to(20px);
 }
 
+.program-category-intro {
+  @extend .intro;
+  color: $default-color-lighter;
+}
+
 /* Header */
 header[role="banner"] {
   border-bottom:1px solid #eee;
