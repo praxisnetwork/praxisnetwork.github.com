@@ -138,27 +138,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0;
     padding-left: 0;
   }
-  nav#categories a {
-    background: #333;
+  nav#category-nav a, nav#program-nav a {
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 1.75em;
     color: #fff;
-    height: 8.75em;
+    text-align: center;
+    line-height: 8.75em;
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
     display: inline;
   }
-  nav#categories a:nth-child(3n) {
+  nav#category-nav a:nth-child(3n), nav#program-nav a:nth-child(3n) {
     float: right;
     margin-right: 0;
     #margin-left: -20px;
     display: inline;
   }
-  nav#categories a:link, nav#categories a:visited {
-    background: #fc0;
+  nav#category-nav a:link, nav#category-nav a:visited, nav#program-nav a:link, nav#program-nav a:visited {
+    background-color: #fc0;
   }
-  nav#categories a:hover, nav#categories a:active {
-    background: #444;
+  nav#category-nav a:hover, nav#category-nav a:active, nav#program-nav a:hover, nav#program-nav a:active {
+    background-color: #444;
+  }
+  nav#category-nav a.mission, nav#program-nav a.mission {
+    background-image: url("../images/mission.jpg");
+  }
+  nav#category-nav a.support, nav#program-nav a.support {
+    background-image: url("../images/support.jpg");
+  }
+  nav#category-nav a.people, nav#program-nav a.people {
+    background-image: url("../images/people.jpg");
+  }
+  nav#category-nav a.structure, nav#program-nav a.structure {
+    background-image: url("../images/structure.jpg");
+  }
+  nav#category-nav a.research, nav#program-nav a.research {
+    background-image: url("../images/research.jpg");
+  }
+  nav#category-nav a.directions, nav#program-nav a.directions {
+    background-image: url("../images/directions.jpg");
+  }
+  nav#category-nav a.praxis-program, nav#program-nav a.praxis-program {
+    background-image: url("../images/praxis-program.jpg");
+  }
+  nav#category-nav a.chi-initiative, nav#program-nav a.chi-initiative {
+    background-image: url("../images/chi-initiative.jpg");
+  }
+  nav#category-nav a.hope-mellon-scholars, nav#program-nav a.hope-mellon-scholars {
+    background-image: url("../images/hope-mellon-scholars.jpg");
+  }
+  nav#category-nav a.cuny-dhi, nav#program-nav a.cuny-dhi {
+    background-image: url("../images/cuny-dhi.jpg");
+  }
+  nav#category-nav a.ucldh, nav#program-nav a.ucldh {
+    background-image: url("../images/ucldh.jpg");
   }
 
   /* Links */
@@ -187,6 +223,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   h2 {
     font-size: 1.5em;
     line-height: 1.16667em;
+    margin-top: 3.5em;
     color: rgba(60, 60, 60, 0.75);
   }
 
@@ -247,6 +284,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     max-width: 100%;
     width: auto;
     height: auto;
+  }
+
+  /* Classes */
+  .intro {
+    font-size: 1.25em;
+    line-height: 1.4em;
   }
 
   /* Header */
