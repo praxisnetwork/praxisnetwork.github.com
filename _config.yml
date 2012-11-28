@@ -14,43 +14,43 @@ praxis-program:
   mission: 'To equip knowledge workers for faculty positions or alternative academic careers at a moment in which new questions can be asked and new systems built.'
   people: 'An annual cohort of six students from a variety of disciplines, directed by Bethany Nowviskie, with collaboration, guidance, and instruction from the Scholars’ Lab Research & Development team.'
   research: 'The first cohort completed Prism, a tool for crowdsourcing interpretation. The second cohort will rethink, revise, and extend it.'
-  support: 'Current funding is through a Mellon Foundation grant to the Scholarly Communication Institute. Future funding is an open question at this point.'
-  directions: 'Goal is dynamic sustainability, with continued contributions to the field as circumstances evolve over time.'
-  structure: 'One-year funded fellowship with weekly meetings, expected joint working time, a single collaborative project, and public documentation throughout the process.'
+  support: 'Currently supported by a Mellon Foundation grant to the Scholarly Communication Institute. Future funding is an open question at this point.'
+  directions: 'A major goal is dynamic sustainability, with continued contributions to the field as circumstances evolve over time.'
+  structure: 'This one-year funded fellowship features weekly meetings, a single collaborative project, and public documentation throughout the process.'
 
 ## CHI Initiative
 chi-initiative:
-  mission: 'To equip doctoral students to creatively apply information and communication technologies to historical and cultural heritage materials, influence the current state of digital history & cultural heritage informatics, and become thought leaders for the future of digital history & cultural heritage informatics.'
+  mission: 'To prepare doctoral students to creatively apply emerging technologies to historical and cultural heritage materials, influence the current state of digital history & cultural heritage informatics, and become thought leaders for the future of the field.'
   people: 'A variable cohort of doctoral students from disciplines related to cultural heritage, under the direction of Ethan Watrall.'
   research: 'One fellow has created a <a href="http://futbol.matrix.msu.edu/">digital dissertation prototype</a>. Another created a <a href="http://talus.matrix.msu.edu/">web app for forensic anthropologists and bioarchaeologists</a>.'
-  support: 'Funding is internal, not through grants, and comes from the MSU graduate school, the college of social science, and the department of anthropology.'
-  directions: 'Hopes to refine based on each year’s successes and challenges to create a sustainable and rigorous program.'
-  structure: 'One-year funded fellowship for individual project work; students meet weekly, participate in a field school session, and present work at conferences throughout the year.'
+  support: 'The program is supported by internal funding, not through grants, and comes from the MSU graduate school, the college of social science, and the department of anthropology.'
+  directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges to create a sustainable and rigorous program.'
+  structure: 'The porgram provides a one-year funded fellowship for individual project work; students meet weekly, participate in a field school session, and present work at conferences throughout the year.'
 
 ## HOPE Mellon
 hope-mellon-scholars:
-  mission: 'To encourage deep student/faculty collaboration in the humanities; to expand the engagement with digital humanities on the institutional level; and to showcase student achievement.'
+  mission: 'To encourage deep collaboration among humanities students and faculty; to strengthen engagement with digital humanities on the institutional level; and to showcase student achievement.'
   people: 'A highly selective undergraduate program directed by William Pannapacker, Mellon Scholars also involves faculty representatives from all departments in the Arts & Humanities division of the college.'
   research: 'Students have <a href="http://celebration.hope.edu/abstracts/listing_titles.asp?CELDEP_RID=1226">completed a wide range of research projects and presented them to the community.'
-  support: 'Currently funded by a grant from the Mellon Foundation, along with some internal funding to support release time for faculty. Post-grant funding is undetermined.'
-  directions: 'Hopes to receive an increasing number of applications to make the program more selective. Major goal is to see more faculty invested.'
-  structure: 'Three-year project: two-semester interdisciplinary seminar; year-long, Oxford-style tutorial, including summer study; capstone project for public presentation.'
+  support: 'The program is currently funded by a Mellon Foundation grant, along with modest internal funding to support release time for faculty.'
+  directions: 'Two signs of success would be deeper engagement among the faculty, and an increasing number of applications to make the program more selective.'
+  structure: 'This three-year project includes a two-semester interdisciplinary seminar; a year-long, Oxford-style tutorial; summer study; and a capstone project for public presentation.'
 
 ## CUNY DHI
 cuny-dhi:
-  mission: 'To create and highlight a broad range of exciting digital projects and resources at the CUNY Graduate Center, and to create institutional change across the CUNY campuses by heightening the public presence of digital efforts.'
+  mission: 'To develop and highlight a broad range of digital projects and resources at the CUNY Graduate Center, and to foster institutional change across the CUNY campuses by heightening the public presence of digital efforts.'
   people: 'Directed by Matt Gold under the purview of the Provost’s Office, the first cohort of digital fellows are doctoral students from a variety of backgrounds.'
-  research: 'First cohort.'
-  support: 'Funding is completely internal under the purview of the Provost’s Office, which signals a strong institutional commitment.'
-  directions: 'Very much an experiment, and they are learning as they go. One hope is to retain some students in subsequent years to build up a base of knowledge and expertise.'
-  structure: 'One-year renewable fellowship with an expectation of 15 hours of work per week; fellows meet weekly to gain skills and discuss projects.'
+  research: 'The first cohort of students are leading and participating in a wide range of projects to benefit the Graduate Center in its digital initiatives.'
+  support: 'Financial support for the program is completely internal to the Provost’s Office, which signals a strong institutional commitment.'
+  directions: 'This new program is experimental, so many successes and challenges are anticipated. One hope is to retain some students in subsequent years to build up a base of knowledge and expertise.'
+  structure: 'The program provides a one-year renewable fellowship with an expectation of 15 hours of work per week; fellows meet weekly to gain skills and discuss projects.'
 
 ## UCL DH
 ucldh:
-  mission: 'To equip students to work on problems that are interesting both from the humanities perspective and from a computer science/engineering perspective.'
-  people: 'This program is highly interdisciplinary; students enter with a range of backgrounds and participate in modules across the faculties. The program is directed by Claire Warwick and Melissa Terras.'
-  research: 'Lorem ipsum dolor sit amet.'
+  mission: 'To equip students to work on problems that are interesting scholarship -- both from a humanities perspective and from a computer science/engineering perspective.'
+  people: 'This master's-level program is highly interdisciplinary; students enter with a range of backgrounds and participate in modules across the faculties. The program is directed by Claire Warwick and Melissa Terras.'
+  research: 'Because the modules are brief and varied, students build a body of knowledge rather than focusing on a single project. As a whole, the Centre produces a wide range of intellectually rich work products.'
   support: 'While initial funding for the program has been provided by the university, the program expects to become self-sustaining through student fees and research grants.'
-  directions: 'Hopes to expand collaboration to include more faculty and students. Sustained enrollment is a concern, as funding and fee structures at UK universities are changing in a way that is difficult for students.'
-  structure: 'Three terms of study: first two are various modules of coursework, while the third is a thesis project and job placement.'
+  directions: 'Program leaders hope to expand collaboration to include more faculty and students, while sustaining high enrollment despite recent changes in fee structures at UK universities.'
+  structure: 'Students work towards an MA or MSC degree during three terms of study. The first two terms include various modules of coursework, while the third focuses on a thesis project and job placement.'
 
