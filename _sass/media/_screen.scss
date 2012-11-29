@@ -57,6 +57,39 @@ nav {
     padding-left:0;
   }
 
+  &#category-nav {
+    @include clearfix;
+    a {
+      @include span-columns(2,6);
+      background-repeat:no-repeat;
+      background-position: 0 50%;
+      @include adjust-leading-to(1.5);
+      text-indent: 40px;
+      &:nth-child(3n) {
+        @include omega;
+      }
+
+      &:link,
+      &:visited {
+        color: #fc0;
+      }
+
+      &:hover,
+      &:active {
+        color: #444;
+      }
+
+      @each $bg in mission, support, people, structure, research, directions {
+        &.#{$bg} {
+          background-image: url('../images/icons/#{$bg}.png');
+        }
+      }
+    }
+  }
+
+  &#program-nav a {
+    display:block;
+  }
 }
 
 /* Links */
@@ -84,12 +117,11 @@ h1 {
   @include adjust-font-size-to(30px);
   @include adjust-leading-to(0.875);
   font-weight:normal;
-  letter-spacing: 0.1em;
 }
 
 h2 {
   @include adjust-font-size-to(24px);
-  @include leader(2);
+  @include leader(1);
   color: $default-color-light;
 }
 

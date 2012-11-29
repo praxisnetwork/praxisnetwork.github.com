@@ -138,6 +138,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0;
     padding-left: 0;
   }
+  nav#category-nav {
+    overflow: hidden;
+    *zoom: 1;
+  }
+  nav#category-nav a {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    line-height: 2.625em;
+    text-indent: 40px;
+  }
+  nav#category-nav a:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+    #margin-left: -20px;
+    display: inline;
+  }
+  nav#category-nav a:link, nav#category-nav a:visited {
+    color: #fc0;
+  }
+  nav#category-nav a:hover, nav#category-nav a:active {
+    color: #444;
+  }
+  nav#category-nav a.mission {
+    background-image: url("../images/icons/mission.png");
+  }
+  nav#category-nav a.support {
+    background-image: url("../images/icons/support.png");
+  }
+  nav#category-nav a.people {
+    background-image: url("../images/icons/people.png");
+  }
+  nav#category-nav a.structure {
+    background-image: url("../images/icons/structure.png");
+  }
+  nav#category-nav a.research {
+    background-image: url("../images/icons/research.png");
+  }
+  nav#category-nav a.directions {
+    background-image: url("../images/icons/directions.png");
+  }
+  nav#program-nav a {
+    display: block;
+  }
 
   /* Links */
   a {
@@ -159,13 +206,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     line-height: 1.86667em;
     line-height: 1.53125em;
     font-weight: normal;
-    letter-spacing: 0.1em;
   }
 
   h2 {
     font-size: 1.5em;
     line-height: 1.16667em;
-    margin-top: 3.5em;
+    margin-top: 1.75em;
     color: rgba(60, 60, 60, 0.75);
   }
 
