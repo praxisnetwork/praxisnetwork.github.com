@@ -138,49 +138,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0;
     padding-left: 0;
   }
-  nav#category-nav a {
-    background-color: #333;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 1.75em;
-    color: #fff;
-    text-align: center;
-    line-height: 8.75em;
-    width: 31.42857%;
-    float: left;
-    margin-right: 2.85714%;
-    display: inline;
-  }
-  nav#category-nav a:nth-child(3n) {
-    float: right;
-    margin-right: 0;
-    #margin-left: -20px;
-    display: inline;
-  }
-  nav#category-nav a:link, nav#category-nav a:visited {
-    background-color: #fc0;
-  }
-  nav#category-nav a:hover, nav#category-nav a:active {
-    background-color: #444;
-  }
-  nav#category-nav a.mission {
-    background-image: url("../images/mission.jpg");
-  }
-  nav#category-nav a.support {
-    background-image: url("../images/support.jpg");
-  }
-  nav#category-nav a.people {
-    background-image: url("../images/people.jpg");
-  }
-  nav#category-nav a.structure {
-    background-image: url("../images/structure.jpg");
-  }
-  nav#category-nav a.research {
-    background-image: url("../images/research.jpg");
-  }
-  nav#category-nav a.directions {
-    background-image: url("../images/directions.jpg");
-  }
 
   /* Links */
   a {
