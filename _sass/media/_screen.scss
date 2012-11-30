@@ -180,12 +180,12 @@ header[role="banner"] {
   border-bottom:1px solid #eee;
   h1 {
     @include adjust-font-size-to(28px);
-    @include span-columns(2,8);
+    @include span-columns(3,8);
   }
 
   nav {
     @include horizontalnav;
-    @include span-columns(6 omega, 8);
+    @include span-columns(5 omega, 8);
     text-align:right;
   }
 }

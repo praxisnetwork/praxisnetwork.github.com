@@ -254,13 +254,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   header[role="banner"] h1 {
     font-size: 1.75em;
     line-height: 2em;
-    width: 22.22222%;
+    width: 35.18519%;
     float: left;
     margin-right: 3.7037%;
     display: inline;
   }
   header[role="banner"] nav {
-    width: 74.07407%;
+    width: 61.11111%;
     float: right;
     margin-right: 0;
     #margin-left: -40px;
