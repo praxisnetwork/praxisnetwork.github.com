@@ -9,15 +9,11 @@ html {
 body {
   font-family: $font-family-default;
   @include container;
-  /*@include susy-grid-background;*/
   background-color: #fefefe;
   margin:0;
   padding-top: rhythm(1);
   padding-bottom: rhythm(3);
-  max-width: 960px;
   color: #555;
-  @include box-shadow(#222 0 0 40px);
-  border-top: 10px solid $accent-color;
 }
 
 p,ul,ol,dl {
@@ -55,36 +51,6 @@ nav {
     list-style:none;
     margin-left:0;
     padding-left:0;
-  }
-
-  &#category-nav {
-    @include clearfix;
-    a {
-      @include span-columns(2,6);
-      background-repeat:no-repeat;
-      background-position: 0 50%;
-      @include adjust-leading-to(1.5);
-      text-indent: 40px;
-      &:nth-child(3n) {
-        @include omega;
-      }
-
-      &:link,
-      &:visited {
-        color: #fc0;
-      }
-
-      &:hover,
-      &:active {
-        color: #444;
-      }
-
-      @each $bg in mission, support, people, structure, research, directions {
-        &.#{$bg} {
-          background-image: url('../images/icons/#{$bg}.png');
-        }
-      }
-    }
   }
 
   &#program-nav a {
@@ -193,7 +159,8 @@ img {
 
 /* Classes */
 .intro {
-  @include adjust-font-size-to(20px);
+  @include adjust-font-size-to(22px);
+  color: #f60;
 }
 
 .program-category-intro {
@@ -203,26 +170,60 @@ img {
 
 /* Header */
 header[role="banner"] {
-  border-bottom:1px solid #eee;
+  position:fixed;
+  top:0;
+  @include span-columns(8);
   @include pad(1,1);
-  @include padding-trailer(1);
-  @include trailer(2);
+  background: rgba(0,0,0,0.75);
+  @include clearfix;
+  z-index:1000;
+  border-bottom:1px solid #eee;
   h1 {
     @include adjust-font-size-to(28px);
+    @include span-columns(2,8);
   }
 
   nav {
     @include horizontalnav;
+    @include span-columns(6 omega, 8);
+    text-align:right;
   }
 }
 
 /* Main Content */
 
 div[role="main"] {
-  @include span-columns(6);
-  @include pre(1);
+  @include pad(1,1);
 }
 
+
+@each $category in mission, support, people, structure, research, directions {
+  section.category {
+    @include pull(1,6);
+    @include pull(1,6, right);
+    @include clearfix;
+
+    padding: rhythm(1) gutter(8);
+
+    div {
+      background: rgba(255,255,255,0.9);
+      @include span-columns(5 omega, 8);
+        padding: rhythm(1) gutter(8);
+    }
+
+    &:nth-child(odd) {
+      div {
+        @include span-columns(5, 8);
+      }
+    }
+
+      
+      &##{$category} {
+      background-image: url('../images/#{$category}.jpg');
+      @include background-size(cover);
+    }
+  }
+}
 /* Footer */
 footer[role="contentinfo"] {
   @include margin-leader;
