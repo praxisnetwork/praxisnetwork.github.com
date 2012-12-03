@@ -13,7 +13,7 @@ title: The Praxis Network
 praxis-program:
   mission: 'To equip knowledge workers for faculty positions or alternative academic careers at a moment in which new questions can be asked and new systems built.'
   people: 'An annual cohort of six students from a variety of disciplines, directed by Bethany Nowviskie, with collaboration, guidance, and instruction from the Scholars’ Lab Research & Development team.'
-  research: 'The first cohort completed Prism, a tool for crowdsourcing interpretation. The second cohort will rethink, revise, and extend it.'
+  research: 'The first cohort completed <a href="http://prism.scholarslab.org/">Prism</a>, a tool for crowdsourcing interpretation. The second cohort will rethink, revise, and extend it.'
   support: 'Currently supported by a Mellon Foundation grant to the Scholarly Communication Institute. Future funding is an open question at this point.'
   directions: 'A major goal is dynamic sustainability, with continued contributions to the field as circumstances evolve over time.'
   structure: 'This one-year funded fellowship features weekly meetings, a single collaborative project, and public documentation throughout the process.'
@@ -27,7 +27,7 @@ chi-initiative:
   directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges to create a sustainable and rigorous program.'
   structure: 'The porgram provides a one-year funded fellowship for individual project work; students meet weekly, participate in a field school session, and present work at conferences throughout the year.'
 
-## HOPE Mellon
+## Hope Mellon
 hope-mellon-scholars:
   mission: 'To encourage deep collaboration among humanities students and faculty; to strengthen engagement with digital humanities on the institutional level; and to showcase student achievement.'
   people: 'A highly selective undergraduate program directed by William Pannapacker, Mellon Scholars also involves faculty representatives from all departments in the Arts & Humanities division of the college.'
