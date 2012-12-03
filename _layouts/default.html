@@ -79,7 +79,7 @@
   </script>
 </head>
 
-<body>
+<body id="{{ page.title | downcase | replace: " ", "-" }}" class="{{ page.bodyclass }}">
 <div id="container">
     <header role="banner">
         <h1><a href="/">{{ site.title }}</a></h1>
