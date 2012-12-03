@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -165,10 +164,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 1.16667em;
-    margin-top: 1.75em;
-    color: rgba(60, 60, 60, 0.75);
+    font-size: 1.875em;
+    line-height: 1.86667em;
+    line-height: 3.5em;
+    color: #f60;
   }
 
   h3 {
@@ -249,37 +248,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     *zoom: 1;
+    text-align: center;
     padding: 0.875em 13.04348%;
-  }
-  header[role="banner"] h1 {
-    font-size: 1em;
-    line-height: 1.75em;
-    width: 34.78261%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
   }
   header[role="banner"] nav {
     font-size: 1em;
     line-height: 1.75em;
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-    text-align: right;
-  }
-  header[role="banner"] nav li {
-    display: inline;
-  }
-  header[role="banner"] nav li:not(:first-child):before {
-    content: " · ";
-    color: rgba(0, 0, 0, 0.5);
-    padding: 0 0.25em;
-  }
-  header[role="banner"] nav a {
-    display: inline;
-    text-decoration: none;
   }
 
   /* Main Content */
@@ -305,8 +279,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     margin-left: 0%;
   }
+  body.program div[role="main"] article header {
+    color: #fff;
+  }
   body.program div[role="main"] article section {
-    display: block;
+    overflow: hidden;
+    *zoom: 1;
     float: none;
     width: auto;
     margin-right: auto;
@@ -318,16 +296,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-right: 13.04348%;
     padding-top: 4.34783%;
     padding-bottom: 4.34783%;
-  }
-  body.program div[role="main"] article > header {
-    color: #fff;
-  }
-  body.program div[role="main"] article section {
     background: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
-    margin: 17.5em 0;
   }
   div[role="main"] section {
     width: 73.91304%;
@@ -349,17 +321,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#mission {
     background-image: url("../images/mission.jpg");
@@ -384,17 +345,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#support {
     background-image: url("../images/support.jpg");
@@ -419,17 +369,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#people {
     background-image: url("../images/people.jpg");
@@ -454,17 +393,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#structure {
     background-image: url("../images/structure.jpg");
@@ -489,17 +417,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#research {
     background-image: url("../images/research.jpg");
@@ -524,17 +441,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
-    width: 47.82609%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  div[role="main"] section.category:nth-child(odd) div {
-    width: 47.82609%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
   }
   div[role="main"] section.category#directions {
     background-image: url("../images/directions.jpg");
@@ -600,7 +506,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 1.75em;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+  header[role="banner"] {
+    text-align: left;
+  }
+  header[role="banner"] h1 {
+    font-size: 1em;
+    line-height: 1.75em;
+    width: 34.78261%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  header[role="banner"] nav {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+    text-align: right;
+  }
+
   .program section {
     overflow: hidden;
     *zoom: 1;
@@ -612,6 +538,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
   .program section p:not(.program-category-intro) {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
+    width: 60.86957%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+  }
+  section.category div {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section.category:nth-child(odd) div {
     width: 60.86957%;
     float: right;
     margin-right: 0;

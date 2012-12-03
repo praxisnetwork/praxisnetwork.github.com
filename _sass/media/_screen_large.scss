@@ -1,0 +1,44 @@
+header[role="banner"] {
+  text-align:left;
+
+  h1 {
+    @include adjust-font-size-to(16px);
+    @include span-columns(3,8);
+  }
+
+  nav {
+    @include span-columns(5 omega, 8);
+    text-align:right;
+  }
+}
+
+.program {
+  section {
+    @include clearfix;
+    header {
+      @include span-columns(3,8);
+    }
+
+    p:not(.program-category-intro) {
+      @include span-columns(5 omega, 8);
+    }
+  }
+}
+
+section {
+  @each $category in mission, support, people, structure, research, directions {
+
+    &.category {
+      div {
+        @include span-columns(5, 8);
+      }
+
+      &:nth-child(odd) {
+        div {
+          @include span-columns(5 omega, 8);
+        }
+      }
+    }
+  }
+}
+

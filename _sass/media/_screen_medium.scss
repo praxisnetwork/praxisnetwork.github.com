@@ -1,12 +1,1 @@
-.program {
-  section {
-    @include clearfix;
-    header {
-      @include span-columns(3,8);
-    }
 
-    p:not(.program-category-intro) {
-      @include span-columns(5 omega, 8);
-    }
-  }
-}
