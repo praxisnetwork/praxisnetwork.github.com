@@ -9,9 +9,9 @@ html {
 body {
   font-family: $font-family-default;
   @include container;
+  /*@include susy-grid-background;*/
   background-color: #fefefe;
   margin:0;
-  padding-top: rhythm(1);
   padding-bottom: rhythm(3);
   color: #555;
 }
@@ -53,8 +53,14 @@ nav {
     padding-left:0;
   }
 
-  &#program-nav a {
-    display:block;
+  &#program-nav {
+    border: 1px dotted #ccc;
+    border-width: 1px 0;
+    padding: rhythm(1) 0;
+    margin: rhythm(1) 0;
+    a {
+      margin-right: 1em;
+    }
   }
 }
 
@@ -164,26 +170,25 @@ img {
 }
 
 .program-category-intro {
-  @extend .intro;
+  @include adjust-font-size-to(14px);
+  font-style:italic;
   color: $default-color-lighter;
 }
 
 /* Header */
 header[role="banner"] {
-  position:fixed;
-  top:0;
-  @include span-columns(8);
-  @include pad(1,1);
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.9);
   @include clearfix;
-  z-index:1000;
-  border-bottom:1px solid #eee;
+
+  padding: rhythm(0.5) column(8) + gutter(8);
+
   h1 {
-    @include adjust-font-size-to(28px);
+    @include adjust-font-size-to(16px);
     @include span-columns(3,8);
   }
 
   nav {
+    @include adjust-font-size-to(16px);
     @include horizontalnav;
     @include span-columns(5 omega, 8);
     text-align:right;
@@ -193,37 +198,92 @@ header[role="banner"] {
 /* Main Content */
 
 div[role="main"] {
-  @include pad(1,1);
-}
+  @include span-columns(8);
 
-
-@each $category in mission, support, people, structure, research, directions {
-  section.category {
-    @include pull(1,6);
-    @include pull(1,6, right);
-    @include clearfix;
-
-    padding: rhythm(1) gutter(8);
-
-    div {
-      background: rgba(255,255,255,0.9);
-      @include span-columns(5 omega, 8);
-        padding: rhythm(1) gutter(8);
+  article {
+    & > header {
+      @include span-columns(6);
+      @include pre(1);
+      padding-top: gutter(6);
+      padding-bottom: gutter(6);
     }
 
-    &:nth-child(odd) {
-      div {
-        @include span-columns(5, 8);
+    body.program & {
+      @include span-columns(8);
+      @include pre(0);
+      
+      section{
+        display:block;
+        @include reset-columns;
+        @include pre(0);
+        margin: rhythm(10) 0;
+        @include pad(1,1);
+        padding-top: gutter(8);
+        padding-bottom: gutter(8);
+      }
+
+      & > header {
+
+          color: #fff;
+      }
+
+      section {
+        background: rgba(255,255,255,0.95);
+        @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
+        margin: rhythm(10) 0;
       }
     }
+  }
 
-      
-      &##{$category} {
-      background-image: url('../images/#{$category}.jpg');
-      @include background-size(cover);
+  section {
+    @include span-columns(6);
+    @include pre(1);
+
+    @each $category in mission, support, people, structure, research, directions {
+      $counter: 1;
+
+      &.category {
+        @include span-columns(8);
+        @include pre(0);
+        @include clearfix;
+        padding: gutter(8);
+
+        div {
+          padding: gutter(8);
+          background: rgba(255,255,255,0.9);
+          @include span-columns(4, 8);
+        }
+
+        &:nth-child(odd) {
+          div {
+            @include span-columns(4 omega, 8);
+          }
+        }
+
+        &##{$category} {
+          background-image: url('../images/#{$category}.jpg');
+          @include background-size(cover);
+          background-attachment: fixed;
+          background-position: 0 $counter;
+          background-repeat:no-repeat;
+        }
+      }
+      $counter: $counter + 1;
     }
   }
 }
+
+@each $program in praxis-program, chi-initiative, hope-mellon-scholars, cuny-dhi, ucldh {
+  body##{$program} {
+    background-image: url('../images/#{$program}.jpg');
+    @include background-size(cover);
+    background-attachment: fixed;
+  }
+}
+
+#program-nav {
+}
+
 /* Footer */
 footer[role="contentinfo"] {
   @include margin-leader;

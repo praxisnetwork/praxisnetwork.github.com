@@ -11,9 +11,10 @@ $base-line-height: 28px;
 // Susy Variables
 $total-columns: 8;
 $column-width: 100px;
-$gutter-width: 40px;
+$gutter-width: 50px;
 $grid-padding: 0;
 $container-style: fluid;
+$gutterColumn: gutter($total-columns) + column($total-columns);
 
 // Colors
 $dark-grey: rgba(0,0,0,0.7);
