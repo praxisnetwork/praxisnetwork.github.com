@@ -263,15 +263,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 4.34783%;
     display: inline;
   }
-  div[role="main"] article > header {
-    width: 73.91304%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 13.04348%;
-    padding-top: 5.88235%;
-    padding-bottom: 5.88235%;
-  }
   body.program div[role="main"] article {
     width: 100%;
     float: left;
@@ -279,8 +270,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     margin-left: 0%;
   }
-  body.program div[role="main"] article header {
+  body.program div[role="main"] article > header {
+    width: 100%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+    padding-top: 5.88235%;
+    padding-bottom: 5.88235%;
+    padding-left: 13.04348%;
+    padding-right: 13.04348%;
     color: #fff;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px);
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px);
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px);
+    background-size: 3px 3px, 3px 3px, auto auto;
+    background-position: -1px -1px, -1px -1px, 0 0;
   }
   body.program div[role="main"] article section {
     overflow: hidden;
@@ -291,7 +297,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     #margin-left: auto;
     display: block;
     margin-left: 0%;
-    margin: 17.5em 0;
+    margin: 0 0 17.5em;
     padding-left: 13.04348%;
     padding-right: 13.04348%;
     padding-top: 4.34783%;
@@ -506,7 +512,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 1.75em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 860px) {
+  h2 {
+    font-size: 3em;
+    line-height: 1.16667em;
+    line-height: 2.1875em;
+  }
+
   header[role="banner"] {
     text-align: left;
   }

@@ -197,26 +197,31 @@ div[role="main"] {
   @include span-columns(8);
 
   article {
-    & > header {
-      @include span-columns(6);
-      @include pre(1);
-      padding-top: gutter(6);
-      padding-bottom: gutter(6);
-    }
 
     body.program & {
       @include span-columns(8);
       @include pre(0);
 
-      header {
+      & > header {
+        @include span-columns(8);
+        padding-top: gutter(6);
+        padding-bottom: gutter(6);
+        @include pad(1,1);
         color: #fff;
+        @include background-image (
+          linear-gradient(0deg, rgba(0,0,0,0.25) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,0,0,0.25) 1px, transparent 1px),
+          linear-gradient(rgba(0,0,0,0.5) 1px, rgba(0,0,0,0.5) 1px)
+        );
+        background-size:3px 3px, 3px 3px, auto auto;
+        background-position: -1px -1px, -1px -1px, 0 0;
       }
 
-      section{
+      section {
         @include clearfix;
         @include reset-columns;
         @include pre(0);
-        margin: rhythm(10) 0;
+        margin: 0 0 rhythm(10);
         @include pad(1,1);
         padding-top: gutter(8);
         padding-bottom: gutter(8);
