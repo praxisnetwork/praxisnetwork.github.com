@@ -289,19 +289,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-position: -1px -1px, -1px -1px, 0 0;
   }
   body.program div[role="main"] article section {
-    overflow: hidden;
-    *zoom: 1;
-    float: none;
-    width: auto;
-    margin-right: auto;
-    #margin-left: auto;
-    display: block;
+    width: 100%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
     margin-left: 0%;
-    margin: 0 0 17.5em;
     padding-left: 13.04348%;
     padding-right: 13.04348%;
     padding-top: 4.34783%;
     padding-bottom: 4.34783%;
+    margin: 0 0 17.5em;
     background: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
