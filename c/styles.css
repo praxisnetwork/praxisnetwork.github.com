@@ -456,8 +456,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-repeat: no-repeat;
   }
 
-  body#praxis-program {
-    background-image: url("../images/praxis-program.jpg");
+  body#uva-praxis-program {
+    background-image: url("../images/uva-praxis-program.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

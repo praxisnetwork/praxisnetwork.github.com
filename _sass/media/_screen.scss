@@ -261,7 +261,7 @@ div[role="main"] {
   }
 }
 
-@each $program in praxis-program, chi-initiative, hope-mellon-scholars, cuny-dhi, ucldh {
+@each $program in uva-praxis-program, chi-initiative, hope-mellon-scholars, cuny-dhi, ucldh {
   body##{$program} {
     background-image: url('../images/#{$program}.jpg');
     @include background-size(cover);
