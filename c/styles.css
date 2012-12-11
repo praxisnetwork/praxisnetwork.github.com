@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -146,13 +147,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
   }
   a:link {
-    color: #00aaff;
+    color: #00aadd;
   }
   a:visited {
-    color: #0088cc;
+    color: #0083aa;
   }
-  a:hover, a:active {
-    color: #0088cc;
+  a:hover {
+    border-bottom: 1px dotted #0083aa;
+    color: #0083aa;
+  }
+  a:active {
+    border-bottom: 1px solid #0083aa;
+    color: #0083aa;
   }
 
   /* Headings */
@@ -258,6 +264,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-size: 1em;
     line-height: 1.75em;
   }
+  header[role="banner"] a {
+    border: none !important;
+  }
+  header[role="banner"] a:link {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  header[role="banner"] a:visited {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  header[role="banner"] a:hover, header[role="banner"] a:active {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  header[role="banner"] a + a:before {
+    content: " · ";
+    color: rgba(255, 255, 255, 0.35);
+  }
 
   /* Main Content */
   div[role="main"] {
@@ -301,7 +323,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-right: 13.04348%;
     padding-top: 4.34783%;
     padding-bottom: 4.34783%;
-    margin: 0 0 17.5em;
+    margin: 0 0 21em;
     background: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
