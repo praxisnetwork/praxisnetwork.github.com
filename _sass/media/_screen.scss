@@ -4,6 +4,7 @@
 html {
   @include background(#555);
   @include background-size(cover);
+  
 }
 
 body {
@@ -135,7 +136,7 @@ table {
   @include adjust-font-size-to(14px);
   @include rhythm(2);
 
-  border: 5px solid #eee;
+  border: 5px solid rgba(0,0,0,0.25);
   border-width: 5px 0;
 
   th,
@@ -170,8 +171,9 @@ img {
 
 /* Classes */
 .intro {
-  @include adjust-font-size-to(22px);
-  color: #f60;
+  @include adjust-font-size-to(24px);
+  @include adjust-leading-to(1.25);
+  color: rgba(0,0,0,0.5);
 }
 
 .program-category-intro {
@@ -182,17 +184,26 @@ img {
 
 /* Header */
 header[role="banner"] {
-  background: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.9);
   @include clearfix;
   @include box-shadow(rgba(0,0,0,0.25) 0 0 20px);
 
   text-align:center;
   padding: rhythm(0.5) column(8) + gutter(8);
+  @include background-image(
+    linear-gradient(0deg, rgba(200,200,200, 1) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255, 0.2) 1px, transparent 1px)
+  );
+  background-size: 72px 10px, 6px 6px;
+  background-position: -1px 0, -1px 0;
+  background-repeat:repeat-x;
 
   h1 {
+    margin-top:10px;
   }
 
   nav {
+    margin-top:10px;
     @include adjust-font-size-to(16px);
   }
 
@@ -254,7 +265,6 @@ div[role="main"] {
         padding-top: gutter(8);
         padding-bottom: gutter(8);
         margin: 0 0 rhythm(12);
-        background: rgba(255,255,255,0.95);
         @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
       }
     }
@@ -264,27 +274,45 @@ div[role="main"] {
     @include span-columns(6);
     @include pre(1);
 
+    &#introduction {
+      @include span-columns(8);
+      @include pre(0);
+      padding: rhythm(1) column(8) + gutter(8);
+      background-color: rgba(0,0,0,0.5);
+      color: #fcfcfc;
+    }
+
     &.category {
       @include span-columns(8);
       @include pre(0);
       @include clearfix;
-      padding: gutter(8);
-      @include box-shadow(rgba(0,0,0,0.25) 0 0 20px);
-
-      div {
-        padding: gutter(8);
-        background: rgba(255,255,255,0.9);
-        @include box-shadow(rgba(0,0,0,0.25) 0 0 40px);
+      padding-top: column(8);
+      h1,p {
+        padding: 0 gutter(8)+column(8) gutter(8);
+        color: rgba(255,255,255,0.8);
+        margin:0;
+      }
+      table {
+        display:block;
+        background-color: rgba(255,255,255,0.9);
+        margin:gutter(8) 0 0;
+        padding: gutter(8) column(8)+gutter(8);
+        border-width: 2px 0 10px;
       }
 
     @each $category in mission, support, people, structure, research, directions {
 
         &##{$category} {
-          background-image: url('../images/#{$category}.jpg');
-          @include background-size(cover);
-          background-attachment: fixed;
-          background-position: top left;
-          background-repeat:no-repeat;
+          @include background-image (
+            linear-gradient(0deg, rgba(0,0,0,0.25) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.25) 1px, transparent 1px),
+            linear-gradient(rgba(0,0,0,0.5) 1px, rgba(0,0,0,0.5) 1px),
+            url('../images/#{$category}.jpg')
+          );
+          background-size: 3px 3px, 3px 3px, cover, cover;
+          background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+          background-attachment: scroll, scroll, scroll,fixed;
+          background-repeat:repeat, repeat, repeat, no-repeat;
         }
       }
     }

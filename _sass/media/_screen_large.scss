@@ -34,15 +34,7 @@ section {
   @each $category in mission, support, people, structure, research, directions {
 
     &.category {
-      div {
-        @include span-columns(5, 8);
-      }
 
-      &:nth-child(odd) {
-        div {
-          @include span-columns(5 omega, 8);
-        }
-      }
     }
   }
 }

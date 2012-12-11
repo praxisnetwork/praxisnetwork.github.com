@@ -209,7 +209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-top: 0em;
     padding-bottom: 0em;
     margin-bottom: 0em;
-    border: 5px solid #eee;
+    border: 5px solid rgba(0, 0, 0, 0.25);
     border-width: 5px 0;
   }
   table th,
@@ -237,9 +237,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Classes */
   .intro {
-    font-size: 1.375em;
-    line-height: 1.27273em;
-    color: #f60;
+    font-size: 1.5em;
+    line-height: 1.16667em;
+    line-height: 2.1875em;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   .program-category-intro {
@@ -251,7 +252,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Header */
   header[role="banner"] {
-    background: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     *zoom: 1;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
@@ -259,8 +260,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
     text-align: center;
     padding: 0.875em 13.04348%;
+    background-image: -webkit-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-image: -moz-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-image: -o-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -o-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-image: linear-gradient(0deg, #c8c8c8 1px, transparent 1px), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 72px 10px, 6px 6px;
+    background-position: -1px 0, -1px 0;
+    background-repeat: repeat-x;
+  }
+  header[role="banner"] h1 {
+    margin-top: 10px;
   }
   header[role="banner"] nav {
+    margin-top: 10px;
     font-size: 1em;
     line-height: 1.75em;
   }
@@ -324,7 +336,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-top: 4.34783%;
     padding-bottom: 4.34783%;
     margin: 0 0 21em;
-    background: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
@@ -336,6 +347,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     margin-left: 13.04348%;
   }
+  div[role="main"] section#introduction {
+    width: 100%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+    margin-left: 0%;
+    padding: 1.75em 13.04348%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fcfcfc;
+  }
   div[role="main"] section.category {
     width: 100%;
     float: left;
@@ -344,77 +365,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0%;
     overflow: hidden;
     *zoom: 1;
-    padding: 4.34783%;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+    padding-top: 8.69565%;
   }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
+  div[role="main"] section.category h1, div[role="main"] section.category p {
+    padding: 0 13.04348% 4.34783%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  div[role="main"] section.category table {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 4.34783% 0 0;
+    padding: 4.34783% 13.04348%;
+    border-width: 2px 0 10px;
   }
   div[role="main"] section.category#mission {
-    background-image: url("../images/mission.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/mission.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/mission.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/mission.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/mission.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/mission.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
   div[role="main"] section.category#support {
-    background-image: url("../images/support.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/support.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/support.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/support.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/support.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/support.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
   div[role="main"] section.category#people {
-    background-image: url("../images/people.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/people.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/people.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/people.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/people.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/people.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
   div[role="main"] section.category#structure {
-    background-image: url("../images/structure.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/structure.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/structure.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/structure.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/structure.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/structure.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
   div[role="main"] section.category#research {
-    background-image: url("../images/research.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/research.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/research.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/research.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/research.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/research.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
   div[role="main"] section.category#directions {
-    background-image: url("../images/directions.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), url("../images/directions.jpg");
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/directions.jpg");
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/directions.jpg");
+    background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/directions.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5) 1px), url("../images/directions.jpg");
+    background-size: 3px 3px, 3px 3px, cover, cover;
+    background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+    background-attachment: scroll, scroll, scroll,fixed;
+    background-repeat: repeat, repeat, repeat, no-repeat;
   }
 
   body#uva-praxis-program {
@@ -508,85 +537,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
   .program section p:not(.program-category-intro) {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-  }
-  section.category div {
-    width: 60.86957%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  section.category:nth-child(odd) div {
     width: 60.86957%;
     float: right;
     margin-right: 0;
