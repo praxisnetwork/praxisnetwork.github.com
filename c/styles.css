@@ -336,6 +336,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-top: 4.34783%;
     padding-bottom: 4.34783%;
     margin: 0 0 21em;
+    background-color: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
