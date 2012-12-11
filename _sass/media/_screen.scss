@@ -179,6 +179,7 @@ img {
 header[role="banner"] {
   background: rgba(0,0,0,0.9);
   @include clearfix;
+  @include box-shadow(rgba(0,0,0,0.25) 0 0 20px);
 
   text-align:center;
   padding: rhythm(0.5) column(8) + gutter(8);
@@ -234,29 +235,29 @@ div[role="main"] {
     @include span-columns(6);
     @include pre(1);
 
-    @each $category in mission, support, people, structure, research, directions {
-      $counter: 1;
+    &.category {
+      @include span-columns(8);
+      @include pre(0);
+      @include clearfix;
+      padding: gutter(8);
+      @include box-shadow(rgba(0,0,0,0.25) 0 0 20px);
 
-      &.category {
-        @include span-columns(8);
-        @include pre(0);
-        @include clearfix;
+      div {
         padding: gutter(8);
+        background: rgba(255,255,255,0.9);
+        @include box-shadow(rgba(0,0,0,0.25) 0 0 40px);
+      }
 
-        div {
-          padding: gutter(8);
-          background: rgba(255,255,255,0.9);
-        }
+    @each $category in mission, support, people, structure, research, directions {
 
         &##{$category} {
           background-image: url('../images/#{$category}.jpg');
           @include background-size(cover);
           background-attachment: fixed;
-          background-position: 0 $counter;
+          background-position: top left;
           background-repeat:no-repeat;
         }
       }
-      $counter: $counter + 1;
     }
   }
 }
@@ -267,9 +268,6 @@ div[role="main"] {
     @include background-size(cover);
     background-attachment: fixed;
   }
-}
-
-#program-nav {
 }
 
 /* Footer */

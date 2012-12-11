@@ -146,13 +146,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
   }
   a:link {
-    color: #ffcc00;
+    color: #00aaff;
   }
   a:visited {
-    color: #777777;
+    color: #0088cc;
   }
   a:hover, a:active {
-    color: #777777;
+    color: #0088cc;
   }
 
   /* Headings */
@@ -248,6 +248,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     *zoom: 1;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
     text-align: center;
     padding: 0.875em 13.04348%;
   }
@@ -320,10 +323,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     overflow: hidden;
     *zoom: 1;
     padding: 4.34783%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
   }
   div[role="main"] section.category div {
     padding: 4.34783%;
     background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 40px;
   }
   div[role="main"] section.category#mission {
     background-image: url("../images/mission.jpg");
@@ -332,22 +341,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  div[role="main"] section.category {
-    width: 100%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 0%;
-    overflow: hidden;
-    *zoom: 1;
-    padding: 4.34783%;
-  }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
   }
   div[role="main"] section.category#support {
     background-image: url("../images/support.jpg");
@@ -356,22 +351,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  div[role="main"] section.category {
-    width: 100%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 0%;
-    overflow: hidden;
-    *zoom: 1;
-    padding: 4.34783%;
-  }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
   }
   div[role="main"] section.category#people {
     background-image: url("../images/people.jpg");
@@ -380,22 +361,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  div[role="main"] section.category {
-    width: 100%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 0%;
-    overflow: hidden;
-    *zoom: 1;
-    padding: 4.34783%;
-  }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
   }
   div[role="main"] section.category#structure {
     background-image: url("../images/structure.jpg");
@@ -404,22 +371,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  div[role="main"] section.category {
-    width: 100%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 0%;
-    overflow: hidden;
-    *zoom: 1;
-    padding: 4.34783%;
-  }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
   }
   div[role="main"] section.category#research {
     background-image: url("../images/research.jpg");
@@ -428,22 +381,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  div[role="main"] section.category {
-    width: 100%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-    margin-left: 0%;
-    overflow: hidden;
-    *zoom: 1;
-    padding: 4.34783%;
-  }
-  div[role="main"] section.category div {
-    padding: 4.34783%;
-    background: rgba(255, 255, 255, 0.9);
   }
   div[role="main"] section.category#directions {
     background-image: url("../images/directions.jpg");
@@ -452,7 +391,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 1;
+    background-position: top left;
     background-repeat: no-repeat;
   }
 

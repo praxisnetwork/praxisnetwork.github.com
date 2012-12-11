@@ -26,12 +26,12 @@ $default-color-light: rgba($default-color, 0.75);
 $default-color-lighter: rgba($default-color, 0.5);
 $default-color-lightest: rgba($default-color, 0.25);
 
-$accent-color: #fc0;
+$accent-color: #0af;
 
 $link-color: $accent-color;
 $link-color-light: lighten($link-color, 10%);
-$link-color-alternate: #777;
-$link-color-alternate-light: lighten($link-color-alternate, 10%);
+$link-color-alternate: darken($link-color, 10%);
+$link-color-alternate-light: darken($link-color-alternate, 10%);
 
 $border-shadow: rgba(0, 0, 0, .15);
 $border-highlight: rgba(255, 255, 255, .09);
