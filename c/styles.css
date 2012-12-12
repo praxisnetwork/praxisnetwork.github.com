@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   html {
-    background: #555555;
+    background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -88,9 +88,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-left: 0;
     padding-right: 0;
     /*@include susy-grid-background;*/
-    background-color: #fefefe;
-    margin: 0;
-    padding-bottom: 5.25em;
+    background-color: #fff;
     color: #555;
   }
   body:after {
@@ -243,24 +241,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Header */
   header[role="banner"] {
-    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     *zoom: 1;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
-    text-align: center;
-    padding: 0.875em 13.04348%;
-    background-image: -webkit-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-    background-image: -moz-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-    background-image: -o-linear-gradient(0deg, #c8c8c8 1px, transparent 1px), -o-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-    background-image: linear-gradient(0deg, #c8c8c8 1px, transparent 1px), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-    background-size: 72px 10px, 6px 6px;
-    background-position: -1px 0, -1px 0;
+    background-color: #fff;
+    padding: 3.0625em 13.04348% 1.75em;
+    background-image: -webkit-linear-gradient(0deg, #969696 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: -moz-linear-gradient(0deg, #969696 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: -o-linear-gradient(0deg, #969696 1px, transparent 1px), -o-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -o-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: linear-gradient(0deg, #969696 1px, transparent 1px), linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-size: 96px 16px, 12px 12px, 6px 6px;
+    background-position: -1px 0, -1px 0, -1px 0;
     background-repeat: repeat-x;
   }
   header[role="banner"] h1 {
-    margin-top: 10px;
+    font-size: 1.125em;
+    line-height: 1.55556em;
+  }
+  .home header[role="banner"] h1 {
+    font-size: 2.5em;
+    line-height: 1.4em;
   }
   header[role="banner"] nav {
     margin-top: 10px;
@@ -269,19 +268,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   header[role="banner"] a {
     border: none !important;
-  }
-  header[role="banner"] a:link {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  header[role="banner"] a:visited {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  header[role="banner"] a:hover, header[role="banner"] a:active {
-    color: rgba(255, 255, 255, 0.9);
-  }
-  header[role="banner"] a + a:before {
-    content: " · ";
-    color: rgba(255, 255, 255, 0.35);
   }
 
   /* Main Content */
@@ -520,7 +506,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* Footer */
   footer[role="contentinfo"] {
     clear: both;
-    padding: 3.5em 13.04348%;
+    padding: 3.5em 13.04348% 7em;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(0deg, #969696 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: -moz-linear-gradient(0deg, #969696 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: -o-linear-gradient(0deg, #969696 1px, transparent 1px), -o-linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), -o-linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-image: linear-gradient(0deg, #969696 1px, transparent 1px), linear-gradient(0deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px), linear-gradient(0deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px);
+    background-size: 96px 16px, 12px 12px, 6px 6px;
+    background-position: -1px 100%, -1px 100%, -1px 100%;
+    background-repeat: repeat-x;
   }
 }
 @media only screen and (min-width: 700px) {

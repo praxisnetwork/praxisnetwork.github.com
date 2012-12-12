@@ -2,7 +2,7 @@
 @include establish-baseline;
 
 html {
-  @include background(#555);
+  @include background(#fff);
   @include background-size(cover);
   
 }
@@ -11,9 +11,7 @@ body {
   font-family: $font-family-default;
   @include container;
   /*@include susy-grid-background;*/
-  background-color: #fefefe;
-  margin:0;
-  padding-bottom: rhythm(3);
+  background-color: #fff;
   color: #555;
 }
 
@@ -175,22 +173,23 @@ img {
 
 /* Header */
 header[role="banner"] {
-  background-color: rgba(0,0,0,0.9);
   @include clearfix;
-  @include box-shadow(rgba(0,0,0,0.25) 0 0 20px);
-
-  text-align:center;
-  padding: rhythm(0.5) column(8) + gutter(8);
+  background-color: #fff;
+  padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
   @include background-image(
-    linear-gradient(0deg, rgba(200,200,200, 1) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255,255,255, 0.2) 1px, transparent 1px)
+    linear-gradient(0deg, rgba(150,150,150, 1) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(200,200,200, 0.5) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(200,200,200, 0.25) 1px, transparent 1px)
   );
-  background-size: 72px 10px, 6px 6px;
-  background-position: -1px 0, -1px 0;
+  background-size: 96px 16px, 12px 12px, 6px 6px;
+  background-position: -1px 0, -1px 0, -1px 0;
   background-repeat:repeat-x;
 
   h1 {
-    margin-top:10px;
+    @include adjust-font-size-to(18px);
+    .home & {
+      @include adjust-font-size-to(40px);
+    }
   }
 
   nav {
@@ -199,26 +198,7 @@ header[role="banner"] {
   }
 
   a {
-
     border:none !important;
-
-    &:link {
-      color: rgba(255,255,255,0.75);
-    }
-
-    &:visited {
-      color: rgba(255,255,255,0.75);
-    }
-
-    &:hover,
-    &:active {
-      color: rgba(255,255,255,0.9);
-    }
-
-    & + a:before {
-      content: " · ";
-      color: rgba(255,255,255,0.35);
-    }
   }
 
 }
@@ -361,5 +341,15 @@ div[role="main"] {
 /* Footer */
 footer[role="contentinfo"] {
   clear:both;
-  padding: rhythm(2) column(8) + gutter(8);
+  padding: rhythm(2) column(8) + gutter(8) rhythm(4);
+  background-color: #fff;
+    @include background-image(
+    linear-gradient(0deg, rgba(150,150,150, 1) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(200,200,200, 0.5) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(200,200,200, 0.25) 1px, transparent 1px)
+  );
+  background-size: 96px 16px, 12px 12px, 6px 6px;
+  background-position: -1px 100%, -1px 100%, -1px 100%;
+  background-repeat:repeat-x;
+
 }
