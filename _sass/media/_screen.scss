@@ -345,8 +345,6 @@ div[role="main"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-  @include margin-leader;
-  &:before {
-    margin-bottom:rhythm(1);
-  }
+  clear:both;
+  padding: rhythm(2) column(8) + gutter(8);
 }

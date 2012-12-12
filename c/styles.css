@@ -506,10 +506,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Footer */
   footer[role="contentinfo"] {
-    margin-top: 1.75em;
-  }
-  footer[role="contentinfo"]:before {
-    margin-bottom: 1.75em;
+    clear: both;
+    padding: 3.5em 13.04348%;
   }
 }
 @media only screen and (min-width: 700px) {
