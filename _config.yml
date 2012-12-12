@@ -20,12 +20,13 @@ praxis-program:
 
 ## CHI Initiative
 chi-initiative:
-  mission: 'To prepare doctoral students to creatively apply emerging technologies to historical and cultural heritage materials, influence the current state of digital history & cultural heritage informatics, and become thought leaders for the future of the field.'
-  people: 'A variable cohort of doctoral students from disciplines related to cultural heritage, under the direction of Ethan Watrall.'
+  mission: 'To prepare graduate students to creatively apply emerging technologies to historical and cultural heritage materials, influence the current state of digital history & cultural heritage informatics, and become thought leaders for the future of the field.'
+  people: 'Directed by Ethan Watrall, the fellowship progrom comprises a small cohort of graduate students from disciplines related to cultural heritage, while the fieldschool is open to graduate and undergraduate students and selected non-students.'
   research: 'Fellows’ wide-ranging projects include a <a href="http://futbol.matrix.msu.edu/">digital dissertation prototype</a> and a <a href="http://talus.matrix.msu.edu/">web app for forensic anthropologists and bioarchaeologists</a>.'
-  support: 'The program is supported by internal funding, not through grants, and comes from the MSU graduate school, the college of social science, and the department of anthropology.'
-  directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges to create a sustainable and rigorous program in which fellows complete robust projects in their area of interest.'
-  structure: 'The program provides a one-year funded fellowship for individual project work; students meet weekly, participate in a field school session, and present work at conferences throughout the year.'
+# Ethan plans to put up a page showcasing fellows and their projects very soon, which we can then point to from this page.
+  support: 'The program is supported by internal funding, not grants, and comes from the MSU Graduate School, the College of Social Science, and the Department of Anthropology.'
+  directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges to create a sustainable and rigorous program in which fellows complete robust projects in their areas of interest.'
+  structure: 'The two key programs are fellowships, year-long funded opportunities to develop digital projects and skills; and fieldschools, 5-6 week theme-based immersive sessions for instruction and collaborative project development.'
 
 ## Hope Mellon
 hope-mellon-scholars:
@@ -40,7 +41,7 @@ hope-mellon-scholars:
 cuny-dhi:
   mission: 'To develop and highlight a broad range of digital projects and resources at the CUNY Graduate Center, and to foster institutional change across the CUNY campuses by heightening the public presence of digital efforts.'
   people: 'Directed by Matt Gold under the purview of the Provost’s Office, the first cohort of digital fellows are doctoral students from a variety of backgrounds.'
-  research: 'While still in the early stages of development, the first cohort of students are leading and participating in a <a href="http://digitalfellows.commons.gc.cuny.edu/projects/">wide range of projects</a> to benefit the Graduate Center in its digital initiatives.'
+  research: 'While still in the early stages of development, the first cohort of fellows are leading a <a href="http://digitalfellows.commons.gc.cuny.edu/projects/">variety of innovative projects</a> to advance the digital initiatives of the Graduate Center.'
   support: 'Financial support for the program is completely internal to the Provost’s Office, which signals a strong institutional commitment.'
   directions: 'This new program is experimental, so many successes and challenges are anticipated. One hope is to retain some students in subsequent years to build up a base of knowledge and expertise.'
   structure: 'The program provides a one-year renewable fellowship with an expectation of 15 hours of work per week; fellows meet weekly to gain skills and discuss projects.'
@@ -52,5 +53,5 @@ ucldh:
   research: 'Because the modules are brief and varied, students build a body of knowledge rather than focusing on a single project. As a whole, the Centre produces <a href="http://www.ucl.ac.uk/dh/projects">an impressive range of intellectually rich work products.</a>'
   support: 'While initial funding for the program has been provided by the university, the program expects to become self-sustaining through student fees and research grants.'
   directions: 'Program leaders hope to expand collaboration to include more faculty and students, while sustaining high enrollment despite recent changes in fee structures at UK universities.'
-  structure: 'Students work towards an MA or MSC degree during three terms of study. The first two terms include various modules of coursework, while the third focuses on a thesis project and job placement.'
+  structure: 'Depending on background and goals, students work towards an MA or MSc degree during three terms of study. The first two terms include various modules of coursework, while the third focuses on a thesis project and job placement.'
 
