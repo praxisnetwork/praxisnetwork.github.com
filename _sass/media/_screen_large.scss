@@ -2,21 +2,6 @@ h2 {
   @include adjust-font-size-to(48px);
   @include adjust-leading-to(1.25);
 }
-
-header[role="banner"] {
-  text-align:left;
-
-  h1 {
-    @include adjust-font-size-to(16px);
-    @include span-columns(3,8);
-  }
-
-  nav {
-    @include span-columns(5 omega, 8);
-    text-align:right;
-  }
-}
-
 .program {
   section {
     @include clearfix;
@@ -31,10 +16,18 @@ header[role="banner"] {
 }
 
 section {
-  @each $category in mission, support, people, structure, research, directions {
 
-    &.category {
-
+  &#introduction {
+    @include clearfix;
+    .content {
+      @include span-columns(5,8);
+    }
+    #program-nav {
+      @include span-columns(3 omega, 8);
+      @include leader(1);
+      a {
+        display:block;
+      }
     }
   }
 }

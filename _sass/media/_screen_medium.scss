@@ -1,1 +1,4 @@
-
+.intro {
+  @include adjust-font-size-to(24px);
+  @include adjust-leading-to(1.25);
+}

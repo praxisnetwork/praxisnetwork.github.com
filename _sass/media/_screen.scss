@@ -54,15 +54,7 @@ nav {
     padding-left:0;
   }
 
-  &#program-nav {
-    border: 1px dotted #ccc;
-    border-width: 1px 0;
-    padding: rhythm(1) 0;
-    margin: rhythm(1) 0;
-    a {
-      margin-right: 1em;
-    }
-  }
+
 }
 
 /* Links */
@@ -171,9 +163,9 @@ img {
 
 /* Classes */
 .intro {
-  @include adjust-font-size-to(24px);
-  @include adjust-leading-to(1.25);
-  color: rgba(0,0,0,0.5);
+  @include adjust-font-size-to(20px);
+  @include adjust-leading-to(1);
+  color: #f60;
 }
 
 .program-category-intro {
@@ -271,6 +263,31 @@ div[role="main"] {
     }
   }
 
+  #category-nav {
+    @include span-columns(8);
+    background: darken(#0cf,20%);
+    text-align:center;
+    @include leader(1);
+    @include adjust-leading-to(2);
+    a {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      color: rgba(255,255,255,0.8);
+      padding: rhythm(0.25) rhythm(0.75);
+
+      &:link,
+      &:visited {
+        background: rgba(255,255,255,0.1);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        background: rgba(255,255,255,0.2);
+      }
+    }
+  }
   section {
     @include span-columns(6);
     @include pre(1);
@@ -279,8 +296,6 @@ div[role="main"] {
       @include span-columns(8);
       @include pre(0);
       padding: rhythm(1) column(8) + gutter(8);
-      background-color: rgba(0,0,0,0.5);
-      color: #fcfcfc;
     }
 
     &.category {

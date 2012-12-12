@@ -132,15 +132,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 0;
     padding-left: 0;
   }
-  nav#program-nav {
-    border: 1px dotted #ccc;
-    border-width: 1px 0;
-    padding: 1.75em 0;
-    margin: 1.75em 0;
-  }
-  nav#program-nav a {
-    margin-right: 1em;
-  }
 
   /* Links */
   a {
@@ -237,10 +228,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Classes */
   .intro {
-    font-size: 1.5em;
-    line-height: 1.16667em;
-    line-height: 2.1875em;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25em;
+    line-height: 1.4em;
+    line-height: 1.75em;
+    color: #f60;
   }
 
   .program-category-intro {
@@ -341,6 +332,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
   }
+  div[role="main"] #category-nav {
+    width: 100%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+    background: #007a99;
+    text-align: center;
+    margin-top: 1.75em;
+    line-height: 3.5em;
+  }
+  div[role="main"] #category-nav a {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.4375em 1.3125em;
+  }
+  div[role="main"] #category-nav a:link, div[role="main"] #category-nav a:visited {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  div[role="main"] #category-nav a:hover, div[role="main"] #category-nav a:focus, div[role="main"] #category-nav a:active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
   div[role="main"] section {
     width: 73.91304%;
     float: left;
@@ -355,8 +369,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     margin-left: 0%;
     padding: 1.75em 13.04348%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fcfcfc;
   }
   div[role="main"] section.category {
     width: 100%;
@@ -500,31 +512,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 1.75em;
   }
 }
+@media only screen and (min-width: 700px) {
+  .intro {
+    font-size: 1.5em;
+    line-height: 1.16667em;
+    line-height: 2.1875em;
+  }
+}
 @media only screen and (min-width: 860px) {
   h2 {
     font-size: 3em;
     line-height: 1.16667em;
     line-height: 2.1875em;
-  }
-
-  header[role="banner"] {
-    text-align: left;
-  }
-  header[role="banner"] h1 {
-    font-size: 1em;
-    line-height: 1.75em;
-    width: 34.78261%;
-    float: left;
-    margin-right: 4.34783%;
-    display: inline;
-  }
-  header[role="banner"] nav {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
-    display: inline;
-    text-align: right;
   }
 
   .program section {
@@ -543,6 +542,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 0;
     #margin-left: -50px;
     display: inline;
+  }
+
+  section#introduction {
+    overflow: hidden;
+    *zoom: 1;
+  }
+  section#introduction .content {
+    width: 60.86957%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline;
+  }
+  section#introduction #program-nav {
+    width: 34.78261%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -50px;
+    display: inline;
+    margin-top: 1.75em;
+  }
+  section#introduction #program-nav a {
+    display: block;
   }
 }
 @media print {
