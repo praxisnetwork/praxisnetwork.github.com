@@ -27,6 +27,13 @@ section {
       @include leader(1);
       a {
         display:block;
+        &:before {
+          content:"" !important;
+        }
+      }
+
+      strong {
+        display:none;
       }
     }
   }

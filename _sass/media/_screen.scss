@@ -79,7 +79,6 @@ a {
     border-bottom: 1px solid $link-color-alternate;
     color:$link-color-alternate;
   }
-
 }
 
 /* Headings */
@@ -288,6 +287,22 @@ div[role="main"] {
       }
     }
   }
+
+  #program-nav {
+    border: 1px dotted $default-color-lightest;
+    border-width: 1px 0;
+    padding: rhythm(1) 0;
+    margin: rhythm(1) 0;
+
+    a {
+      border:none;
+      & + a:before {
+        content: "· ";
+        color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+
   section {
     @include span-columns(6);
     @include pre(1);

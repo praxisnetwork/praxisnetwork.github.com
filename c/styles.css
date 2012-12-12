@@ -355,6 +355,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
   }
+  div[role="main"] #program-nav {
+    border: 1px dotted rgba(60, 60, 60, 0.25);
+    border-width: 1px 0;
+    padding: 1.75em 0;
+    margin: 1.75em 0;
+  }
+  div[role="main"] #program-nav a {
+    border: none;
+  }
+  div[role="main"] #program-nav a + a:before {
+    content: "· ";
+    color: rgba(0, 0, 0, 0.5);
+  }
   div[role="main"] section {
     width: 73.91304%;
     float: left;
@@ -562,6 +575,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   section#introduction #program-nav a {
     display: block;
+  }
+  section#introduction #program-nav a:before {
+    content: "" !important;
+  }
+  section#introduction #program-nav strong {
+    display: none;
   }
 }
 @media print {
