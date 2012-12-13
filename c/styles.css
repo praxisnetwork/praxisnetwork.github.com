@@ -558,15 +558,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 4.34783%;
     display: inline;
   }
-  .program section p:not(.program-category-intro),
-  .program section figure {
+  .program section .content {
     margin-left: 39.13043%;
   }
-  .program section figure figcaption p {
-    margin-left: 0 !important;
-  }
   .program section figure.feature {
-    margin-left: 0 !important;
+    margin-left: -65.21739%;
   }
   .program section figure.feature figcaption {
     width: 21.73913%;

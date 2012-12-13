@@ -9,24 +9,18 @@ h2 {
       @include span-columns(3,8);
     }
 
-    p:not(.program-category-intro),
-    figure {
+    .content {
         @include push(3);
     }
 
     figure {
-      figcaption p {
-        margin-left:0 !important;
-      }
-      
       &.feature {
-        margin-left:0 !important;
+      @include pull(5);
 
         figcaption {
           @include span-columns(2,8);
         }
       }
-
     }
   }
 }
