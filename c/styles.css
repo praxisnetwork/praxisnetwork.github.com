@@ -475,7 +475,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-repeat: repeat, repeat, repeat, no-repeat;
   }
 
-  body#uva-praxis-program {
+  body.uva-praxis-program {
     background-image: url("../images/uva-praxis-program.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -484,7 +484,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-attachment: fixed;
   }
 
-  body#chi-initiative {
+  body.chi-initiative {
     background-image: url("../images/chi-initiative.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -493,7 +493,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-attachment: fixed;
   }
 
-  body#hope-mellon-scholars {
+  body.hope-mellon-scholars {
     background-image: url("../images/hope-mellon-scholars.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -502,8 +502,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-attachment: fixed;
   }
 
-  body#cuny-dhi {
-    background-image: url("../images/cuny-dhi.jpg");
+  body.cuny-gcdi {
+    background-image: url("../images/cuny-gcdi.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -511,7 +511,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-attachment: fixed;
   }
 
-  body#ucldh {
+  body.ucldh {
     background-image: url("../images/ucldh.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
