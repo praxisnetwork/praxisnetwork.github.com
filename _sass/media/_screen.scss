@@ -119,6 +119,19 @@ h6 {
 
 }
 
+figure {
+  @include rhythm(1);
+}
+
+figcaption {
+  @include adjust-font-size-to(12px);
+  @include adjust-leading-to(1);
+  color: $default-color-lighter;
+  & > * {
+    margin-top:0;
+  }
+}
+
 /* Tables */
 table {
   width:100%;

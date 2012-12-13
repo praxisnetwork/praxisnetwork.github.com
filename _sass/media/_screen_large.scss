@@ -9,8 +9,24 @@ h2 {
       @include span-columns(3,8);
     }
 
-    p:not(.program-category-intro) {
-      @include span-columns(5 omega, 8);
+    p:not(.program-category-intro),
+    figure {
+        @include push(3);
+    }
+
+    figure {
+      figcaption p {
+        margin-left:0 !important;
+      }
+      
+      &.feature {
+        margin-left:0 !important;
+
+        figcaption {
+          @include span-columns(2,8);
+        }
+      }
+
     }
   }
 }
