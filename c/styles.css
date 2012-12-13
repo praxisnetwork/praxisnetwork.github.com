@@ -189,6 +189,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
   }
 
+  figure {
+    margin-top: 1.75em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+  }
+
+  figcaption {
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    line-height: 1.75em;
+    color: rgba(60, 60, 60, 0.5);
+  }
+  figcaption > * {
+    margin-top: 0;
+  }
+
   /* Tables */
   table {
     width: 100%;
@@ -541,11 +558,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 4.34783%;
     display: inline;
   }
-  .program section p:not(.program-category-intro) {
-    width: 60.86957%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -50px;
+  .program section p:not(.program-category-intro),
+  .program section figure {
+    margin-left: 39.13043%;
+  }
+  .program section figure figcaption p {
+    margin-left: 0 !important;
+  }
+  .program section figure.feature {
+    margin-left: 0 !important;
+  }
+  .program section figure.feature figcaption {
+    width: 21.73913%;
+    float: left;
+    margin-right: 4.34783%;
     display: inline;
   }
 
