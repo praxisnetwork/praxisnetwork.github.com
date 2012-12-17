@@ -9,7 +9,7 @@
 
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.description | strip_html }}">
   {% endif %}
   <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width,initial-scale=1">
