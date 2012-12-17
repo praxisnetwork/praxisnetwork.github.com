@@ -191,6 +191,7 @@ img {
 .intro {
   @include adjust-font-size-to(20px);
   @include adjust-leading-to(1);
+  margin:0;
   color: #f60;
 }
 
@@ -217,7 +218,9 @@ header[role="banner"] {
   h1 {
     @include adjust-font-size-to(18px);
     .home & {
-      @include adjust-font-size-to(40px);
+      @include adjust-font-size-to(60px);
+      @include adjust-leading-to(1);
+      margin:0;
     }
   }
 
