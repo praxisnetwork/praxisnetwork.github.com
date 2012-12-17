@@ -104,6 +104,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0em;
   }
 
+  ul {
+    list-style: square;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul, ol {
+    margin-left: 1.75em;
+  }
+  nav ul, nav ol {
+    margin: 0;
+  }
+
   /* Forms */
   form fieldset {
     margin: 0;

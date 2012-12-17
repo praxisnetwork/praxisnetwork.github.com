@@ -19,6 +19,22 @@ p,ul,ol,dl {
   @include rhythm(1);
 }
 
+ul {
+  list-style:square;
+}
+
+ol {
+  list-style:decimal;
+}
+
+ul,ol {
+  margin-left: rhythm(1);
+
+  nav & {
+    margin:0;
+  }
+}
+
 /* Forms */
 form {
 
