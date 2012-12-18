@@ -207,9 +207,9 @@ header[role="banner"] {
   background-color: #fff;
   padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
   @include background-image(
-    linear-gradient(0deg, rgba(150,150,150, 1) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(200,200,200, 0.5) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(200,200,200, 0.25) 1px, transparent 1px)
+    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px))
   );
   background-size: 96px 16px, 12px 12px, 6px 6px;
   background-position: -1px 0, -1px 0, -1px 0;
@@ -253,12 +253,10 @@ div[role="main"] {
         @include pad(1,1);
         color: #fff;
         @include background-image (
-          linear-gradient(0deg, rgba(0,0,0,0.25) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0,0,0,0.25) 1px, transparent 1px),
-          linear-gradient(rgba(0,0,0,0.5) 1px, rgba(0,0,0,0.5) 1px)
+           linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5)))
         );
-        background-size:3px 3px, 3px 3px, auto auto;
-        background-position: -1px -1px, -1px -1px, 0 0;
+        background-size:cover;
+        background-repeat:no-repeat;
       }
 
       section {
@@ -347,15 +345,13 @@ div[role="main"] {
 
         &##{$category} {
           @include background-image (
-            linear-gradient(0deg, rgba(0,0,0,0.25) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.25) 1px, transparent 1px),
-            linear-gradient(rgba(0,0,0,0.5) 1px, rgba(0,0,0,0.5) 1px),
+            linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5))),
             url('../images/#{$category}.jpg')
           );
-          background-size: 3px 3px, 3px 3px, cover, cover;
-          background-position: -1px -1px, -1px -1px, 0 0, 0 0;
-          background-attachment: scroll, scroll, scroll,fixed;
-          background-repeat:repeat, repeat, repeat, no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          background-attachment: fixed;
+          background-repeat:no-repeat;
         }
       }
     }
@@ -376,10 +372,10 @@ footer[role="contentinfo"] {
   clear:both;
   padding: rhythm(2) column(8) + gutter(8) rhythm(4);
   background-color: #fff;
-    @include background-image(
-    linear-gradient(0deg, rgba(150,150,150, 1) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(200,200,200, 0.5) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(200,200,200, 0.25) 1px, transparent 1px)
+  @include background-image(
+    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px))
   );
   background-size: 96px 16px, 12px 12px, 6px 6px;
   background-position: -1px 100%, -1px 100%, -1px 100%;
