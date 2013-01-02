@@ -1,7 +1,4 @@
-h2 {
-  @include adjust-font-size-to(48px);
-  @include adjust-leading-to(1.25);
-}
+
 .program {
   section {
     @include clearfix;
@@ -26,6 +23,10 @@ h2 {
 }
 
 section {
+  h2 {
+    @include adjust-font-size-to(48px);
+    @include adjust-leading-to(1.25);
+  }
 
   &#introduction {
     @include clearfix;

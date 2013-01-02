@@ -103,8 +103,8 @@ h1 {
 }
 
 h2 {
-  @include adjust-font-size-to(30px);
-  @include adjust-leading-to(2);
+  @include adjust-font-size-to(24px);
+  @include adjust-leading-to(1.25);
   color: #f60;
 }
 
@@ -242,9 +242,12 @@ div[role="main"] {
 
   article {
 
+    @include pad(1,1);
+
     body.program & {
       @include span-columns(8);
       @include pre(0);
+      @include pad(0,0);
 
       & > header {
         @include span-columns(8);
@@ -380,5 +383,4 @@ footer[role="contentinfo"] {
   background-size: 96px 16px, 12px 12px, 6px 6px;
   background-position: -1px 100%, -1px 100%, -1px 100%;
   background-repeat:repeat-x;
-
 }
