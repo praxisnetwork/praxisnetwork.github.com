@@ -11,6 +11,15 @@
     }
 
     figure {
+      float:right;
+      margin-left: rhythm(1);
+
+      &.normal,
+      &.feature {
+        float:none;
+        margin-left:0;
+      }
+
       &.feature {
       @include pull(5);
 
