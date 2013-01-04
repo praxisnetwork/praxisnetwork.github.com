@@ -46,7 +46,7 @@ form {
 
   textarea {
     width:100%;
-  }
+ }
 
   textarea,
   input,
@@ -204,17 +204,17 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  background-color: #fff;
   padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
-  @include background-image(
-    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px))
+  @include background(
+    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent
+    1px)) -1px 0 repeat-x,
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent
+    1px)) -1px 0 repeat-x,
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent
+    1px)) -1px 0 repeat-x
   );
   background-size: 96px 16px, 12px 12px, 6px 6px;
-  background-position: -1px 0, -1px 0, -1px 0;
-  background-repeat:repeat-x;
-
+  background-color: #fff;
   h1 {
     @include adjust-font-size-to(18px);
     .home & {
@@ -255,11 +255,10 @@ div[role="main"] {
         padding-bottom: gutter(6);
         @include pad(1,1);
         color: #fff;
-        @include background-image (
+        @include pie;
+        @include background(
            linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5)))
         );
-        background-size:cover;
-        background-repeat:no-repeat;
       }
 
       section {
@@ -269,6 +268,7 @@ div[role="main"] {
         padding-top: gutter(8);
         padding-bottom: gutter(8);
         margin: 0 0 rhythm(12);
+        background-color: #fff;
         background-color: rgba(255,255,255,0.95);
         @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
       }
@@ -330,32 +330,35 @@ div[role="main"] {
       @include span-columns(8);
       @include pre(0);
       @include clearfix;
-      padding-top: column(8);
       h1,p {
-        padding: 0 gutter(8)+column(8) gutter(8);
+        @include pie;
+        padding: gutter(8) gutter(8)+column(8) 0;
         color: rgba(255,255,255,0.8);
         margin:0;
+        @include background(
+          linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5)))
+        );
       }
+
+      p {
+        padding-bottom: gutter(8);
+      }
+
       table {
         display:block;
         background-color: rgba(255,255,255,0.9);
-        margin:gutter(8) 0 0;
+        margin:0;
         padding: gutter(8) column(8)+gutter(8);
         border-width: 2px 0 10px;
       }
 
-    @each $category in mission, support, people, structure, research, directions {
-
-        &##{$category} {
-          @include background-image (
-            linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5))),
-            url('../images/#{$category}.jpg')
-          );
-          background-size: cover;
-          background-position: 0 0;
-          background-attachment: fixed;
-          background-repeat:no-repeat;
-        }
+      @each $category in mission, support, people, structure, research, directions {
+      &##{$category} {
+        @include background(
+          url('../images/#{$category}.jpg') 0 0 no-repeat fixed
+        );
+        @include background-size(cover);
+      }
       }
     }
   }
@@ -375,7 +378,7 @@ footer[role="contentinfo"] {
   clear:both;
   padding: rhythm(2) column(8) + gutter(8) rhythm(4);
   background-color: #fff;
-  @include background-image(
+  @include background(
     linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
     linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
     linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px))

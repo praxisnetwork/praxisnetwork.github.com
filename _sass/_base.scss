@@ -1,12 +1,14 @@
 // Imports
 @import "compass";
 @import "compass/reset";
+@import "compass/css3/pie";
 @import "susy";
 @import "mixins";
 
 // Compass Variables
 $base-font-size: 16px;
 $base-line-height: 28px;
+$pie-behavior: url("/PIE.htc");
 
 // Susy Variables
 $total-columns: 8;
