@@ -352,7 +352,7 @@ div[role="main"] {
         border-width: 2px 0 10px;
       }
 
-      @each $category in mission, support, people, structure, research, directions {
+      @each $category in mission, support, people, structure, research, directions, implementation {
       &##{$category} {
         @include background(
           url('../images/#{$category}.jpg') 0 0 no-repeat fixed
