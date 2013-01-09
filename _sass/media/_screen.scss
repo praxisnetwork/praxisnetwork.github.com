@@ -381,7 +381,8 @@ footer[role="contentinfo"] {
   @include background(
     linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
     linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px))
+    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px)),
+    #fff
   );
   background-size: 96px 16px, 12px 12px, 6px 6px;
   background-position: -1px 100%, -1px 100%, -1px 100%;
