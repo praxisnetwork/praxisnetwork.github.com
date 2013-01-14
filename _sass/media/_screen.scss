@@ -1,6 +1,14 @@
 @include border-box-sizing;
 @include establish-baseline;
 
+// There are two approaches to creating PIE elements
+// The default approach is to make the element position: relative.
+.pie-element {
+  // relative is the default, so passing relative
+  // is redundant, but we do it here for clarity.
+  @include pie-element(relative);
+}
+
 html {
   @include background(#fff);
   @include background-size(cover);
@@ -255,13 +263,15 @@ div[role="main"] {
         padding-bottom: gutter(6);
         @include pad(1,1);
         color: #fff;
+        display:block;
         @include pie;
-        @include background(
-           linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5)))
-        );
+        background:rgba(0,0,0,0.5);
+        -pie-background: rgba(0,0,0,0.5);
       }
 
       section {
+        @include pie;
+        z-index:1000;
         @include span-columns(8);
         @include pre(0);
         @include pad(1,1);
@@ -270,6 +280,7 @@ div[role="main"] {
         margin: 0 0 rhythm(12);
         background-color: #fff;
         background-color: rgba(255,255,255,0.95);
+        -pie-background: rgba(255,255,255,0.95);
         @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
       }
     }
@@ -333,11 +344,11 @@ div[role="main"] {
       h1,p {
         @include pie;
         padding: gutter(8) gutter(8)+column(8) 0;
+        color: #fff;
         color: rgba(255,255,255,0.8);
         margin:0;
-        @include background(
-          linear-gradient(top, color-stops(rgba(0,0,0,0.5), rgba(0,0,0,0.5)))
-        );
+        background: rgba(0,0,0,0.5);
+        -pie-background: rgba(0,0,0,0.5);
       }
 
       p {
