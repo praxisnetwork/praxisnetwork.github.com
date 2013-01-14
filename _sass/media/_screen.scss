@@ -369,7 +369,7 @@ div[role="main"] {
           border-width: 10px 0;
         }
 
-      @each $category in mission, support, people, structure, research, directions, implementation {
+      @each $category in mission, support, people, structure, research, directions, nuts-and-bolts {
       &##{$category} {
         @include background(
           url('../images/#{$category}.jpg') 0 0 no-repeat fixed
