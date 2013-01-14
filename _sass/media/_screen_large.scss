@@ -33,7 +33,7 @@
 
 section {
   h2 {
-    @include adjust-font-size-to(48px);
+    @include adjust-font-size-to(36px);
     @include adjust-leading-to(1.25);
   }
 
