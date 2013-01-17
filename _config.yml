@@ -21,13 +21,12 @@ praxis-program:
 
 ## CHI Initiative
 chi-initiative:
-  mission: 'To prepare graduate students to creatively apply emerging technologies to historical and cultural heritage materials, influence the current state of digital history & cultural heritage informatics, and become thought leaders for the future of the field.'
-  people: 'Directed by Ethan Watrall, the fellowship progrom comprises a small cohort of graduate students from disciplines related to cultural heritage, while the fieldschool is open to graduate and undergraduate students and selected non-students.'
-  research: 'Fellows’ wide-ranging projects include a <a href="http://futbol.matrix.msu.edu/">digital dissertation prototype</a> and a <a href="http://talus.matrix.msu.edu/">web app for forensic anthropologists and bioarchaeologists</a>.'
-# Ethan plans to put up a page showcasing fellows and their projects very soon, which we can then point to from this page.
-  support: 'The program is supported by internal funding, not grants, and comes from the MSU Graduate School, the College of Social Science, and the Department of Anthropology.'
-  directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges to create a sustainable and rigorous program in which fellows complete robust projects in their areas of interest.'
-  structure: 'The two key programs are fellowships, year-long funded opportunities to develop digital projects and skills; and fieldschools, 5-6 week theme-based immersive sessions for instruction and collaborative project development.'
+  mission: 'To equip graduate and undergraduate students with the technical, creative, and practical skills necessary to apply information, communication, and computing technologies to cultural heritage materials and questions, influence the current state of cultural heritage informatics, and become thought leaders for the future of the field.'
+  people: 'Directed by Ethan Watrall, the CHI Graduate Fellowship Program comprises a small cohort of graduate students from disciplines related to cultural heritage, while the CHI Fieldschool is open to graduate and undergraduate students, as well as existing professionals.'
+  research: 'Fellows create innovative and vibrant digital projects that contribute new knowledge to their field of study, while also advancing the broader developments in cultural heritage informatics. Details about individual projects can be found on the <a href="http://chi.anthropology.msu.edu/blog/">CHI Initiative blog</a>.'
+  support: 'The program is supported by internal funding, not grants, and comes from the MSU Graduate School, the College of Social Science, the Department of Anthropology, the Department of History, the Department of Writing, Rhetoric, and American Cultures, and University Outreach and Engagement.'
+  directions: 'Watrall aspires to continually refine the program based on each year’s successes and challenges and the current best practices and development within the field of cultural heritage informatics and digital cultural heritage in order to create a sustainable and rigorous program in which fellows complete robust projects in their areas of interest.'
+  structure: 'The two key programs are graduate fellowships, year-long funded opportunities to develop digital projects and skills; and fieldschool, a 5-6 week theme-based immersive sessions for instruction and collaborative project development'
   nuts-and-bolts: 'Consider how to evaluate process-oriented work, and how the credits that students earn will counted by their departments. Also, keep in mind that certain disciplinary methods and paradigms may be unfamiliar for students.'
 
 ## Hope Mellon
