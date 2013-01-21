@@ -405,3 +405,22 @@ footer[role="contentinfo"] {
   background-position: -1px 100%, -1px 100%, -1px 100%;
   background-repeat:repeat-x;
 }
+
+#back-to-top {
+    @include adjust-font-size-to(14px);
+    position:fixed;
+    bottom:0;
+    right: 20px;
+    z-index: 10000;
+    display:none;
+    @include box-shadow(0 0 10px rgba(0,0,0,0.2));
+    border:2px solid white;
+    background-color: #fafafa;
+    padding: 6px 10px;
+    cursor: pointer;
+    color:  darken(#0cf,20%);
+    &:hover {
+      color: #333;
+    }
+}
+
