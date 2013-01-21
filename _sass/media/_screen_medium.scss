@@ -2,3 +2,20 @@
   @include adjust-font-size-to(24px);
   @include adjust-leading-to(1.25);
 }
+
+#image-credits {
+  figure {
+    @include span-columns(2, 8);
+    height: 250px;
+
+    &:nth-child(2n) {
+      @include remove-omega;
+      @include span-columns(2, 8);
+    }
+
+    &:nth-child(4n) {
+      @include span-columns(2 omega, 8);
+    }
+  }
+}
+
