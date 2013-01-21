@@ -228,18 +228,31 @@ header[role="banner"] {
   );
   background-size: 96px 16px, 12px 12px, 6px 6px;
   background-color: #fff;
+  border-bottom: 1px solid #ccc;
   h1 {
-    @include adjust-font-size-to(18px);
+    @include adjust-font-size-to(20px);
+
     .home & {
       @include adjust-font-size-to(60px);
       @include adjust-leading-to(1);
       margin:0;
+      @include trailer(0.5);
+      display:block;
     }
   }
 
   nav {
-    margin-top:10px;
-    @include adjust-font-size-to(16px);
+    @include leader(1);
+    @include adjust-font-size-to(14px);
+    a + a:before {
+      content: "· ";
+      color: #bbb;
+      text-decoration:none;
+    }
+
+    .home & {
+      @include adjust-font-size-to(16px);
+    }
   }
 
   a {
@@ -272,6 +285,12 @@ div[role="main"] {
         @include pie;
         background:rgba(0,0,0,0.5);
         -pie-background: rgba(0,0,0,0.5);
+
+        a {
+          color: #ddd;
+          text-decoration:underline;
+          border:none;
+        }
       }
 
       section {
