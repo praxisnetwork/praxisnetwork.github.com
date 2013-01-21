@@ -105,15 +105,20 @@ a {
 
 /* Headings */
 h1 {
-  @include adjust-font-size-to(30px);
+  @include adjust-font-size-to(40px);
   @include adjust-leading-to(0.875);
   font-weight:normal;
 }
 
 h2 {
   @include adjust-font-size-to(24px);
-  @include adjust-leading-to(1.25);
+  @include adjust-leading-to(1);
+  @include leader(1);
   color: #f60;
+
+  & + * {
+    margin-top:0;
+  }
 }
 
 h3 {
