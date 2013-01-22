@@ -205,6 +205,9 @@ img {
   @include adjust-font-size-to(20px);
   @include adjust-leading-to(1);
   margin:0;
+  padding: gutter(8) 0;
+  border: 1px dotted $default-color-lightest;
+  border-width: 1px 0;
   color: #f60;
 }
 
