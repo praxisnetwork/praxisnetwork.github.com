@@ -42,20 +42,13 @@ section {
     @include clearfix;
     .content {
       @include span-columns(5,8);
+      p {
+        margin: 0 0 rhythm(1);
+      }
     }
-    #program-nav {
+    .intro {
       @include span-columns(3 omega, 8);
-      @include leader(1);
-      a {
-        display:block;
-        &:before {
-          content:"" !important;
-        }
-      }
-
-      strong {
-        display:none;
-      }
+      @include adjust-leading-to(1);
     }
   }
 }
