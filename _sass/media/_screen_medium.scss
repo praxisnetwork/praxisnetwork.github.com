@@ -1,3 +1,11 @@
+header[role="banner"] {
+  .home & {
+    h1 {
+      @include adjust-font-size-to(60px);
+    }
+  }
+}
+
 .intro {
   @include adjust-font-size-to(24px);
   @include adjust-leading-to(1.25);

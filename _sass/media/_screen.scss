@@ -232,7 +232,7 @@ header[role="banner"] {
     @include adjust-font-size-to(20px);
 
     .home & {
-      @include adjust-font-size-to(60px);
+      @include adjust-font-size-to(30px);
       @include adjust-leading-to(1);
       margin:0;
       @include trailer(0.5);
