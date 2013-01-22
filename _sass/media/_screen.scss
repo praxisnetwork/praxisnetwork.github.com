@@ -205,6 +205,9 @@ img {
   @include adjust-font-size-to(20px);
   @include adjust-leading-to(1);
   margin:0;
+  padding: gutter(8) 0;
+  border: 1px dotted $default-color-lightest;
+  border-width: 1px 0;
   color: #f60;
 }
 
@@ -218,16 +221,8 @@ img {
 header[role="banner"] {
   @include clearfix;
   padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
-  @include background(
-    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent
-    1px)) -1px 0 repeat-x,
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent
-    1px)) -1px 0 repeat-x,
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent
-    1px)) -1px 0 repeat-x
-  );
-  background-size: 96px 16px, 12px 12px, 6px 6px;
   background-color: #fff;
+  border-top: 10px solid rgba(0,0,0,0.1);
   h1 {
     @include adjust-font-size-to(20px);
 
@@ -435,15 +430,7 @@ footer[role="contentinfo"] {
   clear:both;
   padding: rhythm(2) column(8) + gutter(8) rhythm(4);
   background-color: #fff;
-  @include background(
-    linear-gradient(left, color-stops(rgba(150,150,150, 1) 1px, transparent 1px)),
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.5) 1px, transparent 1px)),
-    linear-gradient(left, color-stops(rgba(200,200,200, 0.25) 1px, transparent 1px)),
-    #fff
-  );
-  background-size: 96px 16px, 12px 12px, 6px 6px;
-  background-position: -1px 100%, -1px 100%, -1px 100%;
-  background-repeat:repeat-x;
+  border-bottom: 10px solid rgba(0,0,0,0.1);
 }
 
 #back-to-top {
