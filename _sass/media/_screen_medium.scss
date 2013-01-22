@@ -1,4 +1,6 @@
 header[role="banner"] {
+  padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
+
   .home & {
     h1 {
       @include adjust-font-size-to(60px);
@@ -9,6 +11,40 @@ header[role="banner"] {
 .intro {
   @include adjust-font-size-to(24px);
   @include adjust-leading-to(1.25);
+}
+
+div[role="main"] {
+  article {
+    @include pad(1,1);
+
+    body.program & {
+      & > header {
+        @include pad(1,1);
+      }
+      section {
+        @include pad(1,1);
+        padding-top: gutter(8);
+        padding-bottom: gutter(8);
+      }
+    }
+  }
+
+  section {
+    &#introduction {
+      padding: rhythm(1) column(8)+gutter(8);
+    }
+
+    &.category {
+
+      h1,p {
+        @include pad(1,1);
+      }
+
+      .table {
+        padding: gutter(8) column(8)+gutter(8);
+      }
+    }
+  }
 }
 
 #image-credits {
@@ -27,3 +63,6 @@ header[role="banner"] {
   }
 }
 
+footer[role="contentinfo"] {
+  padding: rhythm(2) column(8) + gutter(8) rhythm(4);
+}

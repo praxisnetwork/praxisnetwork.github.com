@@ -172,7 +172,7 @@ table {
 
   th,
   td {
-    padding: rhythm(0.5);
+    padding: rhythm(0.25);
     vertical-align:top;
   }
 
@@ -202,7 +202,7 @@ img {
 
 /* Classes */
 .intro {
-  @include adjust-font-size-to(20px);
+  @include adjust-font-size-to(18px);
   @include adjust-leading-to(1);
   margin:0;
   padding: gutter(8) 0;
@@ -220,7 +220,7 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  padding: rhythm(1.75) column(8) + gutter(8) rhythm(1);
+  padding: gutter(8) gutter(8) rhythm(1);
   background-color: #fff;
   border-top: 10px solid rgba(0,0,0,0.1);
   h1 {
@@ -262,7 +262,8 @@ div[role="main"] {
 
   article {
 
-    @include pad(1,1);
+    padding-left: gutter(8);
+    padding-right: gutter(8);
 
     body.program & {
       @include span-columns(8);
@@ -271,9 +272,7 @@ div[role="main"] {
 
       & > header {
         @include span-columns(8);
-        padding-top: gutter(6);
-        padding-bottom: gutter(6);
-        @include pad(1,1);
+        padding: gutter(8);
         color: #fff;
         display:block;
         @include pie;
@@ -292,14 +291,16 @@ div[role="main"] {
         z-index:1000;
         @include span-columns(8);
         @include pre(0);
-        @include pad(1,1);
-        padding-top: gutter(8);
-        padding-bottom: gutter(8);
+        padding: gutter(8);
         margin: 0 0 rhythm(12);
         background-color: #fff;
         background-color: rgba(255,255,255,0.95);
         -pie-background: rgba(255,255,255,0.95);
         @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
+
+        h2 {
+          margin-top:0;
+        }
       }
     }
   }
@@ -346,13 +347,11 @@ div[role="main"] {
   }
 
   section {
-    @include span-columns(6);
-    @include pre(1);
 
     &#introduction {
       @include span-columns(8);
       @include pre(0);
-      padding: rhythm(1) column(8) + gutter(8);
+      padding: rhythm(1) gutter(8);
     }
 
     &.category {
@@ -361,7 +360,7 @@ div[role="main"] {
       @include clearfix;
       h1,p {
         @include pie;
-        padding: gutter(8) gutter(8)+column(8) 0;
+        padding: gutter(8) gutter(8) 0;
         color: #fff;
         color: rgba(255,255,255,0.8);
         margin:0;
@@ -380,7 +379,7 @@ div[role="main"] {
       }
 
       .table {
-          padding: gutter(8) column(8)+gutter(8);
+          padding: gutter(8) gutter(8);
           background-color: #fff;
           background-color: rgba(255,255,255,0.9);
           border:1px solid rgba(0,0,0,0.2);
@@ -428,9 +427,13 @@ cuny-gcdi, ucldh {
 /* Footer */
 footer[role="contentinfo"] {
   clear:both;
-  padding: rhythm(2) column(8) + gutter(8) rhythm(4);
+  padding: gutter(8) gutter(8) rhythm(4);
   background-color: #fff;
   border-bottom: 10px solid rgba(0,0,0,0.1);
+
+  h2 {
+    margin-top:0;
+  }
 }
 
 #back-to-top {
