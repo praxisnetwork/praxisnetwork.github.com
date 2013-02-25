@@ -45,6 +45,11 @@ div[role="main"] {
       }
     }
   }
+
+  #category-nav {
+    @include pad(1,1);
+  }
+
 }
 
 #image-credits {

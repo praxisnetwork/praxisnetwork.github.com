@@ -333,15 +333,19 @@ div[role="main"] {
   #category-nav {
     @include span-columns(8);
     background-color: $link-color-alternate;
-    text-align:center;
     @include leader(1);
-    @include adjust-leading-to(2);
+    @include adjust-leading-to(1.5);
+    padding-left: gutter(8);
+    padding-right: gutter(8);
+    padding-top: 0.5em;
     a {
       background-color: rgba(0,0,0,0.1);
       color: #fff;
       color: rgba(255,255,255,0.8);
-      padding: rhythm(0.25) rhythm(0.75);
-
+      padding: 0 rhythm(0.75);
+      display:block; float:left;
+      margin-right: 0.25em;
+      margin-bottom: 0.5em;
       &:link,
       &:visited {
         background-color: rgba(0,0,0,0.1);
