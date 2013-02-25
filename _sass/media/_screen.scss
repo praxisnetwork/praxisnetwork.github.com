@@ -91,6 +91,7 @@ nav {
 a {
 
   text-decoration: none;
+  @include transition(background 0.3s linear, color 0.3s linear);
 
   &:link {
   color: $link-color;
@@ -246,10 +247,29 @@ header[role="banner"] {
   nav {
     @include leader(1);
     @include adjust-font-size-to(14px);
-    a + a:before {
-      content: "· ";
-      color: #bbb;
-      text-decoration:none;
+
+    a {
+      background: $link-color;
+      display:block;
+      float:left;
+      margin: 0 5px 5px 0;
+      color: #fff;
+      padding: 4px 8px;
+
+      &:link,
+      &:visited {
+        background-color: $link-color;
+        color: #fff;
+      }
+      &:hover,
+      &:focus {
+        background-color: $link-color-alternate;
+        color: #fff;
+      }
+      &:active {
+        background-color: $link-color;
+        color: #fff;
+      }
     }
 
     .home & {
