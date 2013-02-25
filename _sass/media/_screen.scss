@@ -249,7 +249,7 @@ header[role="banner"] {
     @include adjust-font-size-to(14px);
 
     a {
-      background: $link-color;
+      background: $link-color-alternate;
       display:block;
       float:left;
       margin: 0 5px 5px 0;
@@ -258,14 +258,11 @@ header[role="banner"] {
 
       &:link,
       &:visited {
-        background-color: $link-color;
-        color: #fff;
-      }
-      &:hover,
-      &:focus {
         background-color: $link-color-alternate;
         color: #fff;
       }
+      &:hover,
+      &:focus,
       &:active {
         background-color: $link-color;
         color: #fff;
@@ -335,26 +332,26 @@ div[role="main"] {
 
   #category-nav {
     @include span-columns(8);
-    background: darken(#0cf,20%);
+    background-color: $link-color-alternate;
     text-align:center;
     @include leader(1);
     @include adjust-leading-to(2);
     a {
-      background: rgba(255,255,255,0.1);
+      background-color: rgba(0,0,0,0.1);
       color: #fff;
       color: rgba(255,255,255,0.8);
       padding: rhythm(0.25) rhythm(0.75);
 
       &:link,
       &:visited {
-        background: rgba(255,255,255,0.1);
+        background-color: rgba(0,0,0,0.1);
       }
 
       &:hover,
       &:focus,
       &:active {
         color: #fff;
-        background: rgba(255,255,255,0.2);
+        background-color: rgba(0,0,0,0.2);
       }
     }
   }
