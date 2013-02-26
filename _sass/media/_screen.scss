@@ -428,7 +428,7 @@ div[role="main"] {
 }
 
 @each $program in uva-praxis-program, chi-initiative, hope-mellon-scholars,
-cuny-gcdi, ucldh {
+cuny-gcdi, ucldh, duke-phd-lab, brock-iasc {
   body.#{$program} {
     background-image: url('../images/#{$program}.jpg');
     @include background-size(cover);
