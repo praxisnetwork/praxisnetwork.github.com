@@ -13,18 +13,30 @@
     figure {
       float:right;
       margin-left: rhythm(1);
+      & > div {
+        float:left;
+        width: 48%;
+      }
+
+      & > div + div {
+        float:right;
+      }
 
       &.normal,
       &.feature {
         float:none;
         margin-left:0;
       }
-
+      
+      figcaption {
+        clear:both;
+      }
       &.feature {
       @include pull(5);
 
         figcaption {
           @include span-columns(2,8);
+          clear:none;
         }
       }
     }
