@@ -79,6 +79,16 @@ brock-iasc:
   structure: 'Students take a few core courses, and then craft their own cross-disciplinary path based on their interests. Many students also participate in internships at companies based at <a href="http://ngen-niagara.com/en/content/welcome/index/">nGen</a>, an area business incubator that partners with IASC.' 
   nuts-and-bolts: 'Though it can be challenging, creating relationships across the university and the broader community opens up valuable opportunities and amplifies the strengths of each partner.'
 
+## University of Canterbury Digital Humanities
+ucdh: 
+  mission: 'TEST'
+  people: 'TEST'
+  research: 'TEST'
+  support: 'TEST'
+  directions: 'TEST'
+  structure: 'TEST'
+  nuts-and-bolts: 'TEST'
+
 # New program template. Copy and replace 'program-short-name' with the desired
 # short name for the program. Use that wherever 'program-short-name' occurs elsewhere.
 program-short-name:
