@@ -81,13 +81,13 @@ brock-iasc:
 
 ## University of Canterbury Digital Humanities
 ucdh: 
-  mission: 'TEST'
-  people: 'TEST'
-  research: 'TEST'
-  support: 'TEST'
-  directions: 'TEST'
-  structure: 'TEST'
-  nuts-and-bolts: 'TEST'
+  mission: 'To create Digital Humanities pathways from undergraduate and graduate study to work-based internships, offering students the opportunity to apply their skills in real-world contexts while also increasing digital capabilities across the humanities and social sciences.'
+  people: 'Students from a wide range of fields in the humanities and social sciences participate in various aspects of the program, from jointly-taught courses, to internships, to honors degrees and thesis work. The program is directed by James Smithies.'
+  research: 'The core of the program is a year-long Honours degree blending the student’s home discipline with digital humanities methods. UCDH is also developing non-degree programs for undergraduate, master’s, and doctoral students wishing to incorporate digital approaches into their work.'
+  support: 'While the program is still too new to have many completed research projects, students have already been deeply involved in the development of the <a href="http://www.ceismic.org.nz/">UC CEISMIC Archive</a> and <a href="https://quakestudies.canterbury.ac.nz/">UC QuakeStudies Repository</a>.'
+  directions: 'Support for the program is provided internally by the university, and is based on student enrollment.'
+  structure: 'The basic model is in place and working well. The team is now focused on building out existing pathways, identifying new businesses in need of student interns, and helping develop the approach across all arts, humanities and social science disciplines.'
+  nuts-and-bolts: 'Interdisciplinarity and collaboration are the keys to the University of Canterbury approach.'
 
 # New program template. Copy and replace 'program-short-name' with the desired
 # short name for the program. Use that wherever 'program-short-name' occurs elsewhere.
