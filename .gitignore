@@ -6,4 +6,5 @@ _sass/.sass-cache
 .sass-cache
 .DS_Store
 images/.DS_Store
+.env
 

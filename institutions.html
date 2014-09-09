@@ -1,0 +1,30 @@
+---
+layout: page
+title: Directory of Related Programs
+permalink: "/institutions/"
+---
+
+<div id="programs">
+
+  <div id="institution-filters">
+      <ul>
+        <li><a class="is-checked" data-filter="*">All Programs</a></li>
+        <li><a data-filter=".graduate">Graduate Programs</a></li>
+        <li><a data-filter=".undergraduate">Undergraduate Programs</a></li>
+        <li><a data-filter=".other">Other Programs</a></li>
+      </ul>
+  </div>
+
+   <div id="program-list">
+
+   {% for post in site.categories['program'] %}
+     <div class="{{ post.categories | join: ' ' }}" data-name="{{ post.title | downcase | replace: ' ', '_' }}">
+         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+         </a>
+      </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+

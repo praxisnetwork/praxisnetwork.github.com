@@ -3,7 +3,7 @@
 permalink: /:year/:month/:day/:title/
 pygments:  true
 markdown: rdiscount
-exclude: ['readme.md', 'Rakefile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock']
+exclude: ['readme.md', 'Rakefile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock',"README.md", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json", "lib"]
 
 title: The Praxis Network
 

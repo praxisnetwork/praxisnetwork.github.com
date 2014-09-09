@@ -1,0 +1,14 @@
+---
+layout: institution
+status: publish
+permalink: posts/institutions/<%= @base_name%>
+title: <%= @program_name%>
+categories: <%= @population_supported.gsub(/,/, ' ')%>
+population: <%= @population_supported%>
+other: <%= @other_population_supported%>
+website: <%= @program_url%>
+image: ../../../images/inst_demo.jpg
+---
+## Mission:
+
+ <%= @mission_statement%>
