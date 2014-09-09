@@ -46,7 +46,7 @@ def generate_institutions
 end
 
 task :default => 'import:all'
-  namespace :import do
+namespace :import do
 
   desc "import all institutions."
   task :institutions do
@@ -68,7 +68,7 @@ task :default => 'import:all'
 
   desc "Generate markup for both institutions and students"
   task :all => ['import:institutions', 'import:students']
-  end
+end
 
 
 def parse_date(date)
@@ -109,7 +109,7 @@ def write_fake_student(row)
   other_research_areas = row[7]
   base_name = make_name(student_name, timestamp)
 
-    contents = "---
+  contents = "---
 layout: post
 status: publish
 permalink: posts/students/#{base_name}
@@ -118,7 +118,7 @@ categories: [student, #{program_name}, #{research_area}]
 other: #{other_research_areas}
 website: #{personal_website}
 ---
-#{student_name}
+  #{student_name}
 
 Program Name: #{program_name}
 Personal Website:  #{personal_website}
@@ -141,16 +141,28 @@ def write_studentmarkdown (row)
   @twitter_handle              = @worksheet[row, 6]
   @research_area               = @worksheet[row, 8]
   @other_research_areas        = @worksheet[row, 9]
-  base_name                    = make_name(@student_name, @timestamp)
-  @get_images= get_images
+  @base_name                    = make_name(@student_name, @timestamp)
+  @image= get_image(@program_name)
 
   contents =render("lib/templates/student.html.erb")
 
-  write_file(base_name, contents)
+  write_file(@base_name, contents)
 end
 
-def get_images
-  File.basename Dir["images/*.{jpg, png, gif}"].sample
+
+# Maps program name to a program image
+def get_image(program)
+  images = {
+    "Praxis Program (UVA)" => "uva-praxis-program.jpg",
+    "Cultural Heritage Informatics (CHI) Initiative (MSU)" => "chi-initiative.jpg",
+    "Mellon Scholars program (Hope College)" => "hope-mellon-scholars.jpg",
+    "Digital Fellows Program (CUNY)" => "cuny-dh.jpg",
+    "MA-MSc program (UCL)" => "ucldh.jpg",
+    "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab.jpg",
+    "Interactive Arts and Science Program (Brock University)" => "brock-iasc.jpg",
+    "Honors-level digital humanities program (University of Canterbury)" => "ucdh.jpg",
+  }
+  images[program]
 end
 
 module PraxisProgram
@@ -184,7 +196,7 @@ module PraxisProgram
 
   class Institution < Page
     def initialize
- 
+
     end
   end
 end
