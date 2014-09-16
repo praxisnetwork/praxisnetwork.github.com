@@ -1,7 +1,6 @@
 // Imports
 @import "compass";
 @import "compass/reset";
-@import "compass/css3/pie";
 @import "susy";
 @import "mixins";
 
@@ -11,8 +10,6 @@ $programs: (uva-praxis-program, chi-initiative, hope-mellon-scholars, cuny-gcdi,
 // Compass Variables
 $base-font-size: 16px;
 $base-line-height: 28px;
-$pie-behavior: url("/PIE.htc");
-$pie-base-class: pie-element;
 
 // Susy Variables
 $total-columns: 8;
