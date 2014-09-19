@@ -6,16 +6,14 @@ permalink: "/institutions/"
 
 <div id="programs">
 
-  <div id="institution-filters">
-      <ul>
+    <ul id="filters">
         <li><a class="is-checked" data-filter="*">All Programs</a></li>
         <li><a data-filter=".graduate">Graduate Programs</a></li>
         <li><a data-filter=".undergraduate">Undergraduate Programs</a></li>
         <li><a data-filter=".other">Other Programs</a></li>
-      </ul>
-  </div>
+    </ul>
 
-   <div id="program-list">
+   <div id="list">
 
    {% for post in site.categories['program'] %}
      <div class="{{ post.categories | join: ' ' }}" data-name="{{ post.title | downcase | replace: ' ', '_' }}">

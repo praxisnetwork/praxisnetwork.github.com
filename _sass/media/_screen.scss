@@ -501,62 +501,40 @@ footer[role="contentinfo"] {
   min-height: 60%;
 }
 
-#student-filters {
-    float:left;
-    width: 40%;
-  /*  font-size: 16px; */
-    padding-right: 10px;
-}
-
-#student-list {
+#list {
     float:right;
     width: 60%;
+
+    a,
+    a:link {
+        color:white;
+    }
+
+    > div {
+        width: 125px;
+        height: 125px;
+        margin: 5px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+    }
 }
 
-#institution-filters {
+#filters {
     float:left;
     width: 40%;
+    margin:0;
+    list-style:none;
  /*  font-size: 16px; */
     padding-right: 10px;
-}
 
-#program-list {
-    float:right;
-    width: 60%;
-}
-
-#programs .program a {
-    color: white;
-}
-
-#student-list a {
-    color: white;
+    ul {
+        margin-top:0;
+    }
 }
 
 .is-checked {
   font-weight: bold;
-}
-
-#programs .program {
-    width: 125px;
-    height: 125px;
-    margin: 5px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 5px;
-}
-
-.student {
-    width: 125px;
-    height: 125px;
-    margin: 5px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 5px;
-}
-
-ul {
-    margin-top: 0;
 }
 
 /* colors for different types of institutions */
