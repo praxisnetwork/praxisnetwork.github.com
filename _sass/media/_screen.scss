@@ -469,3 +469,171 @@ footer[role="contentinfo"] {
     }
 }
 
+
+
+/* Directory styles */
+
+.student-info {
+  float:left;
+  width: 70%;
+}
+
+.student-contact {
+  float:right;
+  width: 30%;
+}
+
+.page-content {
+  min-height: 60%;
+}
+
+.institution-info {
+  float:left;
+  width: 70%;
+}
+
+.institution-contact {
+  float:right;
+  width: 30%;
+}
+
+.institution-content{
+  min-height: 60%;
+}
+
+#student-filters {
+    float:left;
+    width: 40%;
+  /*  font-size: 16px; */
+    padding-right: 10px;
+}
+
+#student-list {
+    float:right;
+    width: 60%;
+}
+
+#institution-filters {
+    float:left;
+    width: 40%;
+ /*  font-size: 16px; */
+    padding-right: 10px;
+}
+
+#program-list {
+    float:right;
+    width: 60%;
+}
+
+#programs .program a {
+    color: white;
+}
+
+#student-list a {
+    color: white;
+}
+
+.is-checked {
+  font-weight: bold;
+}
+
+#programs .program {
+    width: 125px;
+    height: 125px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.student {
+    width: 125px;
+    height: 125px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+/* colors for different types of institutions */
+
+.graduate {
+    background-color: #9CAC7E;
+}
+
+.undergraduate {
+    background-color: #F7913F;
+}
+
+#program-list .other {
+    background-color: #50687F;
+}
+
+/* colors for different programs */
+
+.praxis {
+    background-color: #50687F;
+}
+
+.cultural {
+    background-color: #9CAC7E;
+}
+
+.mellon {
+    background-color: #9B6873;
+}
+
+.fellows {
+    background-color: #D59CB5;
+}
+
+.ma-msc {
+    background-color: #F7913F;
+}
+
+.phd {
+    background-color: #76AC9C;
+}
+
+.interactive {
+    background-color: #4893B2;
+}
+
+.honors-level {
+    background-color: #7D7B7E;
+}
+
+/*palette 1
+018B72 ultramarine green
+F0522B tangerine tango
+D54E88 pink flambe
+DFAF4B honey gold
+4B3C39 french roast
+B4CD3E bright chartreuse 
+0069AA olympian blue
+7D7B7E titanium -honors-level
+A288AD rhapsody light purple
+E6C9BB rose smoke offwhite */
+
+/*palette 2 monochromatic/complementary
+programs:
+50687F dark-grey -praxis
+4893B2 blue -interactive
+7A9B0C green -cultural
+D59CB5 light rose-fellows
+76AC9C grey-blue-phd
+9B545E rose -mellon
+F7913F orange ma-msc
+7D7B7E grey honors-level
+
+institutions:
+85859B grad
+1B616D other
+55684F undergrad
+ */
+
+
