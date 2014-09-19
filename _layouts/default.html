@@ -17,6 +17,7 @@
   <!-- Style Sheets -->
   <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/c/styles.css" type="text/css">
+   <link rel="stylesheet" href="{{ "/css/filters.css" | prepend: site.baseurl }}">
 
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -35,23 +36,21 @@
 <div id="container">
     <header role="banner">
         <h1><a href="/">{{ site.title }}</a></h1>
-        {% include program-nav.html %}
-        <nav id="courtesy-nav">
+         <nav id="courtesy-nav">
           <a href="/">Home</a>
           <a href="/students/">Student Directory</a>
           <a href="/institutions/">Related Programs</a>
-        </nav>  
+         </nav>  
         </header>
 
     <div id="content" role="main">
 
-    {{ content }}
-
+      {{ content }}
     </div>
 
     <footer role="contentinfo">
-        <h2>About the Praxis Network</h2>
-        <p>This informal network is being developed with support from the <a href="http://scholarslab.org">Scholars' Lab</a> and the <a href="http://mellon.org/">Andrew W. Mellon Foundation</a>, as part of a 2012-2013 <a href="http://uvasci.org">Scholarly Communication Institute</a> (SCI) focus on graduate education. Its goal is to highlight literacies necessary to humanities scholarship in the digital age and to share model programs that expand career opportunities for graduate and undergraduate students. Related SCI work includes a <a href="http://libra.virginia.edu/catalog/libra-oa:3480">study of alt-ac career preparation</a> as well as a <a href="http://libra.virginia.edu/catalog/libra-oa:3266">set of discussions</a> convened in partnership with <a href="http://digitalhumanities.org/centernet/">centerNet</a> and the <a href="http://chcinetwork.org/">Consortium of Humanities Centers and Institutes</a>.</p>
+      <h2>About the Praxis Network</h2>
+            <p>This informal network is being developed with support from the <a href="http://scholarslab.org">Scholars' Lab</a> and the <a href="http://mellon.org/">Andrew W. Mellon Foundation</a>, as part of a 2012-2013 <a href="http://uvasci.org">Scholarly Communication Institute</a> (SCI) focus on graduate education. Its goal is to highlight literacies necessary to humanities scholarship in the digital age and to share model programs that expand career opportunities for graduate and undergraduate students. Related SCI work includes a <a href="http://libra.virginia.edu/catalog/libra-oa:3480">study of alt-ac career preparation</a> as well as a <a href="http://libra.virginia.edu/catalog/libra-oa:3266">set of discussions</a> convened in partnership with <a href="http://digitalhumanities.org/centernet/">centerNet</a> and the <a href="http://chcinetwork.org/">Consortium of Humanities Centers and Institutes</a>.</p>
         <p>Published by the <a href="http://scholarslab.org">Scholars' Lab</a> under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0 License</a> | <a href="mailto:scholarslab@virginia.edu">Contact Us</a> | <a href="colophon.html">Colophon</a></p>
   </footer>
 </div>
@@ -68,6 +67,9 @@
   })();
 
 </script>
+
+{% include javascript.html %}
+
 </body>
 </html>
 

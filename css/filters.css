@@ -1,9 +1,4 @@
-body {
-  font-size: 18px;
-}
 
-h2 {
-  color: #F7913F;}
 
 .student-info {
   float:left;
@@ -25,7 +20,7 @@ h2 {
 }
 
 .institution-contact {
-   float:right;
+  float:right;
   width: 30%;
 }
 
