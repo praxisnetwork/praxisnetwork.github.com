@@ -31,7 +31,7 @@ $('document').ready(function(){
         $(this).addClass('is-checked');
     });
 
-  // Replaces image src with a random image, based on numerical file
+    // Replaces image src with a random image, based on numerical file
     // name.
     var institution_image = $('#institution-image');
     var numRand = Math.floor(Math.random() * 6) + 1;
