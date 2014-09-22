@@ -98,38 +98,6 @@ def write_file(base_name, contents)
   end
 end
 
-def write_fake_student(row)
-  timestamp = row[0]
-  student_name = row[1]
-  program_name = row[2]
-  year_entering_fellowship = row[3]
-  personal_website = row[4]
-  twitter_handle = row[5]
-  research_area = row[6]
-  other_research_areas = row[7]
-  base_name = make_name(student_name, timestamp)
-
-  contents = "---
-layout: post
-status: publish
-permalink: posts/students/#{base_name}
-title: #{student_name}
-categories: [student, #{program_name}, #{research_area}]
-other: #{other_research_areas}
-website: #{personal_website}
----
-  #{student_name}
-
-Program Name: #{program_name}
-Personal Website:  #{personal_website}
-Twitter Handle:  #{twitter_handle}
-  "
-
-  write_file(base_name, contents)
-
-end
-
-
 #This method writes a markdown file (for students) for any row passed to it
 def write_studentmarkdown (row)
   @timestamp                   = @worksheet[row, 1]
@@ -164,6 +132,7 @@ def get_image(program)
   }
   images[program]
 end
+
 
 module PraxisProgram
   class Page
