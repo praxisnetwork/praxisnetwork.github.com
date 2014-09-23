@@ -4,7 +4,6 @@
 html {
   @include background(#fff);
   @include background-size(cover);
-  
 }
 
 body {
@@ -103,6 +102,32 @@ a {
     color:$link-color-alternate;
   }
 }
+
+.add-institution {
+   @include leader(1);
+   @include adjust-font-size-to(14px);
+
+    a {
+      background: $link-color-alternate;
+      display:block;
+      float:right;
+      margin: 0 5px 5px 0;
+      color: #fff;
+      padding: 4px 8px;
+
+      &:link,
+      &:visited {
+        background-color: $link-color-alternate;
+        color: #fff;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $link-color;
+        color: #fff;
+      }
+    } 
+ }
 
 /* Headings */
 h1 {
@@ -217,6 +242,7 @@ img {
   font-style:italic;
   color: $default-color-lighter;
 }
+
 
 /* Header */
 header[role="banner"] {
@@ -584,34 +610,4 @@ footer[role="contentinfo"] {
 .honors-level {
     background-color: #7D7B7E;
 }
-
-/*palette 1
-018B72 ultramarine green
-F0522B tangerine tango
-D54E88 pink flambe
-DFAF4B honey gold
-4B3C39 french roast
-B4CD3E bright chartreuse 
-0069AA olympian blue
-7D7B7E titanium -honors-level
-A288AD rhapsody light purple
-E6C9BB rose smoke offwhite */
-
-/*palette 2 monochromatic/complementary
-programs:
-50687F dark-grey -praxis
-4893B2 blue -interactive
-7A9B0C green -cultural
-D59CB5 light rose-fellows
-76AC9C grey-blue-phd
-9B545E rose -mellon
-F7913F orange ma-msc
-7D7B7E grey honors-level
-
-institutions:
-85859B grad
-1B616D other
-55684F undergrad
- */
-
 
