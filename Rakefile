@@ -124,7 +124,7 @@ def get_image(program)
     "Praxis Program (UVA)" => "uva-praxis-program.jpg",
     "Cultural Heritage Informatics (CHI) Initiative (MSU)" => "chi-initiative.jpg",
     "Mellon Scholars program (Hope College)" => "hope-mellon-scholars.jpg",
-    "Digital Fellows Program (CUNY)" => "cuny-dh.jpg",
+    "Digital Fellows Program (CUNY)" => "cuny-gcdi.jpg",
     "MA-MSc program (UCL)" => "ucldh.jpg",
     "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab.jpg",
     "Interactive Arts and Science Program (Brock University)" => "brock-iasc.jpg",
