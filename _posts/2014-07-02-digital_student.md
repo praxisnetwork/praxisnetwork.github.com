@@ -9,6 +9,6 @@ other:
 program: Digital Fellows Program (CUNY)
 website: site
 twitter:  twitter
-image: cuny-dh.jpg
+image: cuny-gcdi.jpg
 ---
 
