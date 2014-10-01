@@ -1,14 +1,12 @@
 ---
 layout: institution
 status: publish
-permalink: posts/institutions/
+permalink: posts/institutions/2014-06-30-capitals_matter
 title: capitals Matter
 categories: Other Program
 population: Other Program
 other: capital
 website: www.cnn.com
-image: ../../../images/inst_demo.jpg
+mission:  lorem.
 ---
-## Mission:
 
- lorem.

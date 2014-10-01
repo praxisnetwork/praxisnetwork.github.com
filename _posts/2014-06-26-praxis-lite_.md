@@ -1,14 +1,12 @@
 ---
 layout: institution
 status: publish
-permalink: posts/institutions/
+permalink: posts/institutions/2014-06-26-praxis-lite_
 title: Praxis-lite 
 categories: Other Program
 population: Other Program
 other: library
 website: praxis.com
-image: ../../../images/inst_demo.jpg
+mission:  lots of missions
 ---
-## Mission:
 
- lots of missions
