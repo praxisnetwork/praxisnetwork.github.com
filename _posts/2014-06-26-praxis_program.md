@@ -1,18 +1,16 @@
 ---
 layout: institution
 status: publish
-permalink: posts/institutions/
+permalink: posts/institutions/2014-06-26-praxis_program
 title: Praxis program
 categories: Undergraduate Program
 population: Undergraduate Program
 other: 
 website: whatchagot.com
-image: ../../../images/inst_demo.jpg
----
-## Mission:
-
- 
+mission:  
 sketch out calendar for the fall, even if not shared, to see how the commitment levels 
  
     
      
+---
+

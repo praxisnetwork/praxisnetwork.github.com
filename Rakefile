@@ -181,12 +181,12 @@ def write_institutionsmarkdown (row)
   @mission_statement           = @worksheet[row, 7]
   @population_supported        = @worksheet[row, 8]
   @other_population_supported  = @worksheet[row, 10]
-  base_name                   = make_name(@program_name, @timestamp)
+  @base_name                   = make_name(@program_name, @timestamp)
 
-  contents =render("lib/templates/institution.html.erb")
+  contents = render("lib/templates/institution.html.erb")
   puts @population_supported
 
-  write_file(base_name, contents)
+  write_file(@base_name, contents)
 end
 
 def render(template_path)
