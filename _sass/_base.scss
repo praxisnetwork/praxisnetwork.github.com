@@ -1,7 +1,8 @@
 // Imports
 @import "compass";
 @import "compass/reset";
-@import "susyone";
+@import "susy";
+@import "breakpoint";
 @import "mixins";
 
 
@@ -9,16 +10,23 @@
 $programs: (uva-praxis-program, chi-initiative, hope-mellon-scholars, cuny-gcdi, ucldh, duke-phd-lab, brock-iasc, ucdh);
 
 // Compass Variables
-$base-font-size: 16px;
-$base-line-height: 28px;
+$base-font-size: 18px;
+$base-line-height: 30px;
 
 // Susy Variables
-$total-columns: 8;
-$column-width: 100px;
-$gutter-width: 50px;
-$grid-padding: 0;
-$container-style: fluid;
-$gutterColumn: gutter($total-columns) + column($total-columns);
+$susy: (
+  columns: 32,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  debug: (
+    image: show,
+    color: rgba(blue, 0.5),
+    output: overlay,
+    toggle: top right,
+  ),
+);
 
 // Colors
 $dark-grey: rgba(0,0,0,0.7);

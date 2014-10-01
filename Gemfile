@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem "jekyll"
 gem "susy"
+gem "breakpoint"
 gem "pygments.rb"
 gem "rdiscount"
 gem "foreman"

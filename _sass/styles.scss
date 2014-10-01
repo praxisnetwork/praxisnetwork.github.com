@@ -5,21 +5,6 @@
   @import "media/screen";
 }
 
-// small
-@media only screen and (min-width: 540px) {
-  @import "media/screen_small";
-}
-
-// medium
-@media only screen and (min-width: 700px) {
-  @import "media/screen_medium";
-}
-
-// large
-@media only screen and (min-width: 860px) {
-  @import "media/screen_large";
-}
-
 // print
 @media print {
   @import "media/print";

@@ -2,110 +2,114 @@
 @include establish-baseline;
 
 html {
-  @include background(#fff);
-  @include background-size(cover);
+    @include background(#fff);
+    @include background-size(cover);
 }
 
 body {
-  font-family: $font-family-default;
-  @include container;
-  /*@include susy-grid-background;*/
-  background-color: #fff;
-  color: #555;
+    font-family: $font-family-default;
+    @include container(show);
+    /*@include susy-grid-background;*/
+    background-color: white;
+    color: #555;
+    @include pad(1,1);
+    @include susy-breakpoint(800px, 32) {
+        @include pad(2,2);
+    }
+
+    &.home {
+        padding:0;
+    }
 }
 
 p,ul,ol,dl {
-  @include rhythm(1);
+    @include rhythm(1);
 }
 
 ul {
-  list-style:square;
+    list-style:square;
 }
 
 ol {
-  list-style:decimal;
+    list-style:decimal;
 }
 
 ul,ol {
-  margin-left: rhythm(1);
+    margin-left: rhythm(1);
 
-  nav & {
-    margin:0;
-  }
+    nav & {
+        margin:0;
+    }
 }
 
 em, i {
-  font-style:italic;
+    font-style:italic;
 }
 
 strong, b {
-  font-weight:bold;
+    font-weight:bold;
 }
 
 /* Forms */
 form {
 
-  fieldset {
-    margin:0;
-    padding:0;
-    border:none;
-  }
+    fieldset {
+        margin:0;
+        padding:0;
+        border:none;
+    }
 
-  textarea {
-    width:100%;
- }
+    textarea {
+        width:100%;
+    }
 
-  textarea,
-  input,
-  select {
-    font-family: $font-family-alternate;
-    color: $default-color;
-    @include adjust-font-size-to(12px);
-    @include adjust-leading-to(1);
-  }
+    textarea,
+    input,
+    select {
+        font-family: $font-family-alternate;
+        color: $default-color;
+    }
 
 }
 
 /* Navigation */
 nav {
-  ul,
-  ol {
-    list-style:none;
-    margin-left:0;
-    padding-left:0;
-  }
-
-
+    ul,
+    ol {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+    }
 }
 
 /* Links */
 a {
 
-  text-decoration: none;
-  @include transition(background 0.3s linear, color 0.3s linear);
+    text-decoration: none;
+    @include transition(background 0.3s linear, color 0.3s linear);
 
-  &:link {
-  color: $link-color;
-  }
+    &:link {
+        color: $link-color;
+    }
 
-  &:visited {
-    color: $link-color-alternate;
-  }
+    &:visited {
+        color: $link-color-alternate;
+    }
 
-  &:hover {
-    border-bottom: 1px dotted $link-color-alternate;
-    color:$link-color-alternate;
-  }
+    &:hover {
+        border-bottom: 1px dotted $link-color-alternate;
+        color:$link-color-alternate;
+    }
 
-  &:active {
-    border-bottom: 1px solid $link-color-alternate;
-    color:$link-color-alternate;
-  }
+    &:active {
+        border-bottom: 1px solid $link-color-alternate;
+        color:$link-color-alternate;
+    }
 }
 
 .add-institution {
-   @include leader(1);
    @include adjust-font-size-to(14px);
+   @include leader(1, 14px);
 
     a {
       background: $link-color-alternate;
@@ -126,20 +130,20 @@ a {
         background-color: $link-color;
         color: #fff;
       }
-    } 
+    }
  }
 
 /* Headings */
 h1 {
   @include adjust-font-size-to(40px);
-  @include adjust-leading-to(0.875);
+  @include adjust-leading-to(0.875, 40px);
   font-weight:normal;
 }
 
 h2 {
   @include adjust-font-size-to(24px);
-  @include adjust-leading-to(1);
-  @include leader(1);
+  @include adjust-leading-to(1, 24px);
+  @include leader(1, 24px);
   color: #f60;
 
   & + * {
@@ -151,6 +155,7 @@ h3 {
   font-weight:bold;
   color: $default-color-light;
   @include adjust-font-size-to(20px);
+  @include adjust-leading-to(1, 20px);
 }
 
 h4 {
@@ -169,7 +174,7 @@ h6 {
 #{headings(1,6)} {
 
   a {
-  text-decoration:none;
+    text-decoration:none;
   }
 
 }
@@ -179,8 +184,8 @@ figure {
 }
 
 figcaption {
-  @include adjust-font-size-to(12px);
-  @include adjust-leading-to(1);
+  @include adjust-font-size-to(15px);
+  @include adjust-leading-to(1, 15px);
   color: $default-color-lighter;
   & > * {
     margin-top:0;
@@ -190,9 +195,6 @@ figcaption {
 /* Tables */
 table {
   width:100%;
-  @include adjust-font-size-to(14px);
-  @include rhythm(2);
-
   border: 5px solid rgba(0,0,0,0.25);
   border-width: 5px 0;
 
@@ -226,83 +228,26 @@ img {
   height: auto;
 }
 
-/* Classes */
-.intro {
-  @include adjust-font-size-to(18px);
-  @include adjust-leading-to(1);
-  margin:0;
-  padding: gutter(8) 0;
-  border: 1px dotted $default-color-lightest;
-  border-width: 1px 0;
-  color: #f60;
-}
-
-.program-category-intro {
-  @include adjust-font-size-to(14px);
-  font-style:italic;
-  color: $default-color-lighter;
-}
-
-
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  padding:rhythm(3) gutter(8) rhythm(1);
-  background-color: #fff;
-  border-top: 10px solid rgba(0,0,0,0.1);
+  background-color: #333;
+  background-color: rgba(black, .5);
+
+  a, :link {
+      color:white;
+  }
+
   h1 {
-    @include adjust-font-size-to(20px);
+    @include adjust-font-size-to(24px);
+    @include adjust-leading-to(1, 24px);
 
     .home & {
       @include adjust-font-size-to(30px);
-      @include adjust-leading-to(1);
+      @include adjust-leading-to(1, 30px);
       margin:0;
       @include trailer(0.5);
       display:block;
-    }
-  }
-
-  #courtesy-nav{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    text-align:right;
-    padding-right:gutter(8);
-    @include adjust-leading-to(2);
-    background:#eee;
-    a{
-      padding-left:1em;
-    }
-  }
-
-  #program-nav {
-    @include leader(1);
-    @include adjust-font-size-to(14px);
-
-    a {
-      background: $link-color-alternate;
-      display:block;
-      float:left;
-      margin: 0 5px 5px 0;
-      color: #fff;
-      padding: 4px 8px;
-
-      &:link,
-      &:visited {
-        background-color: $link-color-alternate;
-        color: #fff;
-      }
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $link-color;
-        color: #fff;
-      }
-    }  
-
-    .home & {
-      @include adjust-font-size-to(16px);
     }
   }
 
@@ -312,27 +257,49 @@ header[role="banner"] {
 
 }
 
+  #program-nav {
+      display:block;
+    @include adjust-font-size-to(18px);
+    @include adjust-leading-to(1, 18px);
+    @include clearfix;
+
+    a, :link {
+        display:block;
+        height: 150px;
+        @include gallery(6 of 12 isolate);
+        @include susy-breakpoint(600px, 12) {
+            @include gallery(3 of 12 isolate);
+            height: 120px;
+        }
+        @include susy-breakpoint(800px, 12) {
+            height: 150px;
+        }
+        @include susy-breakpoint(1200px, 12) {
+            height: 200px;
+        }
+        @include susy-breakpoint(1400px, 8) {
+            height: 150px;
+            @include gallery(1 of 8 isolate);
+        }
+
+        color: white;
+        padding-top: rhythm(1);
+    }
+  }
+
 /* Main Content */
 
 div[role="main"] {
-  @include span-columns(8);
 
   article {
 
-    padding-left: gutter(8);
-    padding-right: gutter(8);
-
     body.program & {
-      @include span-columns(8);
-      @include pre(0);
-      @include pad(0,0);
 
-      & > header {
-        @include span-columns(8);
-        padding: gutter(8);
+      > header {
         color: #fff;
         display:block;
-        background:rgba(0,0,0,0.5);
+        background:rgba(black,.5);
+        margin-bottom: rhythm(4);
 
         a {
           color: #ddd;
@@ -341,40 +308,93 @@ div[role="main"] {
         }
       }
 
+        header, section .content {
+            padding-top: rhythm(1);
+            padding-bottom: rhythm(1);
+
+            @include pad(1 of 30);
+            
+            @include susy-breakpoint(800px, 32) {
+                @include pad(2 of 28);
+            }
+            @include susy-breakpoint(1200px, 32) {
+                @include pad(4 of 24);
+            }
+        }
+
       section {
         z-index:1000;
-        @include span-columns(8);
-        @include pre(0);
-        padding: gutter(8);
-        margin: 0 0 rhythm(12);
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.95);
-        @include box-shadow(rgba(0,0,0,0.5) 0 0 20px);
+        margin-bottom: rhythm(4);
+        header {
+            background-color: #333;
+            background-color: rgba(black, .5);
+            color: white;
+            p {
+                margin-bottom:0;
+            }
+  
+        }            
+        .content {
+            @include clearfix;
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.95);            
+            > :first-child {
+                margin-top:0;
+            }
+            
+        }
+
+        figure {
+            margin-top:0;
+
+            @include susy-breakpoint(600px, 32) {
+                @include span(last 4 of 12);
+                margin-left: span(1 of 32 wide);
+            }
+
+            &.feature,
+            &.normal {
+
+                float:none;
+                width: auto;
+                margin:0;
+            }
+
+            @include susy-breakpoint(600px, 32) {
+            &.normal {
+                .image {
+                    @include gallery(6 of 12);
+                }
+                figcaption {
+                    clear:both;
+                }
+                
+            }
+            }
+        }
 
         h2 {
           margin-top:0;
         }
+
+        > :last-child {
+            margin-bottom:0;
+        }
+        
       }
     }
   }
 
   #category-nav {
-    @include span-columns(8);
     background-color: $link-color-alternate;
-    @include leader(1);
-    @include adjust-leading-to(1.5);
-    padding-left: gutter(8);
-    padding-right: gutter(8);
-    padding-top: 0.5em;
     a {
       background-color: rgba(0,0,0,0.1);
       color: #fff;
       color: rgba(255,255,255,0.8);
       border:none;
-      padding: 0 rhythm(0.75);
-      display:block; float:left;
-      margin-right: 0.25em;
-      margin-bottom: 0.5em;
+      display:block;
+      float:left;
+
       &:link,
       &:visited {
         background-color: rgba(0,0,0,0.1);
@@ -390,70 +410,120 @@ div[role="main"] {
   }
 
 
-  section {
+    section {
 
-    &#introduction {
-      @include span-columns(8);
-      @include pre(0);
-      padding: rhythm(1) gutter(8);
-    }
-
-    &.category {
-      @include span-columns(8);
-      @include pre(0);
-      @include clearfix;
-      h1,p {
-        padding: gutter(8) gutter(8) 0;
-        color: #fff;
-        color: rgba(255,255,255,0.8);
-        margin:0;
-        background: rgba(0,0,0,0.5);
-      }
-
-      p {
-        padding-bottom: gutter(8);
-      }
-
-      table {
-        display:block;
-        margin:0;
-        border-width: 0;
-      }
-
-      .table {
-          padding: gutter(8) gutter(8);
-          background-color: #fff;
-          background-color: rgba(255,255,255,0.9);
-          border:1px solid rgba(0,0,0,0.2);
-          border-width: 10px 0;
+        &.category {
+        h1,p {
+            color: #fff;
+            color: rgba(255,255,255,0.8);
+            margin:0;
+            background: rgba(0,0,0,0.5);
+        }
+        h1 {
+            padding-top: rhythm(4, 40px);
+        }
+        p {
+            padding-bottom: rhythm(4);
+        }
+        
+        table {
+            display:block;
+            margin:0;
+            border-width: 0;
         }
 
-      @each $category in mission, support, people, structure, research, directions, nuts-and-bolts {
-      &##{$category} {
-        @include background(
-          url('../images/#{$category}.jpg') 0 0 no-repeat fixed
-        );
-        @include background-size(cover);
-      }
-      }
+        .table {
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.9);
+            border:1px solid rgba(0,0,0,0.2);
+            border-width: 10px 0;
+            padding-top: rhythm(2);
+            padding-bottom: rhythm(2);
+        }
+
+        h1,p,.table {
+            @include pad(1);
+            @include susy-breakpoint(800px, 32) {
+                @include pad(2);
+            }
+            @include susy-breakpoint(1200px, 32) {
+                @include pad(4,4);
+            }
+
+        }
+        @each $category in mission, support, people, structure, research, directions, nuts-and-bolts {
+        &##{$category} {
+            @include background(
+                url('../images/#{$category}.jpg') 0 0 no-repeat fixed
+            );
+            @include background-size(cover);
+        }
+        }
+        }
     }
-  }
 }
 
+#introduction {
+    @include clearfix;
+    @include pad(1);
+    padding-top: rhythm(1);
+    padding-bottom: rhythm(1);
+
+    @include susy-breakpoint(800px, 32) {
+
+        @include pad(2);
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+
+        h1 {
+            @include adjust-font-size-to(30px);
+            @include span(6 of 16);
+            margin-top: rhythm(1, 30px);
+            @include adjust-leading-to(1.25,30px);
+            color: #f60;
+        }
+
+        .content {
+            @include span(last 9 of 16);
+        }
+
+    }
+
+    @include susy-breakpoint(1200px, 32) {
+        @include pad(4,4);
+        padding-top: rhythm(3);
+        padding-bottom: rhythm(3);
+    }
+
+}
 @each $program in $programs {
   body.#{$program} {
     background-image: url('../images/#{$program}.jpg');
     @include background-size(cover);
     background-attachment: fixed;
   }
+
+  a.#{$program} {
+      @include background(
+        linear-gradient(top, rgba(black,.5), rgba(black, .5)),
+        url('../images/#{$program}.jpg')
+        );
+
+    @include background-size(cover);
+  }
 }
 
 #image-credits {
   figure {
-    @include span-columns(4, 8);
     height: 250px;
-    &:nth-child(2n) {
-      @include span-columns(4 omega, 8);
+    text-align:center;
+    @include gallery(6 of 12 isolate);
+    @include susy-breakpoint(600px, 12) {
+        @include gallery(4 of 12 isolate);
+    }
+
+    @include susy-breakpoint(800px, 12) {
+        @include gallery(3 of 12 isolate);
     }
 
     img {
@@ -468,13 +538,31 @@ div[role="main"] {
 /* Footer */
 footer[role="contentinfo"] {
   clear:both;
-  padding: gutter(8) gutter(8) rhythm(4);
-  background-color: #fff;
-  border-bottom: 10px solid rgba(0,0,0,0.1);
+  background-color: #333;
+  background-color: rgba(black,.75);
+    padding-top: rhythm(1);
+    padding-bottom: rhythm(1);
+
+    @include pad(1,1);
+    @include susy-breakpoint(800px, 32) {
+        @include pad(2,2);
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+    }
+
+    @include susy-breakpoint(1200px, 32) {
+        @include pad(4,4);
+    }
+
 
   h2 {
     margin-top:0;
   }
+
+  > :last-child {
+      margin-bottom:0;
+  }
+  
 }
 
 #back-to-top {
@@ -547,9 +635,6 @@ footer[role="contentinfo"] {
 }
 
 #filters {
-    float:left;
-    width: 40%;
-    margin:0;
     list-style:none;
  /*  font-size: 16px; */
     padding-right: 10px;
