@@ -228,9 +228,9 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  background-color: #333;
-  background-color: rgba(black, .5);
-
+  background-color: #222;
+  background-color: rgba(#222, .9);
+  margin: 1px;
   a, :link, :visited {
       color:white;
   }
@@ -256,12 +256,18 @@ header[role="banner"] {
 
   #program-nav {
       display:block;
-    @include adjust-font-size-to(18px);
-    @include adjust-leading-to(1, 18px);
+    @include adjust-font-size-to(20px);
+    @include adjust-leading-to(1, 20px);
     @include clearfix;
-
+    border: 1px solid white;
+    border-width: 0 1px 0 0;
     a, :link {
-        display:block;
+        border: 1px solid white;
+        border-width: 1px 0 0 1px;
+        display: inline-block; /* non-flexbox browsers */
+        @include display-flex(inline-flex);
+        @include align-items(top);
+        @include justify-content(flex-end);
         height: 150px;
         @include gallery(6 of 12 isolate);
         @include susy-breakpoint(600px, 12) {
@@ -425,14 +431,16 @@ div[role="main"] {
     section {
 
         &.category {
+            padding-top: rhythm(6);
+
         h1,p {
             color: #fff;
             color: rgba(255,255,255,0.8);
             margin:0;
-            background: rgba(0,0,0,0.5);
         }
         h1 {
             padding-top: rhythm(4, 40px);
+            padding-bottom: rhythm(1, 40px);
         }
         p {
             padding-bottom: rhythm(4);
@@ -466,7 +474,8 @@ div[role="main"] {
         @each $category in mission, support, people, structure, research, directions, nuts-and-bolts {
         &##{$category} {
             @include background(
-                url('../images/#{$category}.jpg') 0 0 no-repeat fixed
+                linear-gradient(top, rgba($accent-color, .75), rgba($accent-color, .75)),
+                url('../images/#{$category}-grayscale.jpg') 0 0 no-repeat fixed
             );
             @include background-size(cover);
         }
@@ -521,7 +530,7 @@ div[role="main"] {
       &:visited {
           text-decoration:none;
       @include background(
-        linear-gradient(top, rgba(#378,.5), rgba(#378, .5)),
+        linear-gradient(top, rgba($accent-color,.75), rgba($accent-color, .75)),
         url('../images/#{$program}-small-grayscale.jpg')
         );
 
