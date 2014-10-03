@@ -85,7 +85,6 @@ nav {
 /* Links */
 a {
 
-    text-decoration: none;
     @include transition(background 0.3s linear, color 0.3s linear);
 
     &:link {
@@ -97,12 +96,10 @@ a {
     }
 
     &:hover {
-        border-bottom: 1px dotted $link-color-alternate;
         color:$link-color-alternate;
     }
 
     &:active {
-        border-bottom: 1px solid $link-color-alternate;
         color:$link-color-alternate;
     }
 }
@@ -234,7 +231,7 @@ header[role="banner"] {
   background-color: #333;
   background-color: rgba(black, .5);
 
-  a, :link {
+  a, :link, :visited {
       color:white;
   }
 
@@ -298,14 +295,19 @@ div[role="main"] {
       > header {
         color: #fff;
         display:block;
-        background:rgba(black,.5);
+        background:rgba(black,.75);
         margin-bottom: rhythm(4);
 
         a {
-          color: #ddd;
-          text-decoration:underline;
-          border:none;
+            &:link, &:visited {
+                color: #ddd;
+            }
+
+            &:hover, &:focus, &:active {
+                color: #fff;
+            }
         }
+
       }
 
         header, section .content {
@@ -313,7 +315,7 @@ div[role="main"] {
             padding-bottom: rhythm(1);
 
             @include pad(1 of 30);
-            
+
             @include susy-breakpoint(800px, 32) {
                 @include pad(2 of 28);
             }
@@ -327,21 +329,31 @@ div[role="main"] {
         margin-bottom: rhythm(4);
         header {
             background-color: #333;
-            background-color: rgba(black, .5);
+            background-color: rgba(black, .75);
             color: white;
             p {
                 margin-bottom:0;
             }
-  
-        }            
+
+            a {
+                &:link, &:visited {
+                    color: #ddd;
+                }
+
+                &:hover, &:focus, &:active {
+                    color: #fff;
+                }
+            }
+
+        }
         .content {
             @include clearfix;
             background-color: #fff;
-            background-color: rgba(255,255,255,0.95);            
+            background-color: rgba(255,255,255,0.95);
             > :first-child {
                 margin-top:0;
             }
-            
+
         }
 
         figure {
@@ -368,7 +380,7 @@ div[role="main"] {
                 figcaption {
                     clear:both;
                 }
-                
+
             }
             }
         }
@@ -380,7 +392,7 @@ div[role="main"] {
         > :last-child {
             margin-bottom:0;
         }
-        
+
       }
     }
   }
@@ -425,7 +437,7 @@ div[role="main"] {
         p {
             padding-bottom: rhythm(4);
         }
-        
+
         table {
             display:block;
             margin:0;
@@ -504,12 +516,28 @@ div[role="main"] {
   }
 
   a.#{$program} {
+
+      &:link,
+      &:visited {
+          text-decoration:none;
       @include background(
-        linear-gradient(top, rgba(black,.5), rgba(black, .5)),
-        url('../images/#{$program}.jpg')
+        linear-gradient(top, rgba(#378,.5), rgba(#378, .5)),
+        url('../images/#{$program}-small-grayscale.jpg')
         );
 
-    @include background-size(cover);
+      @include background-size(cover);
+        }
+      &:hover,
+      &:focus,
+      &:active {
+      @include background(
+        linear-gradient(top, rgba(black,.5), rgba(black, .5)),
+        url('../images/#{$program}-small.jpg')
+        );
+      @include background-size(cover);
+
+      }
+
   }
 }
 
@@ -562,7 +590,7 @@ footer[role="contentinfo"] {
   > :last-child {
       margin-bottom:0;
   }
-  
+
 }
 
 #back-to-top {
