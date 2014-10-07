@@ -12,7 +12,6 @@ body {
     /*@include susy-grid-background;*/
     background-color: white;
     color: #555;
-    @include pad(1,1);
     @include susy-breakpoint(800px, 32) {
         @include pad(2,2);
     }
@@ -132,15 +131,16 @@ a {
 
 /* Headings */
 h1 {
-  @include adjust-font-size-to(40px);
-  @include adjust-leading-to(0.875, 40px);
+  @include adjust-font-size-to(36px);
+  @include adjust-leading-to(1.25, 36px);
   font-weight:normal;
 }
 
 h2 {
-  @include adjust-font-size-to(24px);
-  @include adjust-leading-to(1, 24px);
-  @include leader(1, 24px);
+  @include adjust-font-size-to(32px);
+  @include adjust-leading-to(1, 32px);
+  @include leader(1, 32px);
+  @include trailer(1, 32px);
   color: #f60;
 
   & + * {
@@ -229,28 +229,51 @@ img {
 header[role="banner"] {
   @include clearfix;
   background-color: #222;
-  background-color: rgba(#222, .9);
-  margin: 1px;
+  background-color: rgba(#222, .95);
+  margin: 0 0 1px;
+  padding: rhythm(.5) 0;
+
   a, :link, :visited {
       color:white;
+      text-decoration:none;
   }
 
-  h1 {
-    @include adjust-font-size-to(24px);
-    @include adjust-leading-to(1, 24px);
 
-    .home & {
-      @include adjust-font-size-to(30px);
-      @include adjust-leading-to(1, 30px);
-      margin:0;
-      @include trailer(0.5);
-      display:block;
-    }
+  h1,ul {
+    @include adjust-font-size-to(16px);
+    @include adjust-leading-to(1, 16px);
   }
 
-  a {
-    border:none !important;
+  nav {
+      @include clearfix;
+      h1, ul, li {
+          display:inline-block;
+          margin:0;
+      }
+
+      h1 {
+          @include span(4 of 12);
+      }
+
+      ul {
+          @include span(last 8 of 12);
+          text-align:right;
+
+          li:first-child:after {
+              content: " / ";
+              color: #999;
+              color: rgba(white, .5);
+              margin: 0 .5em;
+          }
+      }
+
+      a {
+          @include adjust-leading-to(1,18px);
+      }
+
   }
+
+  @include pad(1,1);
 
 }
 
@@ -334,22 +357,13 @@ div[role="main"] {
         z-index:1000;
         margin-bottom: rhythm(4);
         header {
-            background-color: #333;
-            background-color: rgba(black, .75);
-            color: white;
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.95);
+
             p {
                 margin-bottom:0;
             }
 
-            a {
-                &:link, &:visited {
-                    color: #ddd;
-                }
-
-                &:hover, &:focus, &:active {
-                    color: #fff;
-                }
-            }
 
         }
         .content {
@@ -434,8 +448,6 @@ div[role="main"] {
             padding-top: rhythm(6);
 
         h1,p {
-            color: #fff;
-            color: rgba(255,255,255,0.8);
             margin:0;
         }
         h1 {
