@@ -4,7 +4,6 @@ title: Home
 bodyclass: home
 ---
 
-{% include program-nav.html %}
 
 <section id="introduction">
 <h1 class="intro">equipping students for forward-looking scholarship &amp; meaningful humanities careers</span></h1>
@@ -16,53 +15,17 @@ bodyclass: home
 
 </section>
 
+<section id="programs">
+    <h1>Programs in the Praxis Network</h1>
+    {% include program-nav.html %}
+</section>
 {% include category-nav.html %}
-<section id="mission" class="category">
-    <div>
-    <h1>Mission</h1>
-        {% include mission.html %}
-    </div>
+
+{% assign categories = "mission,structure,research,people,support,directions,nuts-and-bolts" | split: "," %}
+
+{% for category in categories %}
+<section id="{{ category }}" class="category">
+    {% include {{ category }}.html %}
 </section>
 
-<section id="structure" class="category">
-    <div>
-        <h1>Structure</h1>
-        {% include structure.html %}
-    </div>
-</section>
-
-<section id="research" class="category">
-    <div>
-        <h1>Research</h1>
-        {% include research.html %}
-    </div>
-</section>
-
-<section id="people" class="category">
-    <div>
-    <h1>People</h1>
-        {% include people.html %}
-    </div>
-</section>
-
-<section id="support" class="category">
-    <div>
-    <h1>Support</h1>
-        {% include support.html %}
-    </div>
-</section>
-
-<section id="directions" class="category">
-    <div>
-        <h1>Directions</h1>
-        {% include directions.html %}
-    </div>
-</section>
-
-<section id="nuts-and-bolts" class="category">
-    <div>
-        <h1>Nuts & Bolts</h1>
-        {% include nuts-and-bolts.html %}
-    </div>
-</section>
-
+{% endfor %}

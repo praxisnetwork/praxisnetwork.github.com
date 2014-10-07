@@ -19,7 +19,7 @@ $susy: (
   gutters: 1/4,
   math: fluid,
   output: float,
-  gutter-position: inside,
+  gutter-position: outside,
   debug: (
     image: show,
     color: rgba(blue, 0.5),
@@ -38,7 +38,7 @@ $default-color-light: rgba($default-color, 0.75);
 $default-color-lighter: rgba($default-color, 0.5);
 $default-color-lightest: rgba($default-color, 0.25);
 
-$accent-color: #378;
+$accent-color: #39c;
 
 $link-color: #f60;
 $link-color-light: lighten($link-color, 10%);
