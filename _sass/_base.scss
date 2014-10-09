@@ -1,6 +1,5 @@
 // Imports
 @import "compass";
-@import "compass/reset";
 @import "susy";
 @import "breakpoint";
 @import "mixins";
@@ -16,10 +15,6 @@ $base-line-height: 30px;
 // Susy Variables
 $susy: (
   columns: 32,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: outside,
   debug: (
     image: show,
     color: rgba(blue, 0.5),

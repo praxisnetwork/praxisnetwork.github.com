@@ -15,7 +15,7 @@ html {
     );
     @include background-size(
         100% rhythm(.5)
-        );
+    );
     background-position: 0 0, 10% 0, -7% 0, 0 0, -13% 0, 0 0, 0 0, 0 0;
     background-repeat:no-repeat;
     padding-top: rhythm(.5);
@@ -599,18 +599,16 @@ div[role="main"] {
 
         @include susy-breakpoint(600px, 12) {
             @include gallery(3 of 12);
-        margin-bottom: gutter();
-
+            margin-bottom: gutter();
             height: 120px;
         }
         @include susy-breakpoint(800px, 12) {
-        margin-bottom: gutter();
-
+            margin-bottom: gutter();
             height: 150px;
         }
-        @include susy-breakpoint(1200px, 12) {
-        margin-bottom: gutter();
 
+        @include susy-breakpoint(1200px, 12) {
+            margin-bottom: gutter();
             height: 200px;
         }
 
