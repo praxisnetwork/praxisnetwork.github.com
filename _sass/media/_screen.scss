@@ -239,30 +239,27 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  @include pad(1,1);
   padding-top: rhythm(.5);
   padding-bottom: rhythm(.5);
   background-color: white;
   background-color: rgba(white, .95);
 
-  h1,ul {
-    @include adjust-font-size-to(16px);
-    @include adjust-leading-to(1, 16px);
-  }
-
   nav {
-      @include clearfix;
       h1, ul, li {
           display:inline-block;
           margin:0;
       }
 
       h1 {
-          @include span(12 of 30);
+          @include adjust-font-size-to(50px);
+          @include adjust-leading-to(1,50px);
+          @include span(15 of 30);
       }
 
       ul {
-          @include span(last 18 of 30);
+          @include adjust-font-size-to(16px);
+          @include adjust-leading-to(1,16px);
+          @include span(last 15 of 30);
           text-align:right;
 
           li:first-child:after {
@@ -274,6 +271,16 @@ header[role="banner"] {
       }
 
   }
+
+    @include pad(1);
+    @include susy-breakpoint(800px, 32) {
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+        @include pad(2);
+    }
+    @include susy-breakpoint(1200px, 32) {
+        @include pad(4,4);
+    }
 
 }
 
@@ -492,14 +499,14 @@ div[role="main"] {
 
         h1 {
             @include adjust-font-size-to(30px);
-            @include span(6 of 16);
+            @include span(last 10 of 28);
             margin-top: rhythm(1, 30px);
             @include adjust-leading-to(1.25,30px);
-            color: #f60;
+            color: lighten($accent-color, 10%);
         }
 
         .content {
-            @include span(last 9 of 16);
+            @include span(17 of 28);
         }
 
     }
@@ -508,14 +515,23 @@ div[role="main"] {
         @include pad(4,4);
         padding-top: rhythm(3);
         padding-bottom: rhythm(3);
+
+        h1 {
+            @include span(last 9 of 24);
+        }
+
+        .content {
+            @include span(14 of 24);
+        }
+
     }
 
 }
 
 #programs {
-    @include clearfix;
-    @include pad(1);
-    padding-top: rhythm(1);
+
+    @include pad(1,1);
+    padding-top: gutters(32);
     padding-bottom: rhythm(1);
     background-color: darken($accent-color, 10%);
     color:white;
@@ -529,8 +545,12 @@ div[role="main"] {
 
   #program-nav {
       display:block;
-    @include adjust-font-size-to(20px);
-    @include clearfix;
+      @include clearfix;
+      &:after {
+          clear:both;
+      }
+      
+      @include adjust-font-size-to(20px);
     a, :link {
         display: inline-block; /* non-flexbox browsers */
         @include display-flex(inline-flex);
@@ -539,24 +559,27 @@ div[role="main"] {
         text-align:center;
         height: 150px;
         @include box-shadow(1px 1px 2px rgba(black,.25));
-        @include gallery(6 of 12 isolate);
+        @include gallery(6 of 12);
+        margin-bottom: gutter();
+        
         @include susy-breakpoint(600px, 12) {
-            @include gallery(3 of 12 isolate);
+            @include gallery(3 of 12);
+        margin-bottom: gutter();
+            
             height: 120px;
         }
         @include susy-breakpoint(800px, 12) {
+        margin-bottom: gutter();
+            
             height: 150px;
         }
         @include susy-breakpoint(1200px, 12) {
+        margin-bottom: gutter();
+            
             height: 200px;
         }
-        @include susy-breakpoint(1400px, 8) {
-            height: 150px;
-            @include gallery(1 of 8 isolate);
-        }
-        margin-bottom: 40px;
 
-        color: white;
+        color:white;
     }
   }
 

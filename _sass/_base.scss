@@ -42,7 +42,7 @@ $accent-color: #39c;
 
 $link-color: #f60;
 $link-color-light: lighten($link-color, 10%);
-$link-color-alternate: darken($link-color, 10%);
+$link-color-alternate: lighten($link-color, 10%);
 $link-color-alternate-light: darken($link-color-alternate, 10%);
 
 $border-shadow: rgba(0, 0, 0, .15);
