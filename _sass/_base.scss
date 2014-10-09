@@ -8,6 +8,8 @@
 // Program short names.
 $programs: (uva-praxis-program, chi-initiative, hope-mellon-scholars, cuny-gcdi, ucldh, duke-phd-lab, brock-iasc, ucdh);
 
+$categories: (mission, structure, research, people, support, directions, nuts-and-bolts);
+
 // Compass Variables
 $base-font-size: 18px;
 $base-line-height: 30px;
@@ -33,9 +35,9 @@ $default-color-light: rgba($default-color, 0.75);
 $default-color-lighter: rgba($default-color, 0.5);
 $default-color-lightest: rgba($default-color, 0.25);
 
-$accent-color: #39c;
+$accent-color: hsla(200, 80, 50, 1);
 
-$link-color: #f60;
+$link-color: adjust-hue($accent-color, 180);
 $link-color-light: lighten($link-color, 10%);
 $link-color-alternate: lighten($link-color, 10%);
 $link-color-alternate-light: darken($link-color-alternate, 10%);

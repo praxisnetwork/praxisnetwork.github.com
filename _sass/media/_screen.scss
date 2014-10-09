@@ -150,21 +150,21 @@ h2 {
   @include leader(1, 32px);
   @include trailer(1, 32px);
   color: $accent-color;
-
+  font-weight:normal;
   & + * {
     margin-top:0;
   }
 }
 
 h3 {
-  font-weight:bold;
+  font-weight:normal;
   color: $default-color-light;
   @include adjust-font-size-to(20px);
   @include adjust-leading-to(1, 20px);
 }
 
 h4 {
-  font-weight:bold;
+  font-weight:normal;
 }
 
 h5 {
@@ -352,7 +352,6 @@ div[role="main"] {
         header {
 
             p {
-                margin-bottom:0;
                 color: #999;
                 @include adjust-font-size-to(16px);
                 @include adjust-leading-to(1,16px);
@@ -479,19 +478,32 @@ div[role="main"] {
             }
 
             header {
-                @include background-image(
-                    linear-gradient(105deg, transparent 0, transparent 85%, rgba(darken($accent-color, 10%), .25) 85%),
-                    linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),
-                    linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .075) 90%),
-                    linear-gradient(30deg, transparent 0, transparent 9%, rgba(white, .125) 9%),
-                    linear-gradient(15deg, transparent 0, transparent 67%, rgba(darken($accent-color, 10%), .5) 85%),
-                    linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .05) 55%),
-                    linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .075) 80%),
-                    linear-gradient(left, rgba($accent-color, .85), rgba($accent-color, .85))
-                );
-
                 padding: rhythm(4) 0;
             }
+            @each $category in $categories {
+                $i: index($categories, $category);
+                $overlay-color: adjust-hue($accent-color, ($i * 30));
+
+                &##{$category} {
+                    header{
+                        @include background-image(
+                            linear-gradient(105deg, transparent 0, transparent 85%, rgba($overlay-color, .25) 85%),
+                            linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),
+                            linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .075) 90%),
+                            linear-gradient(30deg, transparent 0, transparent 9%, rgba(white, .125) 9%),
+                            linear-gradient(15deg, transparent 0, transparent 67%, rgba($overlay-color, .25) 85%),
+                            linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .05) 55%),
+                            linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .075) 80%),
+                            linear-gradient(left, rgba($overlay-color, .85), rgba($overlay-color, .85))
+                        );
+                    }
+
+                    a, :link {
+                        color: $overlay-color;
+                    }
+                }
+            }
+
             .content {
                 background-color: #fff;
                 padding-top: rhythm(2);
@@ -564,17 +576,17 @@ div[role="main"] {
 }
 
 #programs {
-
     @include pad(1,1);
-    padding-top: gutters(32);
-    padding-bottom: rhythm(1);
-    background-color: darken($accent-color, 10%);
-    color:white;
+    padding-top: rhythm(1);
+    padding-bottom: rhythm(2);
+    background-color: #eee;
 
     h1 {
         text-align:center;
         @include adjust-font-size-to(40px);
+        @include padding-leader(1,40px);
         @include trailer(1,40px);
+        color: $accent-color;
     }
 }
 
@@ -584,7 +596,7 @@ div[role="main"] {
       &:after {
           clear:both;
       }
-
+      margin-bottom: rhythm(1, 20px);
       @include adjust-font-size-to(20px);
     a, :link {
         display: inline-block; /* non-flexbox browsers */
@@ -629,7 +641,7 @@ div[role="main"] {
       &:visited {
           text-decoration:none;
       @include background(
-        linear-gradient(top, rgba($accent-color,.75), rgba($accent-color, .75)),
+        linear-gradient(top, rgba($link-color,.75), rgba($link-color, .75)),
         url('../images/#{$program}-small-grayscale.jpg')
         );
 
@@ -639,8 +651,8 @@ div[role="main"] {
       &:focus,
       &:active {
       @include background(
-        linear-gradient(top, rgba(black,.5), rgba(black, .5)),
-        url('../images/#{$program}-small.jpg')
+        linear-gradient(top, rgba($link-color,.5), rgba($link-color, .5)),
+        url('../images/#{$program}-small-grayscale.jpg')
         );
       @include background-size(cover);
 
