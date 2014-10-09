@@ -4,11 +4,11 @@
 html {
     background-color: $accent-color;
     @include background-image(
-        linear-gradient(105deg, transparent 0, transparent 85%, rgba($accent-color, .125) 85%),    
-        linear-gradient(70deg, transparent 0, transparent 10%, rgba(white, .25) 10%),    
+        linear-gradient(105deg, transparent 0, transparent 85%, rgba($accent-color, .125) 85%),
+        linear-gradient(70deg, transparent 0, transparent 10%, rgba(white, .25) 10%),
         linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .5) 90%),
         linear-gradient(30deg, transparent 0, transparent 9%, rgba($accent-color, .175) 9%),
-        linear-gradient(15deg, transparent 0, transparent 67%, rgba(white, .5) 85%),    
+        linear-gradient(15deg, transparent 0, transparent 67%, rgba(white, .5) 85%),
         linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .35) 55%),
         linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .125) 80%),
         linear-gradient(left, $accent-color, $accent-color)
@@ -149,7 +149,7 @@ h2 {
   @include adjust-leading-to(1, 32px);
   @include leader(1, 32px);
   @include trailer(1, 32px);
-  color: #f60;
+  color: $accent-color;
 
   & + * {
     margin-top:0;
@@ -206,7 +206,7 @@ table {
   th {
       font-weight:normal;
   }
-  
+
   th,
   td {
     padding: rhythm(.5);
@@ -239,37 +239,51 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  padding-top: rhythm(.5);
-  padding-bottom: rhythm(.5);
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
   background-color: white;
   background-color: rgba(white, .95);
 
   nav {
       h1, ul, li {
-          display:inline-block;
           margin:0;
       }
 
+      h1,ul {
+          text-align:center;
+      }
+
       h1 {
-          @include adjust-font-size-to(50px);
-          @include adjust-leading-to(1,50px);
-          @include span(15 of 30);
+          @include adjust-font-size-to(46px);
+          @include adjust-leading-to(1,46px);
       }
 
       ul {
           @include adjust-font-size-to(16px);
           @include adjust-leading-to(1,16px);
-          @include span(last 15 of 30);
-          text-align:right;
 
-          li:first-child:after {
-              content: " / ";
-              color: #bbb;
-              color: rgba(black, .25);
-              margin: 0 .25em;
+          li {
+              display:inline-block;
+              &:first-child:after {
+                  content: " / ";
+                  color: #bbb;
+                  color: rgba(black, .25);
+                  margin: 0 .25em;
+              }
           }
       }
 
+      @include susy-breakpoint(800px, 32) {
+        h1 {
+          @include span(18 of 30);
+          text-align:left;
+        }
+
+        ul {
+          @include span(last 12 of 30);
+          text-align:right;
+        }
+    }
   }
 
     @include pad(1);
@@ -311,7 +325,7 @@ div[role="main"] {
 
       }
 
-        header, section .content {
+    > header, section {
             @include pad(1,1);
 
             @include susy-breakpoint(800px, 32) {
@@ -325,36 +339,57 @@ div[role="main"] {
       section {
         z-index:1000;
         margin-bottom: rhythm(12);
+        padding-top: rhythm(1);
+        padding-bottom: rhythm(1);
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.95);
+        @include clearfix;
+
         &:last-child {
             margin-bottom:0;
         }
 
         header {
-            background-color: #fff;
-            background-color: rgba(255,255,255,0.95);
 
             p {
                 margin-bottom:0;
-            }
-
-            @include susy-breakpoint(800px, 32) {
-
-            }
-
-            @include susy-breakpoint(1200px, 32) {
-
+                color: #999;
+                @include adjust-font-size-to(16px);
+                @include adjust-leading-to(1,16px);
             }
 
         }
         .content {
             @include clearfix;
-            background-color: #fff;
-            background-color: rgba(255,255,255,0.95);
             > :first-child {
                 margin-top:0;
             }
 
         }
+
+        @include susy-breakpoint(800px, 32) {
+            padding-top: rhythm(2);
+            margin-bottom: rhythm(18);
+
+            header {
+                @include span(10 of 28);
+            }
+            .content {
+                @include span(last 17 of 28);
+            }
+        }
+
+        @include susy-breakpoint(1200px, 32) {
+            padding-top: rhythm(4);
+            margin-bottom: rhythm(22);
+            header {
+                @include span(8 of 24);
+            }
+            .content {
+                @include span(last 15 of 24);
+            }
+        }
+
 
         figure {
             margin-top:0;
@@ -442,14 +477,14 @@ div[role="main"] {
                 margin:0;
                 border-width: 0;
             }
-            
+
             header {
                 @include background-image(
-                    linear-gradient(105deg, transparent 0, transparent 85%, rgba(darken($accent-color, 10%), .25) 85%),    
-                    linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),    
+                    linear-gradient(105deg, transparent 0, transparent 85%, rgba(darken($accent-color, 10%), .25) 85%),
+                    linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),
                     linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .075) 90%),
                     linear-gradient(30deg, transparent 0, transparent 9%, rgba(white, .125) 9%),
-                    linear-gradient(15deg, transparent 0, transparent 67%, rgba(darken($accent-color, 10%), .5) 85%),    
+                    linear-gradient(15deg, transparent 0, transparent 67%, rgba(darken($accent-color, 10%), .5) 85%),
                     linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .05) 55%),
                     linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .075) 80%),
                     linear-gradient(left, rgba($accent-color, .85), rgba($accent-color, .85))
@@ -549,7 +584,7 @@ div[role="main"] {
       &:after {
           clear:both;
       }
-      
+
       @include adjust-font-size-to(20px);
     a, :link {
         display: inline-block; /* non-flexbox browsers */
@@ -561,21 +596,21 @@ div[role="main"] {
         @include box-shadow(1px 1px 2px rgba(black,.25));
         @include gallery(6 of 12);
         margin-bottom: gutter();
-        
+
         @include susy-breakpoint(600px, 12) {
             @include gallery(3 of 12);
         margin-bottom: gutter();
-            
+
             height: 120px;
         }
         @include susy-breakpoint(800px, 12) {
         margin-bottom: gutter();
-            
+
             height: 150px;
         }
         @include susy-breakpoint(1200px, 12) {
         margin-bottom: gutter();
-            
+
             height: 200px;
         }
 
@@ -648,7 +683,7 @@ footer[role="contentinfo"] {
     a, :link {
         color:white;
     }
-    
+
     @include pad(1,1);
     @include susy-breakpoint(800px, 32) {
         @include pad(2,2);
