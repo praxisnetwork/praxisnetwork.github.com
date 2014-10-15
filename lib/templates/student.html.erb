@@ -9,19 +9,29 @@ other: <%= @other_research_areas%>
 program: <%= @program_name%>
 website: <%= @personal_website%>
 twitter:  <%= @twitter_handle%>
-image: <%= @image%>
+image: <%= @thumbnail%>
+disciplinary_home: <%= @disciplinary_home %>
 ---
 <header class='post-header student-info'>
-     <h1><%= @student_name%></h1>
-     <h2>Program: <%= @program_name%></h2>
-     <h3>Research Focus:{{page.research | remove:'Other'}} {%if page.other%} {{page.other}} {%endif%} </h3>
+  <h1>{{ page.title }}</h1>
+     <ul>
+       {% if page.program %} <li>Program: {{ page.program_name }}</li> {% endif %}
+       {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home }}</li>{% endif %}
+
+       {% if page.research %} <li>Research Focus:{{page.research | remove:'Other'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
+ </ul>
   </header>
 
   <% unless @personal_website.nil? || @twitter_handle.nil? %>
   <div class='student-contact'>
-    <% image_tag = @thumbnail %>
-    <h3>{% if page.website%}URL: <a href=" {{page.website}}">{{page.website}}</a> {%endif%}</h3>
-    <h3>{% if page.twitter%}Twitter: <a href="http://www.twitter.com/{{page.twitter}}"> @{{page.twitter}}</a> {%endif%}</h3>
+    {% if page.image %}
+    <img src="{{page.image}}" alt="">
+    {% endif %}
+
+    <ul>
+    {% if page.website%}<li>URL: <a href=" {{page.website}}">{{page.website}}</a></li>
+    {% endif %}
+    {% if page.twitter%}<li>Twitter: <a href="http://www.twitter.com/{{page.twitter}}"> @{{page.twitter}}</a></li>{% endif %}
   </div>
 
 <% end %>
