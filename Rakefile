@@ -184,6 +184,7 @@ def write_institutionsmarkdown (row)
   @population_supported        = @worksheet[row, 8]
   @other_population_supported  = @worksheet[row, 10]
   @thumbnail_image             = @worksheet[row, 11]
+  @program_twitter             = @worksheet[row, 12]
   @base_name                   = make_name(@program_name, @timestamp)
 
   contents = render("lib/templates/institution.html.erb")
