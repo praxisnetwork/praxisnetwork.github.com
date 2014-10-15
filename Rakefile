@@ -109,7 +109,9 @@ def write_studentmarkdown (row)
   @twitter_handle              = @worksheet[row, 6]
   @research_area               = @worksheet[row, 8]
   @other_research_areas        = @worksheet[row, 9]
-  @base_name                    = make_name(@student_name, @timestamp)
+  @thumbnail                   = @worksheet[row, 10]
+  @disciplinary_home           = @worksheet[row, 11]
+  @base_name                   = make_name(@student_name, @timestamp)
   @image= get_image(@program_name)
 
   contents =render("lib/templates/student.html.erb")
@@ -181,6 +183,7 @@ def write_institutionsmarkdown (row)
   @mission_statement           = @worksheet[row, 7]
   @population_supported        = @worksheet[row, 8]
   @other_population_supported  = @worksheet[row, 10]
+  @thumbnail_image             = @worksheet[row, 11]
   @base_name                   = make_name(@program_name, @timestamp)
 
   contents = render("lib/templates/institution.html.erb")

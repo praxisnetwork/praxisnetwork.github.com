@@ -19,7 +19,8 @@ mission:  <%#= @mission_statement%>
  </div>
 
  <% unless @program_url.nil? %>
- <div class='institution-contact'>
+   <div class='institution-contact'>
+    <% image_tag = @thumbnail_image %>
     <h3>Program URL: <a href="<%= @program_url%>"><%= @program_url%></a></h3>
   </div>
 <% end %>
