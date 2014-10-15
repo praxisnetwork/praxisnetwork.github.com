@@ -1,37 +1,16 @@
 ---
-layout: institution
+layout: record
 status: publish
-permalink: posts/students/<%= @base_name%>
-title: <%= @student_name%>
-categories: [student, <%= @program_name%>, <%= @research_area%>]
-research: <%= @research_area%>
-other: <%= @other_research_areas%>
-program: <%= @program_name%>
-website: <%= @personal_website%>
-twitter:  <%= @twitter_handle%>
-image: <%= @thumbnail%>
-disciplinary_home: <%= @disciplinary_home %>
+permalink: posts/students/<%= @base_name %>
+title: <%= @student_name %>
+categories: [student, <%= @program_name %>, <%= @research_area %>]
+research: [<%= @research_area %>]
+other: <%= @other_research_areas %>
+other_discipline: <%= @other_discipline %>
+program: <%= @program_name %>
+website: <%= @personal_website %>
+twitter:  <%= @twitter_handle %>
+image: <%= @thumbnail %>
+disciplinary_home: [<%= @disciplinary_home %>]
 ---
-<header class='post-header student-info'>
-  <h1>{{ page.title }}</h1>
-     <ul>
-       {% if page.program %} <li>Program: {{ page.program_name }}</li> {% endif %}
-       {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home }}</li>{% endif %}
 
-       {% if page.research %} <li>Research Focus:{{page.research | remove:'Other'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
- </ul>
-  </header>
-
-  <% unless @personal_website.nil? || @twitter_handle.nil? %>
-  <div class='student-contact'>
-    {% if page.image %}
-    <img src="{{page.image}}" alt="">
-    {% endif %}
-
-    <ul>
-    {% if page.website%}<li>URL: <a href=" {{page.website}}">{{page.website}}</a></li>
-    {% endif %}
-    {% if page.twitter%}<li>Twitter: <a href="http://www.twitter.com/{{page.twitter}}"> @{{page.twitter}}</a></li>{% endif %}
-  </div>
-
-<% end %>

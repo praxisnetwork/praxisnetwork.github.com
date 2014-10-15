@@ -1,5 +1,5 @@
 ---
-layout: institution
+layout: record
 status: publish
 permalink: posts/institutions/<%= @base_name%>
 title: <%= @program_name%>
@@ -7,20 +7,7 @@ categories: <%= @population_supported.gsub(/,/, ' ')%>
 population: <%= @population_supported%>
 other: <%= @other_population_supported%>
 website: <%= @program_url%>
-mission:  <%#= @mission_statement%>
+twitter: <%= @program_twitter =>
 ---
 
- <div class='institution-info'>
-   <header class='post-header'>
-     <h1><%= @program_name%></h1>
-     <h2>Mission Statement:</h2> <p><%= @mission_statement%></p>
-     <h3>Program Type: {{page.population | remove:'Other Program'}}{%if page.other%} {{page.other}} {%endif%} </h3>
-   </header>
- </div>
-
- <% unless @program_url.nil? %>
-   <div class='institution-contact'>
-    <% image_tag = @thumbnail_image %>
-    <h3>Program URL: <a href="<%= @program_url%>"><%= @program_url%></a></h3>
-  </div>
-<% end %>
+<%= @mission_statement %>
