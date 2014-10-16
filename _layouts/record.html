@@ -6,11 +6,11 @@ layout: default
 <header>
   <h1>{{ page.title }}</h1>
     <ul>
-    {% if page.program %}<li>Program: {{ page.program_name }}</li>{% endif %}
+    {% if page.program %}<li>Program: {{ page.program }}</li>{% endif %}
     {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home }}</li>{% endif %}
-    {% if page.research %}<li>Research Focus:{{page.research | remove:'Other'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
+    {% if page.research %}<li>Research Focus: {{page.research | remove:'Other'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
 
-    {% if page.population %}<li>Program Type:{{page.population | remove:'Other Program'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
+    {% if page.population %}<li>Program Type: {{page.population | remove:'Other Program'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
     {% if page.website%}<li>URL: <a href=" {{ page.website }}">{{page.website}}</a></li>
     {% endif %}
     {% if page.twitter %}<li>Twitter: <a href="http://www.twitter.com/{{page.twitter}}"> @{{ page.twitter }}</a></li>{% endif %}
