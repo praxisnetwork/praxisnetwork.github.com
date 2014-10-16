@@ -102,13 +102,13 @@ end
 def write_studentmarkdown (row)
   @timestamp                   = @worksheet[row, 1]
   @student_name                = @worksheet[row, 2]
-  #student_email               = @worksheet[row, 3]
+  @student_email               = @worksheet[row, 3]
   @program_name                = @worksheet[row, 7]
   @year_entering_fellowship    = @worksheet[row, 4]
   @personal_website            = @worksheet[row, 5]
   @twitter_handle              = @worksheet[row, 6]
   @research_area               = @worksheet[row, 8]
-  @other_research_areas        = @worksheet[row, 9]
+  #@other_research_areas        = @worksheet[row, 9]
   @thumbnail                   = @worksheet[row, 10]
   @disciplinary_home           = @worksheet[row, 11]
   @base_name                   = make_name(@student_name, @timestamp)
