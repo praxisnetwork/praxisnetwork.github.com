@@ -111,6 +111,7 @@ def write_studentmarkdown (row)
   #@other_research_areas        = @worksheet[row, 9]
   @thumbnail                   = @worksheet[row, 10]
   @disciplinary_home           = @worksheet[row, 11]
+  @other_discipline            = @worksheet[row, 12]
   @base_name                   = make_name(@student_name, @timestamp)
   @image= get_image(@program_name)
 

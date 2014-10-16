@@ -5,7 +5,6 @@ permalink: posts/students/2014-10-16-jeremy_boggs
 title: Jeremy Boggs
 categories: [student, Praxis Program (UVA), Textual Analysis, Software Development, Visualizations]
 research: [Textual Analysis, Software Development, Visualizations]
-
 other_discipline: 
 program: Praxis Program (UVA)
 website: http://clioweb.org

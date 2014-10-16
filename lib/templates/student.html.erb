@@ -3,14 +3,19 @@ layout: record
 status: publish
 permalink: posts/students/<%= @base_name %>
 title: <%= @student_name %>
-categories: [student, <%= @program_name %>, <%= @research_area %>]
+categories: [student, <%= @program_name %><% unless @research_area.size == 0 %>, <%= @research_area %><% end %>]
+<% unless @research_area.size == 0 %>
 research: [<%= @research_area %>]
-<%# other: <%= @other_research_areas %>
+<% end %>
+<% unless @other_discipline.size == 0 %>
 other_discipline: <%= @other_discipline %>
+<% end %>
 program: <%= @program_name %>
 website: <%= @personal_website %>
 twitter:  <%= @twitter_handle %>
 image: <%= @thumbnail %>
+<% unless @disciplinary_home.size == 0 %>
 disciplinary_home: [<%= @disciplinary_home %>]
+<% end %>
 ---
 
