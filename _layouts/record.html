@@ -4,7 +4,11 @@ layout: default
 
 <article class="{{ category | first }}">
 <header>
-  <h1>{{ page.title }}</h1>
+  <h1 id='record-header'>{{ page.title }}</h1>
+</header>
+
+<div class='content'>
+<div class="record-info">
     <ul>
     {% if page.program %}<li>Program: {{ page.program }}</li>{% endif %}
     {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home | join: ", " }}</li>{% endif %}
@@ -15,13 +19,11 @@ layout: default
     {% if page.twitter %}<li>Twitter: <a href="http://www.twitter.com/{{ page.twitter | remove: '@' }}"> @{{ page.twitter | remove: '@' }}</a></li>{% endif %}
 
     </ul>
-  </header>
+  </div>
 
     {% if page.image %}
     <div class="profile-picture"><img src="{{ page.image }}" alt=""></div>
     {% endif %}
 
-    <div class='content'>
-    {{ content }}
-    </div>
+</div>
 </article>
