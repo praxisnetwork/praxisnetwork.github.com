@@ -780,9 +780,6 @@ footer[role="contentinfo"] {
 }
 
 #records {
-    float:right;
-    width: 60%;
-
     a,
     a:link {
         color:white;
@@ -806,6 +803,30 @@ footer[role="contentinfo"] {
     ul {
         margin-top:0;
     }
+}
+
+@include susy-breakpoint(800px, 32) {
+
+    #filters {
+        @include span(last 10 of 28);
+    }
+
+    #records {
+        @include span(17 of 28);
+    }
+
+}
+
+@include susy-breakpoint(1200px, 32) {
+
+    #filters {
+        @include span(last 9 of 24);
+    }
+
+    #records {
+        @include span(14 of 24);
+    }
+
 }
 
 .is-checked {
