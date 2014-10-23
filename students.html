@@ -5,7 +5,6 @@ permalink: "/students/"
 bodyclass: students
 ---
 
-<main id="students" class="records">
   <ul id="filters">
     <li><a class='is-checked'>All Students</a></li>
     <li><a id="program-dropdown" class="dropdown">Programs</a>
@@ -31,7 +30,7 @@ bodyclass: students
     </li>
   </ul>
 
-  <div id="list">
+  <div id="records">
     {% for post in site.categories['student'] %}
         <div class="{{ post.categories | join: ' ' }}" data-name="{{ post.title | downcase | replace: ' ', '_' }}">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
@@ -39,5 +38,3 @@ bodyclass: students
         </div>
       {% endfor %}
   </div>
-
-</main>
