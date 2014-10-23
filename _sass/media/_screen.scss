@@ -302,8 +302,6 @@ header[role="banner"] {
 
 div[role="main"] {
 
-  article {
-
     @include pad(1);
 
     @include susy-breakpoint(800px, 32) {
@@ -316,7 +314,9 @@ div[role="main"] {
         @include pad(4,4);
     }
 
-    body.program & {
+    .home &,
+    .program & {
+
         padding:0;
         @include susy-breakpoint(800px, 32) {
             padding:0;
@@ -324,6 +324,12 @@ div[role="main"] {
         @include susy-breakpoint(1200px, 32) {
             padding:0;
         }
+
+    }
+
+  article {
+
+    body.program & {
 
       > header {
         color: #fff;
@@ -758,20 +764,6 @@ footer[role="contentinfo"] {
 
 
 /* Directory styles */
-
-.record {
-  @include pad(1);
-  @include pad(1);
-    @include susy-breakpoint(800px, 32) {
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(2);
-        @include pad(2);
-    }
-    @include susy-breakpoint(1200px, 32) {
-        @include pad(4,4);
-    }
-
-}
 
 .record-info {
   float:left;
