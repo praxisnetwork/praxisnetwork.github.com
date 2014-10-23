@@ -1,8 +1,5 @@
 $('document').ready(function(){
 
-    // hides filter dropdowns on students page
-    $('#filters ul').hide();
-
     // select container for isotope instance
     var things = $('#records');
 
@@ -18,18 +15,13 @@ $('document').ready(function(){
         }
     );
 
+    var $select = $('#filters select');
     // script for button click filters
-    $('#filters').on('click', 'a', function(){
+     $select.change(function() {
 
-        $(this).nextAll().toggle();
-
-        var filterValue = $( this ).attr('data-filter');
+        var filterValue = $( this ).val();
         things.isotope({ filter: filterValue });
-        //removes .is-checked from other buttons
-        $('#filters').find('a').removeClass('is-checked');
-        //adds .is-checked to current filter button
-        $(this).addClass('is-checked');
-    });
+      });
 
     // Replaces image src with a random image, based on numerical file
     // name.
