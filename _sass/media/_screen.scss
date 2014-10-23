@@ -507,7 +507,7 @@ div[role="main"] {
             }
             @each $category in $categories {
                 $i: index($categories, $category);
-                $overlay-color: adjust-hue($accent-color, ($i * 30));
+                $overlay-color: desaturate(adjust-hue($accent-color, ($i * 30)), 20%);
 
                 &##{$category} {
                     header{
