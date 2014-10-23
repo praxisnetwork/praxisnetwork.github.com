@@ -4,7 +4,7 @@ $('document').ready(function(){
     $('#filters ul').hide();
 
     // select container for isotope instance
-    var things = $('#list');
+    var things = $('#records');
 
     // initialize isotope instance with options
     things.isotope(
