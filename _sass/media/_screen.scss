@@ -740,6 +740,20 @@ footer[role="contentinfo"] {
 
 /* Directory styles */
 
+.record, .records {
+  @include pad(1);
+  @include pad(1);
+    @include susy-breakpoint(800px, 32) {
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+        @include pad(2);
+    }
+    @include susy-breakpoint(1200px, 32) {
+        @include pad(4,4);
+    }
+
+}
+
 .record-info {
   float:left;
   width: 70%;
@@ -753,20 +767,6 @@ footer[role="contentinfo"] {
 .page-content {
   min-height: 60%;
 }
-
-/*.institution-info {
-  float:left;
-  width: 70%;
-}
-
-.institution-contact {
-  float:right;
-  width: 30%;
-}
-
-.institution-content{
-  min-height: 60%;
-}*/
 
 #list {
     float:right;
