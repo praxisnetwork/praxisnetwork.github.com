@@ -803,6 +803,10 @@ footer[role="contentinfo"] {
     ul {
         margin-top:0;
     }
+
+    a {
+        cursor:pointer;
+    }
 }
 
 @include susy-breakpoint(800px, 32) {
