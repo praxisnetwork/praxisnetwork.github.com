@@ -4,32 +4,31 @@ title: Students and Alumni
 permalink: "/students/"
 bodyclass: students
 ---
-<div id="filters">
-  <label for="programs">Programs</label>
-  <select id="programs" name="programs">
-      <option value="*">All Students</option>
-      <option value=".praxis">Praxis Program (UVa)</option>
-      <option value=".cultural">Cultural Heritage Informatics (CHI) Initiative (MSU)</option>
-      <option value=".mellon">Mellon Scholars program (Hope College)</option>
-      <option value=".fellows">Digital Fellows Program (CUNY)</option>
-     <option value=".ma-msc">MA/MSc program (UCL)</option>
-     <option value=".phd">PhD Lab in Digital Knowledge (Duke)</option>
-          <option value=".interactive">Interactive Arts and Science Program (Brock University)</option>
-          <option value=".honors-level">Honors-level digital humanities program (University of Canterbury)</option>
-  </select>
 
-
-   <label for="research-areas">Research Areas</label>
-   <select id=research-areas" name="research-areas">
-      <option value="*">All Research Areas</option>
-      <option value=".textual">Textual Analysis</option>
-      <option value=".software">Software Development</option>
-      <option value=".visualizations">Visualizations</option>
-      <option value=".spatial">Spatial Humanities</option>
-      <option value=".other">Other</option>
-   </select>
-</div>
-
+  <ul id="filters">
+    <li><a class='is-checked'>All Students</a></li>
+    <li><a id="program-dropdown" class="dropdown">Programs</a>
+        <ul>
+          <li><a data-filter=".praxis">Praxis Program (UVa)</a></li>
+          <li><a data-filter=".cultural">Cultural Heritage Informatics (CHI) Initiative (MSU)</a></li>
+          <li><a data-filter=".mellon">Mellon Scholars program (Hope College)</a></li>
+          <li><a data-filter=".fellows">Digital Fellows Program (CUNY)</a></li>
+          <li><a data-filter=".ma-msc">MA/MSc program (UCL)</a></li>
+          <li><a data-filter=".phd">PhD Lab in Digital Knowledge (Duke)</a></li>
+          <li><a data-filter=".interactive">Interactive Arts and Science Program (Brock University)</a></li>
+          <li><a data-filter=".honors-level">Honors-level digital humanities program (University of Canterbury)</a></li>
+        </ul>
+    </li>
+    <li><a id="research-area-dropdown" class="dropdown">Research Areas</a>
+        <ul>
+            <li><a data-filter=".textual">Textual Analysis</a></li>
+            <li><a data-filter=".software">Software Development</a></li>
+            <li><a data-filter=".visualizations">Visualizations</a></li>
+            <li><a data-filter=".spatial">Spatial Humanities</a></li>
+            <li><a data-filter=".other">Other</a></li>
+        </ul>
+    </li>
+  </ul>
 
   <div id="records">
     {% for post in site.categories['student'] %}
