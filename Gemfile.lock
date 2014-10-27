@@ -85,7 +85,7 @@ GEM
     jekyll-watch (1.1.1)
       listen (~> 2.7)
     jwt (1.0.0)
-    kramdown (1.4.2)
+    kramdown (1.5.0)
     launchy (2.4.2)
       addressable (~> 2.3)
     liquid (2.6.1)
