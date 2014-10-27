@@ -6,7 +6,6 @@ layout: default
 <header>
   <h1>{{ page.title }}</h1>
 </header>
-
 <div class='content'>
 <div class="record-info">
     <ul>
@@ -14,16 +13,18 @@ layout: default
     {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home | join: ", " }}</li>{% endif %}
     {% if page.research %}<li>Research Focus: {{ page.research | join: ", " }}</li>{% endif %}
     {% if page.population %}<li>Program Type: {{page.population | remove:'Other Program'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
-    {% if page.website%}<li>URL: <a href=" {{ page.website }}">{{page.website}}</a></li>
+    {% if page.website%}<li>URL: <a href= "{{ page.website }}">{{page.website}}</a></li>
     {% endif %}
-    {% if page.twitter %}<li>Twitter: <a href="http://www.twitter.com/{{ page.twitter | remove: '@' }}"> @{{ page.twitter | remove: '@' }}</a></li>{% endif %}
+    {% if page.twitter %}<li>Twitter: <a href= "http://www.twitter.com/{{ page.twitter | remove: '@' }}"> @{{ page.twitter | remove: '@' }}</a></li>{% endif %}
+  </ul>
+  
+  {% if content %}<h2>Mission:</h2> {{ content }}{% endif %}
 
-    </ul>
-  </div>
+   </div>
 
     {% if page.image %}
     <div class="profile-picture"><img src="{{ page.image }}" alt=""></div>
-    {% endif %}
+  {% endif %}
 
 </div>
 </article>
