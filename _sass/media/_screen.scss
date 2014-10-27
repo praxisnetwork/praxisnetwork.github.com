@@ -812,12 +812,11 @@ footer[role="contentinfo"] {
 @include susy-breakpoint(800px, 32) {
 
     #filters {
-        @include span(last 10 of 28);
+        @include span(last 9 of 28);
     }
 
     #records {
         @include span(17 of 28);
-        background-color: purple;
     }
 
 }
