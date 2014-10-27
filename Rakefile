@@ -26,7 +26,7 @@ def over_rows(key)
   for row in 2..worksheet.num_rows
     yield(row)
   end
-end
+end  
 
 task :test do
   generate_institutions
@@ -113,74 +113,90 @@ def write_studentmarkdown (row)
   @disciplinary_home           = @worksheet[row, 11]
   @other_discipline            = @worksheet[row, 12]
   @base_name                   = make_name(@student_name, @timestamp)
-  @image= get_image(@program_name)
+  @shortname= get_shortname(@program_name)
 
   contents =render("lib/templates/student.html.erb")
 
   write_file(@base_name, contents)
 end
 
+ #Maps program name on form to a program short name
+def get_shortname(program)
+   shortnames = {
+  "Praxis Program (UVA)" => "praxis-program",
+  "Cultural Heritage Informatics (CHI) Initiative (MSU)" => "chi-initiative",
+  "Mellon Scholars program (Hope College)" => "hope-mellon-scholars",
+  "Digital Fellows Program (CUNY)" => "cuny-gcdi",
+  "MA-MSc program (UCL)" => "ucldh",
+  "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab",
+  "Interactive Arts and Science Program (Brock University)" => "brock-iasc",
+  "Interactive Arts and Science Program (University of Canterbury)" => "ucdh",
+  }
+  shortnames[program]
+end
+
+
 
 # Maps program name to a program image
-def get_image(program)
-  images = {
-    "Praxis Program (UVA)" => "uva-praxis-program.jpg",
-    "Cultural Heritage Informatics (CHI) Initiative (MSU)" => "chi-initiative.jpg",
-    "Mellon Scholars program (Hope College)" => "hope-mellon-scholars.jpg",
-    "Digital Fellows Program (CUNY)" => "cuny-gcdi.jpg",
-    "MA-MSc program (UCL)" => "ucldh.jpg",
-    "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab.jpg",
-    "Interactive Arts and Science Program (Brock University)" => "brock-iasc.jpg",
-    "Honors-level digital humanities program (University of Canterbury)" => "ucdh.jpg",
-  }
-  images[program]
-end
+#def get_image(program)
+ #  images = {
+ #  "Praxis Program (UVA)" => "uva-praxis-program.jpg",
+ #  "Cultural Heritage Informatics (CHI) Initiative (MSU)" => "chi-initiative.jpg",
+ #  "Mellon Scholars program (Hope College)" => "hope-mellon-scholars.jpg",
+ #   "Digital Fellows Program (CUNY)" => "cuny-gcdi.jpg",
+ #   "MA-MSc program (UCL)" => "ucldh.jpg",
+ #   "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab.jpg",
+ #   "Interactive Arts and Science Program (Brock University)" => "brock-iasc.jpg",
+ #   "Honors-level digital humanities program (University of Canterbury)" => "ucdh.jpg",
+ # }
+  #images[program]
+#end
 
 
-module PraxisProgram
-  class Page
-    def slugify
+#module PraxisProgram
+ # class Page
+ #   def slugify
 
-    end
+  #  end
 
-    def render
+  #  def render
 
-    end
+  #  end
 
-    def save
+  #  def save
 
-    end
+  #  end
 
-    def notice
+  #  def notice
 
-    end
+  #  end
 
-    def image
+  #  def image
 
-    end
-  end
+  #  end
+ # end
 
-  class Student < Page
-    def initialize
+#  class Student < Page
+ #   def initialize
 
-    end
-  end
+ #   end
+ # end
 
-  class Institution < Page
-    def initialize
+  #class Institution < Page
+   # def initialize
 
-    end
-  end
-end
+    #end
+  #end
+#end
 #This method writes a markdown file (for institutions) for any row passed to it
 def write_institutionsmarkdown (row)
   @timestamp                   = @worksheet[row, 1]
-  #contact_name               = @worksheet[row, 2]
-  #email                      = @worksheet[row, 3]
+  @contact_name               = @worksheet[row, 2]
+  @email                      = @worksheet[row, 3]
   @program_name                = @worksheet[row, 4]
   @program_url                 = @worksheet[row, 9]
   @institution_name            = @worksheet[row, 5]
-  #program_address            = @worksheet[row, 6]
+  @program_address            = @worksheet[row, 6]
   @mission_statement           = @worksheet[row, 7]
   @population_supported        = @worksheet[row, 8]
   @other_population_supported  = @worksheet[row, 10]
@@ -203,4 +219,4 @@ end
 desc "Clean up _posts directory"
 task :clean do
   `rm -f _posts/*.md`
-end
+  end

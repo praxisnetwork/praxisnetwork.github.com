@@ -817,6 +817,7 @@ footer[role="contentinfo"] {
 
     #records {
         @include span(17 of 28);
+        background-color: purple;
     }
 
 }

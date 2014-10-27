@@ -11,6 +11,7 @@ title: The Praxis Network
 
 ## Praxis Program
 praxis-program:
+  name: "Praxis Program (UVa)"  
   mission: 'To equip the next generation of knowledge workers for faculty positions and alternative academic careers at a moment when new questions can be asked and new systems built; additionally, to serve as the key node and nurturer of a broader "Praxis Network."'
   people: 'An annual cohort of six students from a variety of disciplines, directed by <a href="http://nowviskie.org">Bethany Nowviskie</a>. Fellows receive mentoring and instruction from Scholars’ Lab faculty and staff.'
   research: 'The first cohort prototyped <a href="http://prism.scholarslab.org/">Prism</a>, a digital humanities tool for collective reading, or "crowdsourcing interpretation." The second cohort is rethinking, revising, and extending the Prism framework.'
@@ -21,6 +22,7 @@ praxis-program:
 
 ## CHI Initiative
 chi-initiative:
+  name: "Cultural Heritage Informatics (CHI) Initiative (MSU)"
   mission: 'To equip graduate and undergraduate students with the technical, creative, and practical skills necessary to apply information, communication, and computing technologies to cultural heritage materials and questions, influence the current state of cultural heritage informatics, and become thought leaders for the future of the field.'
   people: 'Directed by <a href="http://anthropology.msu.edu/blog/people/ethan-watrall/">Ethan Watrall</a>, the CHI Graduate Fellowship Program comprises a small cohort of graduate students from disciplines related to cultural heritage, while the CHI Fieldschool is open to graduate and undergraduate students, as well as existing professionals.'
   research: 'Fellows create innovative and vibrant digital projects that contribute new knowledge to their field of study, while also advancing the broader developments in cultural heritage informatics. Details about individual projects can be found on the <a href="http://chi.anthropology.msu.edu/blog/">CHI Initiative blog</a>.'
@@ -31,6 +33,7 @@ chi-initiative:
 
 ## Hope Mellon
 hope-mellon-scholars:
+  name: "Mellon Scholars program (Hope College)"
   mission: 'To encourage scholarly collaboration among arts and humanities students and faculty; to strengthen engagement with digital humanities on the institutional level; to foster collaboration with other institutions; and to provide experiences and opportunities that will equip students for a variety of career options.'
   people: 'A highly selective undergraduate program directed by <a href="http://www.hope.edu/academic/english/about/facultyprofiles/pannapacker.htm">William Pannapacker</a>, the Mellon Scholars Program also involves faculty representatives from all departments in the Arts and Humanities division of the college.'
   research: 'Participating students have completed <a href="http://celebration.hope.edu/abstracts/listing_titles.asp?CELDEP_RID=1226">capstone projects</a> on a wide range of topics and presented them to the community, both within the institution and at broader conference settings. Future cohorts will have many options for the kinds of projects and research they undertake.'
@@ -41,6 +44,7 @@ hope-mellon-scholars:
 
 ## CUNY GCDI
 cuny-gcdi:
+  name: "Digital Fellows Program (CUNY)"
   mission: 'To develop and highlight a broad range of digital projects and resources at the CUNY Graduate Center, and to foster institutional change at the Graduate Center by heightening the public presence of its digital initiatives.'
   people: 'Directed by <a href="http://commons.gc.cuny.edu/members/admin/">Matthew K. Gold</a> under the purview of the Provost’s Office, the first cohort of digital fellows are doctoral students from a variety of backgrounds.'
   research: 'While the program is still in the early stages of development, the first cohort of fellows are leading a <a href="http://digitalfellows.commons.gc.cuny.edu/projects/">variety of innovative projects</a> to advance the digital initiatives of the Graduate Center.'
@@ -51,6 +55,7 @@ cuny-gcdi:
 
 ## UCL DH
 ucldh:
+  name: "MA-MSc program (UCL)"
   mission: 'To equip students to work on problems that are interesting and challenging scholarship—both from a humanities perspective and from a computer science/engineering perspective.'
   people: 'This master’s-level program is highly interdisciplinary; students enter with a range of backgrounds and participate in modules across the faculties. The program is directed by <a href="http://www.ucl.ac.uk/dis/people/simonmahony">Simon Mahony</a>, with input from all of the UCLDH team.'
   research: 'Because the modules are brief and varied, students build a body of knowledge rather than focusing on a single project. As a whole, the Centre produces <a href="http://www.ucl.ac.uk/dh/projects">an impressive range of intellectually rich work products.</a>'
@@ -61,6 +66,7 @@ ucldh:
 
 ## Duke PhD Lab
 duke-phd-lab:
+  name: "PhD Lab in Digital Knowledge (Duke)"
   mission: 'To provide an arena in which PhD students in the humanities and interpretive social sciences can learn about new digital scholarship, engage with its challenges, and see its promise for their own research and professional lives within or outside the university.'
   people: 'Directors <a href="http://english.duke.edu/people?Gurl=/aas/English&Uil=cathy.davidson&subpage=profile">Cathy N. Davidson</a> and <a href="http://romancestudies.duke.edu/people?subpage=profile&Gurl=%2Faas%2FRomance&Uil=dfbell">David F. Bell</a> bring together a diverse cohort of approximately twelve PhD and MFA students from disciplines across the arts, humanities, and interpretive social sciences.'
   research: 'The capstone project for participating scholars is an e-portfolio that integrates approaches the students have learned about online self-presentation and more specific thematic topics, such as peer-to-peer teaching. Scholars also develop collaborative projects.'
@@ -71,6 +77,7 @@ duke-phd-lab:
 
 ## Brock IASC
 brock-iasc:
+  name: "Interactive Arts and Science Program (Brock University)"
   mission: 'To combine theory and practice so that students can study how and why new media are emerging, as well as create their own integrative digital media projects.'
   people: 'Under the direction of <a href="http://www.brocku.ca/humanities/departments-and-centres/history/faculty-staff/kevin-kee">Kevin Kee</a>, the program includes a number of core faculty members and cohorts of approximately 25 undergraduates pursuing majors or minors.'
   research: 'Alongside their studies, many students participate in public projects, such as the <a href="http://ihistorytours.com/">Niagara 1812</a> historical project, which allows them to apply the skills they learn to projects with immediate public relevance.'
@@ -80,7 +87,8 @@ brock-iasc:
   nuts-and-bolts: 'Though it can be challenging, creating relationships across the university and the broader community opens up valuable opportunities and amplifies the strengths of each partner.'
 
 ## University of Canterbury Digital Humanities
-ucdh: 
+ucdh:
+  name: "Honors-level digital humanities program (University of Canterbury)"
   mission: 'To create Digital Humanities pathways from undergraduate and graduate study to work-based internships, offering students the opportunity to apply their skills in real-world contexts while also increasing digital capabilities across the humanities and social sciences.'
   people: 'Students from a wide range of fields in the humanities and social sciences participate in various aspects of the program, from jointly-taught courses, to internships, to honors degrees and thesis work. The program is directed by James Smithies.'
   research: 'The core of the program is a year-long Honours degree blending the student’s home discipline with digital humanities methods. UCDH is also developing non-degree programs for undergraduate, master’s, and doctoral students wishing to incorporate digital approaches into their work.'
