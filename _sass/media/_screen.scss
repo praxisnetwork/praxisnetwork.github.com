@@ -456,31 +456,6 @@ div[role="main"] {
     }
   }
 
-  #category-nav {
-    background-color: $link-color-alternate;
-    a {
-      background-color: rgba(0,0,0,0.1);
-      color: #fff;
-      color: rgba(255,255,255,0.8);
-      border:none;
-      display:block;
-      float:left;
-
-      &:link,
-      &:visited {
-        background-color: rgba(0,0,0,0.1);
-      }
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: #fff;
-        background-color: rgba(0,0,0,0.2);
-      }
-    }
-  }
-
-
     section {
 
         &.category {
@@ -556,6 +531,35 @@ div[role="main"] {
         }
     }
 }
+
+  #category-nav {
+    background-color: rgba(black,.75);
+    display:block;
+    width: 100%;
+    text-align:center;
+    padding: rhythm(.25) 0;
+    border-bottom: 1px solid white;
+    a {
+        color:white;
+        text-decoration:none;
+
+        &:link
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+            color: white;
+        }
+
+      + a:before {
+          content: " | ";
+          color: #999;
+          color: rgba(white, .5);
+          padding: 0 .25em;
+          text-decoration:none;
+      }
+    }
+  }
 
 #introduction {
     @include clearfix;
