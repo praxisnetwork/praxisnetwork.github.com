@@ -11,7 +11,7 @@ research: [Textual Analysis, Visualizations]
 program: Praxis Program (UVA)
 website: 
 twitter:  jorisgjata
-image: http://scholarslab.org/people/joris-gjata/
+image: http://scholarslab.org/wp-content/uploads/2014/08/joris.jpg
 
 ---
 

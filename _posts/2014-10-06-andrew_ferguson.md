@@ -11,6 +11,7 @@ research: [Textual Analysis, Game Studies]
 program: Praxis Program (UVA)
 website: 
 twitter:  epiktistes
-image: http://scholarslab.org/people/andrew-ferguson/
+image: http://scholarslab.org/wp-content/uploads/2014/08/andrew.jpg
+
 ---
 

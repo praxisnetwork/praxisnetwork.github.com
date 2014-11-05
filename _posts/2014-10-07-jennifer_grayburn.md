@@ -9,7 +9,7 @@ categories: [student, Praxis Program (UVA)]
 program: Praxis Program (UVA)
 website: 
 twitter:  
-image: http://scholarslab.org/people/jennifer-grayburn/
+image: http://scholarslab.org/wp-content/uploads/2014/08/jen1.jpg
 
 ---
 
