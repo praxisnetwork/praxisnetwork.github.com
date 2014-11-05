@@ -11,7 +11,7 @@ research: [Textual Analysis, Software Development, Spatial Humanities]
 program: Praxis Program (UVA)
 website: 
 twitter:  chawlaswati
-image: 
+image: http://scholarslab.org/people/swati-chawla/
 
 ---
 
