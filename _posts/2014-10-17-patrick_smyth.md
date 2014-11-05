@@ -15,5 +15,6 @@ image: http://www.digitalscholar.net/wp-content/uploads/2014/10/pic_thumbnail.jp
 
 disciplinary_home: [English]
 
+shortname: cuny-gcdi
 ---
 

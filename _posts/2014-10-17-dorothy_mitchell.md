@@ -15,5 +15,6 @@ image: https://s.gravatar.com/avatar/619238ba61c968716a0a3080ac19fd21?s=80
 
 disciplinary_home: [Asian Languages and Literatures, English]
 
+shortname: hope-mellon-scholars
 ---
 

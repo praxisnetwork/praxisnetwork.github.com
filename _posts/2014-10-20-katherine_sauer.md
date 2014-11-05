@@ -13,5 +13,6 @@ image:
 
 disciplinary_home: [English, French Language and Literature, Gender Studies]
 
+shortname: hope-mellon-scholars
 ---
 

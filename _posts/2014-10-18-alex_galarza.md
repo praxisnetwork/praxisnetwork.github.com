@@ -15,5 +15,6 @@ image: http://en.gravatar.com/userimage/22121174/2ca9c1902f3b8b903bcc90557ce6e10
 
 disciplinary_home: [Anthropology, Cultural Studies, History]
 
+shortname: chi-initiative
 ---
 

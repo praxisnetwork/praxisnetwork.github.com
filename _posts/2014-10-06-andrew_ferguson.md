@@ -13,5 +13,6 @@ website:
 twitter:  epiktistes
 image: http://scholarslab.org/wp-content/uploads/2014/08/andrew.jpg
 
+shortname: praxis-program
 ---
 

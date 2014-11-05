@@ -15,5 +15,6 @@ image:
 
 disciplinary_home: [Philosophy, statistics]
 
+shortname: praxis-program
 ---
 

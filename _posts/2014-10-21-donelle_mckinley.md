@@ -15,5 +15,6 @@ image:
 
 disciplinary_home: [Information Management]
 
+shortname: ucdh
 ---
 

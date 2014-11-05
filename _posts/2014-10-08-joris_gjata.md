@@ -13,5 +13,6 @@ website:
 twitter:  jorisgjata
 image: http://scholarslab.org/wp-content/uploads/2014/08/joris.jpg
 
+shortname: praxis-program
 ---
 

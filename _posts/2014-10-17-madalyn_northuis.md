@@ -15,5 +15,6 @@ image: https://media.licdn.com/media/p/8/005/081/3c6/23ea7c6.jpg
 
 disciplinary_home: [Classics, History, Gender and Women's Studies]
 
+shortname: hope-mellon-scholars
 ---
 

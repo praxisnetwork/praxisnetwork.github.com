@@ -13,5 +13,6 @@ website:
 twitter:  chawlaswati
 image: http://scholarslab.org/wp-content/uploads/2014/08/swati.jpg
 
+shortname: praxis-program
 ---
 

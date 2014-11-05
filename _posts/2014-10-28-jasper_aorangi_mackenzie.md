@@ -15,5 +15,6 @@ image:
 
 disciplinary_home: [Mathematics and Statistics/Digital Humanities]
 
+shortname: ucdh
 ---
 

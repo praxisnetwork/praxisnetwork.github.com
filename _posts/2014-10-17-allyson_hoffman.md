@@ -13,5 +13,6 @@ image:
 
 disciplinary_home: [Classics, English]
 
+shortname: hope-mellon-scholars
 ---
 

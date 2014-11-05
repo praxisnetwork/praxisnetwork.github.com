@@ -15,5 +15,6 @@ image:
 
 disciplinary_home: [Peace Studies]
 
+shortname: hope-mellon-scholars
 ---
 
