@@ -18,7 +18,10 @@ layout: default
     {% if page.twitter %}<li>Twitter: <a href= "http://www.twitter.com/{{ page.twitter | remove: '@' }}"> @{{ page.twitter | remove: '@' }}</a></li>{% endif %}
   </ul>
   
-  {% if content %}<h2>Mission:</h2> {{ content }}{% endif %}
+  {% if page.categories contains 'institution' %}
+  <h2>Mission:</h2>
+  {% endif %}
+  {{content}}
 
    </div>
 
