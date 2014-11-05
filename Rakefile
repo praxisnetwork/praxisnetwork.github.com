@@ -130,7 +130,7 @@ def get_shortname(program)
   "MA-MSc program (UCL)" => "ucldh",
   "PhD Lab in Digital Knowledge (Duke)" => "duke-phd-lab",
   "Interactive Arts and Science Program (Brock University)" => "brock-iasc",
-  "Interactive Arts and Science Program (University of Canterbury)" => "ucdh",
+  "Honors-level digital humanities program (University of Canterbury)" => "ucdh",
   }
   shortnames[program]
 end
