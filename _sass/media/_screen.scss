@@ -566,27 +566,29 @@ div[role="main"] {
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(2);
 
         h1 {
             @include adjust-font-size-to(30px);
             @include span(last 10 of 28);
-            margin-top: rhythm(1, 30px);
+            margin-top: 0;
             @include adjust-leading-to(1.25,30px);
             color: lighten($accent-color, 10%);
         }
 
         .content {
             @include span(17 of 28);
+            :first-child {
+	            margin-top: 0;
+            }
+
         }
 
     }
 
     @include susy-breakpoint(1200px, 32) {
         @include pad(4,4);
-        padding-top: rhythm(3);
-        padding-bottom: rhythm(3);
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
 
         h1 {
             @include span(last 9 of 24);
@@ -594,6 +596,7 @@ div[role="main"] {
 
         .content {
             @include span(14 of 24);
+
         }
 
     }
