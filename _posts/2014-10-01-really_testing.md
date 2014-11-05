@@ -3,7 +3,7 @@ layout: record
 status: publish
 permalink: posts/institutions/2014-10-01-really_testing
 title: Really Testing
-categories: Post-Graduate
+categories: [institution, Post-Graduate]
 population: Post-Graduate
 other: 
 website: www.google.com

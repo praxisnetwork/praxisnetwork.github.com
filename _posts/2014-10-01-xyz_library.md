@@ -3,7 +3,7 @@ layout: record
 status: publish
 permalink: posts/institutions/2014-10-01-xyz_library
 title: XYZ Library
-categories: Post-Graduate  Other Program
+categories: [institution, Post-Graduate  Other Program]
 population: Post-Graduate, Other Program
 other: Library
 website: www.google.com

@@ -3,7 +3,7 @@ layout: record
 status: publish
 permalink: posts/institutions/2014-10-01-longish_fancy_name
 title: Longish Fancy Name
-categories: Graduate Program  Post-Graduate
+categories: [institution, Graduate Program  Post-Graduate]
 population: Graduate Program, Post-Graduate
 other: 
 website: www.google.com
