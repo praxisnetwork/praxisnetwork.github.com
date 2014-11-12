@@ -23,14 +23,14 @@ $dark-grey: rgba(0,0,0,0.7);
 $light-grey: rgba(0,0,0,0.5);
 $lightest-grey: rgba(0,0,0,0.2);
 
-$default-color: rgb(60,60,60);
+$default-color: rgb(20,80,50);
 $default-color-light: rgba($default-color, 0.75);
 $default-color-lighter: rgba($default-color, 0.5);
 $default-color-lightest: rgba($default-color, 0.25);
 
-$accent-color: hsla(200, 80, 50, 1);
+$accent-color: hsla(181, 64, 35, 0.95);
 
-$link-color: adjust-hue($accent-color, 180);
+$link-color: adjust-hue($accent-color, 210);
 $link-color-light: lighten($link-color, 10%);
 $link-color-alternate: lighten($link-color, 10%);
 $link-color-alternate-light: darken($link-color-alternate, 10%);
