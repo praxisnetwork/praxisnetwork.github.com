@@ -195,7 +195,8 @@
     line-height: 0.9375em;
     margin-top: 0.9375em;
     margin-bottom: 0.9375em;
-    color: rgba(192, 240, 241, 0.95);
+    /*color: lighten($accent-color, 10%);*/
+    color: rgba(32, 144, 146, 0.95);
     font-weight: normal;
   }
   h2 + * {
