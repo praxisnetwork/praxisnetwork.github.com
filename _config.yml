@@ -1,7 +1,7 @@
 # standard jekyll configuration
 
 permalink: /:year/:month/:day/:title/
-pygments:  true
+highlighter: pygments
 #markdown: rdiscount
 exclude: ['readme.md', 'Rakefile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock',"README.md", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json", "lib"]
 
@@ -12,9 +12,9 @@ title: The Praxis Network
 ## Praxis Program
 praxis-program:
   mission: 'To equip the next generation of knowledge workers for faculty positions and alternative academic careers at a moment when new questions can be asked and new systems built; additionally, to serve as the key node and nurturer of a broader "Praxis Network."'
-  people: 'An annual cohort of six students from a variety of disciplines, directed by <a href="http://nowviskie.org">Bethany Nowviskie</a>. Fellows receive mentoring and instruction from Scholars’ Lab faculty and staff.'
-  research: 'The first cohort prototyped <a href="http://prism.scholarslab.org/">Prism</a>, a digital humanities tool for collective reading, or "crowdsourcing interpretation." The second cohort is rethinking, revising, and extending the Prism framework.'
-  support: 'Supported through a two-year pilot period by the Andrew W. Mellon Foundation, the program will be sustained by the University of Virginia Library, which also houses <a href="http://uvasci.org">SCI</a> and the <a href="http://scholarslab.org">Scholars’ Lab</a>.'
+  people: 'An annual cohort of six students from a variety of disciplines, directed by <a href="http://purdom.org/">Purdom Lindblad</a>. Fellows receive mentoring and instruction from Scholars’ Lab faculty and staff.'
+  research: 'The first and second cohort prototyped and expanded <a href="http://prism.scholarslab.org/">Prism</a>, a digital humanities tool for collective reading, or "crowdsourcing interpretation." The third cohort developed <a href="http://ivanhoe.scholarslab.org/">Ivanhoe</a>, a platform for critical, reflective interpretation. The current, fourth, cohort is expanding and revising Ivanhoe.'
+  support: 'Supported through a two-year pilot period by the Andrew W. Mellon Foundation, the program is now sustained by the University of Virginia Library, which also houses <a href="http://uvasci.org">SCI</a> and the <a href="http://scholarslab.org">Scholars’ Lab</a>.'
   directions: 'The curriculum will be adjusted continually, based on participant interest and the potential of various projects to make meaningful interventions in contemporary digital humanities discourse—which is construed as including both DH theory and praxis.'
   structure: 'This one-year funded fellowship features weekly meetings, a single, collaborative project common to all fellows and staff, and iterative, public sharing of outcomes and teaching materials.'
   nuts-and-bolts: 'Keys for success include an investment of significant staff time for high-quality mentorship, adequate space for collaborative work, and flexibility to accommodate the various backgrounds and skill levels of the fellows.'
