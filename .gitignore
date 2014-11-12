@@ -7,4 +7,4 @@ _sass/.sass-cache
 .DS_Store
 images/.DS_Store
 .env
-
+node_modules/
