@@ -674,21 +674,21 @@ div[role="main"] {
       &:link,
       &:visited {
           text-decoration:none;
-      @include background(
-        linear-gradient(top, rgba($link-color,.75), rgba($link-color, .75)),
-        url('../images/#{$program}-small-grayscale.jpg')
-        );
+          @include background(
+             linear-gradient(top, rgba($link-color,.35), rgba($link-color, .75)),
+             url('../images/#{$program}-small-grayscale.jpg')
+            );
 
-      @include background-size(cover);
+          @include background-size(cover);
         }
       &:hover,
       &:focus,
       &:active {
-      @include background(
-        linear-gradient(top, rgba($link-color,.5), rgba($link-color, .5)),
-        url('../images/#{$program}-small-grayscale.jpg')
-        );
-      @include background-size(cover);
+           @include background(
+           linear-gradient(top, rgba($link-color,.5), rgba($link-color, .5)),
+           url('../images/#{$program}-small-grayscale.jpg')
+            );
+            @include background-size(cover);
 
       }
 
