@@ -9,3 +9,4 @@ javascripts_dir = "j"
 output_style  = :expanded
 #output_style  = :compressed
 line_comments = false
+sourcemap = true
