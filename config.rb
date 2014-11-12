@@ -8,3 +8,4 @@ images_dir = "i"
 javascripts_dir = "j"
 output_style  = :compressed
 line_comments = false
+sourcemap = true
