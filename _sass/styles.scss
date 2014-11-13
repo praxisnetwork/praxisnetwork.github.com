@@ -7,7 +7,6 @@
 // screen
 @media only screen {
   @import "media/screen";
-  @import "hacks";
 }
 
 // print
@@ -15,3 +14,11 @@
   @import "media/print";
 }
 
+header[role="banner"] nav h1 {
+  line-height: 1em;
+}
+
+#introduction {
+  padding-top: 0px;
+  padding-bottom: 12px;
+}

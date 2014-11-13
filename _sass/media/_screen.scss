@@ -565,7 +565,7 @@ div[role="main"] {
 
 #introduction {
     @include clearfix;
-    @include pad(1);
+    /*@include pad(1);*/
     padding-top: rhythm(1);
     padding-bottom: rhythm(1);
     

@@ -717,8 +717,7 @@
   }
 
   #introduction {
-    padding-left: 3.14465%;
-    padding-right: 3.14465%;
+    /*@include pad(1);*/
     padding-top: 1.875em;
     padding-bottom: 1.875em;
   }
@@ -1398,10 +1397,6 @@
   .interactive {
     background-color: #824646;
   }
-
-  section#introduction {
-    margin-top: -25px;
-  }
 }
 @media print {
   * {
@@ -1460,6 +1455,14 @@
   h2, h3 {
     page-break-after: avoid;
   }
+}
+header[role="banner"] nav h1 {
+  line-height: 1em;
+}
+
+#introduction {
+  padding-top: 0px;
+  padding-bottom: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
