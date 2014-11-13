@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,YAAY;EACV,UAAU,EAAE,KAAK",
-"sources": ["../_sass/hacks.scss"],
-"names": [],
-"file": "hacks.css"
-}

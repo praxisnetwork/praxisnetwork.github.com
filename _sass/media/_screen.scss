@@ -568,8 +568,7 @@ div[role="main"] {
     @include pad(1);
     padding-top: rhythm(1);
     padding-bottom: rhythm(1);
-    margin-top: -10px;
-
+    
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
