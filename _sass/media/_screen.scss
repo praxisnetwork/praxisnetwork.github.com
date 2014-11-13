@@ -568,6 +568,7 @@ div[role="main"] {
     @include pad(1);
     padding-top: rhythm(1);
     padding-bottom: rhythm(1);
+    margin-top: -10px;
 
     @include susy-breakpoint(800px, 32) {
 
@@ -857,7 +858,7 @@ footer[role="contentinfo"] {
 /* colors for different types of institutions */
 
 .graduate {
-    background-color: #466281;
+    background-color: #844865;
 }
 
 .undergraduate, .honors-level  {
@@ -865,11 +866,11 @@ footer[role="contentinfo"] {
 }
 
 .post-graduate {
-   background-color:  #844865;
+   background-color:   #BF7B33;
  }
 
 .other {
-    background-color: #824646;
+    background-color:  #2A9597;
 }
 
 /* colors for different programs */
