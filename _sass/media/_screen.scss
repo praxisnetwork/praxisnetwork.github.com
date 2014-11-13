@@ -777,16 +777,22 @@ footer[role="contentinfo"] {
 
 .record-info {
   float:left;
+  margin-top: -25px;
+  margin-left: -20px;
   width: 70%;
 }
 
 .profile-picture {
   float:right;
+  margin-left: -100px;
+  margin-top: -63px;
   width: 30%;
+  padding-bottom: 4em;
 }
 
 .page-content {
   min-height: 60%;
+  margin-top: -50px;
 }
 
 #records {
@@ -807,11 +813,12 @@ footer[role="contentinfo"] {
 
 #filters {
     list-style:none;
+    margin-top: -15px;
  /*  font-size: 16px; */
     padding-right: 10px;
 
     ul {
-        margin-top:0;
+        margin-top:-15px;
     }
 
     a {
@@ -850,7 +857,7 @@ footer[role="contentinfo"] {
 /* colors for different types of institutions */
 
 .graduate {
-    background-color: #7D7F44;
+    background-color: #466281;
 }
 
 .undergraduate, .honors-level  {
@@ -858,11 +865,11 @@ footer[role="contentinfo"] {
 }
 
 .post-graduate {
-   background-color: #43607E;
+   background-color:  #844865;
  }
 
 .other {
-    background-color: #B58686;
+    background-color: #824646;
 }
 
 /* colors for different programs */
