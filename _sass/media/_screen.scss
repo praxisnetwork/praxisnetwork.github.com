@@ -142,7 +142,7 @@ h1 {
   @include adjust-font-size-to(36px);
   @include adjust-leading-to(1.25, 36px);
   font-weight:normal;
-  
+
 }
 
 h2 {
@@ -151,7 +151,7 @@ h2 {
   @include leader(1, 32px);
   @include trailer(1, 32px);
   /*color: lighten($accent-color, 10%);*/
-   color: rgba(32, 144, 146, .95); 
+   color: rgba(32, 144, 146, .95);
   font-weight:normal;
   & + * {
     margin-top:0;
@@ -565,10 +565,10 @@ div[role="main"] {
 
 #introduction {
     @include clearfix;
-    /*@include pad(1);*/
+    @include pad(1);
     padding-top: rhythm(1);
     padding-bottom: rhythm(1);
-    
+
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
@@ -579,7 +579,7 @@ div[role="main"] {
             margin-top: 0;
             @include adjust-leading-to(1.25,30px);
             /*color: lighten($accent-color, 50%);*/
-            color: rgba(32, 144, 146, .95); 
+            color: rgba(32, 144, 146, .95);
         }
 
         .content {

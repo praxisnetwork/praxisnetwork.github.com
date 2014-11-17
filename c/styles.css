@@ -717,7 +717,8 @@
   }
 
   #introduction {
-    /*@include pad(1);*/
+    padding-left: 3.14465%;
+    padding-right: 3.14465%;
     padding-top: 1.875em;
     padding-bottom: 1.875em;
   }
