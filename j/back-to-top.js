@@ -19,6 +19,21 @@ function animateButton() {
     }
 }
 
+$(document).ready(function() {
+  $('nav#category-nav a').each(function() {
+    var $this = $(this),
+        value = $this.attr('href'),
+        element = $(value);
+
+    $(this).click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: element.offset().top
+      }, 500);
+    });
+  });
+});
+
 $(window).resize(animateButton);
 $(window).scroll(animateButton);
 $(window).load(animateButton);
