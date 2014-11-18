@@ -1457,13 +1457,5 @@
     page-break-after: avoid;
   }
 }
-header[role="banner"] nav h1 {
-  line-height: 1em;
-}
-
-#introduction {
-  padding-top: 0px;
-  padding-bottom: 12px;
-}
 
 /*# sourceMappingURL=styles.css.map */
