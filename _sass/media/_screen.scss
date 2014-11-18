@@ -241,10 +241,9 @@ img {
 /* Header */
 header[role="banner"] {
   @include clearfix;
-  padding-top: rhythm(1);
-  padding-bottom: rhythm(1);
   background-color: white;
   background-color: rgba(white, .95);
+  padding-top: rhythm(1);
 
   nav {
       h1, ul, li {
@@ -290,12 +289,12 @@ header[role="banner"] {
 
     @include pad(1);
     @include susy-breakpoint(800px, 32) {
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(2);
         @include pad(2);
+        padding-top: rhythm(2);
     }
     @include susy-breakpoint(1200px, 32) {
         @include pad(4,4);
+        padding-top: rhythm(2);
     }
 
 }
@@ -305,10 +304,10 @@ header[role="banner"] {
 div[role="main"] {
 
     @include pad(1);
+    padding-top: rhythm(1);
+    padding-bottom: rhythm(1);
 
     @include susy-breakpoint(800px, 32) {
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(2);
         @include pad(2);
     }
 
@@ -572,6 +571,8 @@ div[role="main"] {
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
+    padding-top: rhythm(1);
+    padding-bottom: rhythm(1);
 
         h1 {
             @include adjust-font-size-to(30px);
@@ -618,9 +619,8 @@ div[role="main"] {
 
     h1 {
         text-align:center;
-        @include adjust-font-size-to(40px);
-        @include padding-leader(1,40px);
-        @include trailer(1,40px);
+        @include adjust-font-size-to(32px);
+        @include trailer(1,32px);
         color: $accent-color;
     }
 }

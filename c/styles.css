@@ -278,10 +278,9 @@
 
   /* Header */
   header[role="banner"] {
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
     background-color: white;
     background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 1.875em;
     padding-left: 3.14465%;
     padding-right: 3.14465%;
   }
@@ -332,16 +331,16 @@
 }
 @media only screen and (min-width: 800px) {
   header[role="banner"] {
-    padding-top: 3.75em;
-    padding-bottom: 3.75em;
     padding-left: 6.28931%;
     padding-right: 6.28931%;
+    padding-top: 3.75em;
   }
 }
 @media only screen and (min-width: 1200px) {
   header[role="banner"] {
     padding-left: 12.57862%;
     padding-right: 12.57862%;
+    padding-top: 3.75em;
   }
 }
 
@@ -350,12 +349,12 @@
   div[role="main"] {
     padding-left: 3.14465%;
     padding-right: 3.14465%;
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
   }
 }
 @media only screen and (min-width: 800px) {
   div[role="main"] {
-    padding-top: 3.75em;
-    padding-bottom: 3.75em;
     padding-left: 6.28931%;
     padding-right: 6.28931%;
   }
@@ -732,6 +731,8 @@
   #introduction {
     padding-left: 6.28931%;
     padding-right: 6.28931%;
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
   }
   #introduction h1 {
     font-size: 1.875em;
@@ -782,10 +783,9 @@
   }
   #programs h1 {
     text-align: center;
-    font-size: 2.5em;
-    line-height: 1.5em;
-    padding-top: 0.75em;
-    margin-bottom: 0.75em;
+    font-size: 2em;
+    line-height: 1.875em;
+    margin-bottom: 0.9375em;
     color: rgba(32, 144, 146, 0.95);
   }
 
