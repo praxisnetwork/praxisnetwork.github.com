@@ -1,0 +1,21 @@
+---
+layout: page
+title: Compare Praxis Network Programs
+permalink: "/compare/"
+bodyclass: compare
+---
+
+<div class="summary">
+<p>Each program in the Praxis Network exists within a particular ecosystem of disciplinary expectations, institutional needs, available resources, leadership styles, and specific challenges. Here you can learn how the programs compare across a number of categories, or select a single program to read an in-depth profile.</p>
+</div>
+
+{% include category-nav.html %}
+
+{% assign categories = "mission,structure,research,people,support,directions,nuts-and-bolts" | split: "," %}
+
+{% for category in categories %}
+<section id="{{ category }}" class="category">
+    {% include {{ category }}.html %}
+</section>
+
+{% endfor %}
