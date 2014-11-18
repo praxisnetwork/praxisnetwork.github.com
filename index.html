@@ -10,22 +10,12 @@ bodyclass: home
 
 <div class="content">
 <p>Praxis Network programs are allied but differently-inflected humanities education initiatives, mainly focused on graduate training, and all engaged in rethinking pedagogy and campus partnerships in relation to the digital. Among other elements, the initiatives emphasize new models of methodological training and collaborative research. Each program exists within a particular ecosystem of disciplinary expectations, institutional needs, available resources, leadership styles, and specific challenges.</p>
-<p>Scroll down to see how these emerging models compare across a number of categories, or select a single program to read an in-depth profile. The <a href="/students/">Student and Alumni Directory</a> highlights the research interests of Praxis Network students. The <a href="/institutions/">Directory of Related Programs</a> showcases similar efforts.</p>
+<p><a href="/compare/">Compare</a> the Praxis Network programs across several categories. The <a href="/students/">Student and Alumni Directory</a> highlights the research interests of Praxis Network students. The <a href="/institutions/">Directory of Related Programs</a> showcases similar efforts.</p>
 </div>
-
 </section>
-{% include category-nav.html %}
+
 <section id="programs">
     <h1>Programs in the Praxis Network</h1>
     {% include program-nav.html %}
 </section>
-{% include category-nav.html %}
 
-{% assign categories = "mission,structure,research,people,support,directions,nuts-and-bolts" | split: "," %}
-
-{% for category in categories %}
-<section id="{{ category }}" class="category">
-    {% include {{ category }}.html %}
-</section>
-
-{% endfor %}

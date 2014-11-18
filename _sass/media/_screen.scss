@@ -3,22 +3,7 @@
 
 html {
     background-color: $accent-color;
-    @include background-image(
-    linear-gradient(105deg, transparent 0, transparent 85%, rgba($accent-color, .125) 85%),
-    linear-gradient(70deg, transparent 0, transparent 10%, rgba(white, .25) 10%),
-    linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .5) 90%),
-    linear-gradient(30deg, transparent 0, transparent 9%, rgba($accent-color, .175) 9%),
-    linear-gradient(15deg, transparent 0, transparent 67%, rgba(white, .5) 85%),
-    linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .35) 55%),
-    linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .125) 80%),
-    linear-gradient(left, $accent-color, $accent-color)
-    );
-    @include background-size(
-    100% rhythm(.5)
-    );
-    background-position: 0 0, 10% 0, -7% 0, 0 0, -13% 0, 0 0, 0 0, 0 0;
-    background-repeat:no-repeat;
-    padding-top: rhythm(.5);
+    padding-top: rhythm(.25);
 }
 
 body {
@@ -27,6 +12,8 @@ body {
     /*@include susy-grid-background;*/
     background-color: white;
     color: #444;
+    margin:0;
+    padding:0;
 }
 
 p,ul,ol,dl {
@@ -139,17 +126,17 @@ a {
 
 /* Headings */
 h1 {
-    @include adjust-font-size-to(36px);
-    @include adjust-leading-to(1.25, 36px);
+    @include adjust-font-size-to(32px);
+    @include adjust-leading-to(1.25, 32px);
     font-weight:normal;
 
 }
 
 h2 {
-    @include adjust-font-size-to(32px);
-    @include adjust-leading-to(1, 32px);
-    @include leader(1, 32px);
-    @include trailer(1, 32px);
+    @include adjust-font-size-to(28px);
+    @include adjust-leading-to(1, 28px);
+    @include leader(1, 28px);
+    @include trailer(1, 28px);
     /*color: lighten($accent-color, 10%);*/
     color: rgba(32, 144, 146, .95);
     font-weight:normal;
@@ -244,7 +231,8 @@ header[role="banner"] {
     background-color: white;
     background-color: rgba(white, .95);
     padding-top: rhythm(1);
-
+    padding-bottom: rhythm(1);
+    border-bottom: 1px solid #ccc;
     nav {
         h1, ul, li {
             margin:0;
@@ -255,17 +243,17 @@ header[role="banner"] {
         }
 
         h1 {
-            @include adjust-font-size-to(46px);
-            @include adjust-leading-to(1,46px);
+            @include adjust-font-size-to(32px);
+            @include adjust-leading-to(1.25,32px);
         }
 
         ul {
-            @include adjust-font-size-to(16px);
-            @include adjust-leading-to(1,16px);
+            @include adjust-font-size-to(15px);
+            @include adjust-leading-to(1.25,15px);
 
             li {
                 display:inline-block;
-                &:first-child:after {
+                & + li:before {
                     content: " / ";
                     color: #bbb;
                     color: rgba(black, .25);
@@ -276,26 +264,18 @@ header[role="banner"] {
 
         @include susy-breakpoint(800px, 32) {
             h1 {
-                @include span(18 of 30);
+                @include span(12 of 30);
                 text-align:left;
             }
 
             ul {
-                @include span(last 12 of 30);
+                @include span(last 18 of 30);
                 text-align:right;
             }
         }
     }
 
     @include pad(1);
-    @include susy-breakpoint(800px, 32) {
-        @include pad(2);
-        padding-top: rhythm(2);
-    }
-    @include susy-breakpoint(1200px, 32) {
-        @include pad(4,4);
-        padding-top: rhythm(2);
-    }
 
 }
 
@@ -304,28 +284,53 @@ header[role="banner"] {
 div[role="main"] {
 
     @include pad(1);
-    padding-top: rhythm(1);
-    padding-bottom: rhythm(1);
 
     @include susy-breakpoint(800px, 32) {
         @include pad(2);
+        padding-top: rhythm(1);
+        padding-bottom: rhythm(1);
     }
 
     @include susy-breakpoint(1200px, 32) {
         @include pad(4,4);
+        padding-top: rhythm(1);
+        padding-bottom: rhythm(1);
     }
 
     .home &,
-    .program & {
+    .program &,
+    .compare & {
 
-        padding:0;
+        padding-left:0;
+        padding-right:0;
         @include susy-breakpoint(800px, 32) {
-            padding:0;
-        }
-        @include susy-breakpoint(1200px, 32) {
-            padding:0;
+            padding-left:0;
+            padding-right:0;
         }
 
+        @include susy-breakpoint(1200px, 32) {
+            padding-left:0;
+            padding-right:0;
+        }
+
+    }
+
+    .compare & {
+        h1,.summary {
+            @include pad(1);
+
+            @include susy-breakpoint(800px, 32) {
+                @include pad(2);
+            }
+
+            @include susy-breakpoint(1200px, 32) {
+                @include pad(4,4);
+            }
+        }
+
+        .summary {
+            padding-bottom: rhythm(1);
+        }
     }
 
     article {
@@ -796,6 +801,7 @@ footer[role="contentinfo"] {
 }
 
 #records {
+    margin-bottom: rhythm(1);
     a,
     a:link {
         color:white;

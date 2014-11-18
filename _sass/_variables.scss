@@ -30,7 +30,7 @@ $default-color-lightest: rgba($default-color, 0.25);
 
 $accent-color: hsla(181, 64, 35, 0.95);
 
-$link-color: adjust-hue($accent-color, 210);
+$link-color: adjust-hue($accent-color, 150);
 $link-color-light: lighten($link-color, 10%);
 $link-color-alternate: lighten($link-color, 10%);
 $link-color-alternate-light: darken($link-color-alternate, 10%);
