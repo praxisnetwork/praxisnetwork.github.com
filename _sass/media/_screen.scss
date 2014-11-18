@@ -4,17 +4,17 @@
 html {
     background-color: $accent-color;
     @include background-image(
-        linear-gradient(105deg, transparent 0, transparent 85%, rgba($accent-color, .125) 85%),
-        linear-gradient(70deg, transparent 0, transparent 10%, rgba(white, .25) 10%),
-        linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .5) 90%),
-        linear-gradient(30deg, transparent 0, transparent 9%, rgba($accent-color, .175) 9%),
-        linear-gradient(15deg, transparent 0, transparent 67%, rgba(white, .5) 85%),
-        linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .35) 55%),
-        linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .125) 80%),
-        linear-gradient(left, $accent-color, $accent-color)
+    linear-gradient(105deg, transparent 0, transparent 85%, rgba($accent-color, .125) 85%),
+    linear-gradient(70deg, transparent 0, transparent 10%, rgba(white, .25) 10%),
+    linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .5) 90%),
+    linear-gradient(30deg, transparent 0, transparent 9%, rgba($accent-color, .175) 9%),
+    linear-gradient(15deg, transparent 0, transparent 67%, rgba(white, .5) 85%),
+    linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .35) 55%),
+    linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .125) 80%),
+    linear-gradient(left, $accent-color, $accent-color)
     );
     @include background-size(
-        100% rhythm(.5)
+    100% rhythm(.5)
     );
     background-position: 0 0, 10% 0, -7% 0, 0 0, -13% 0, 0 0, 0 0, 0 0;
     background-repeat:no-repeat;
@@ -112,180 +112,180 @@ a {
 }
 
 .add-institution {
-   @include adjust-font-size-to(14px);
-   @include leader(1, 14px);
+    @include adjust-font-size-to(14px);
+    @include leader(1, 14px);
 
     a {
-      background: $link-color-alternate;
-      display:block;
-      float:right;
-      margin: 0 5px 5px 0;
-      color: #fff;
-      padding: 4px 8px;
+        background: $link-color-alternate;
+        display:block;
+        float:right;
+        margin: 0 5px 5px 0;
+        color: #fff;
+        padding: 4px 8px;
 
-      &:link,
-      &:visited {
-        background-color: $link-color-alternate;
-        color: #fff;
-      }
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $link-color;
-        color: #fff;
-      }
+        &:link,
+        &:visited {
+            background-color: $link-color-alternate;
+            color: #fff;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $link-color;
+            color: #fff;
+        }
     }
- }
+}
 
 /* Headings */
 h1 {
-  @include adjust-font-size-to(36px);
-  @include adjust-leading-to(1.25, 36px);
-  font-weight:normal;
+    @include adjust-font-size-to(36px);
+    @include adjust-leading-to(1.25, 36px);
+    font-weight:normal;
 
 }
 
 h2 {
-  @include adjust-font-size-to(32px);
-  @include adjust-leading-to(1, 32px);
-  @include leader(1, 32px);
-  @include trailer(1, 32px);
-  /*color: lighten($accent-color, 10%);*/
-   color: rgba(32, 144, 146, .95);
-  font-weight:normal;
-  & + * {
-    margin-top:0;
-  }
+    @include adjust-font-size-to(32px);
+    @include adjust-leading-to(1, 32px);
+    @include leader(1, 32px);
+    @include trailer(1, 32px);
+    /*color: lighten($accent-color, 10%);*/
+    color: rgba(32, 144, 146, .95);
+    font-weight:normal;
+    & + * {
+        margin-top:0;
+    }
 }
 
 h3 {
-  font-weight:normal;
-  color: $default-color-light;
-  @include adjust-font-size-to(20px);
-  @include adjust-leading-to(1, 20px);
+    font-weight:normal;
+    color: $default-color-light;
+    @include adjust-font-size-to(20px);
+    @include adjust-leading-to(1, 20px);
 }
 
 h4 {
-  font-weight:normal;
+    font-weight:normal;
 }
 
 h5 {
-  font-style:italic;
+    font-style:italic;
 }
 
 h6 {
-  font-style:italic;
-  color: $default-color-lighter;
+    font-style:italic;
+    color: $default-color-lighter;
 }
 
 #{headings(1,6)} {
 
-  a {
-    text-decoration:none;
-  }
+    a {
+        text-decoration:none;
+    }
 
 }
 
 figure {
-  @include rhythm(1);
+    @include rhythm(1);
 }
 
 figcaption {
-  @include adjust-font-size-to(15px);
-  @include adjust-leading-to(1, 15px);
-  color: $default-color-lighter;
-  & > * {
-    margin-top:0;
-  }
+    @include adjust-font-size-to(15px);
+    @include adjust-leading-to(1, 15px);
+    color: $default-color-lighter;
+    & > * {
+        margin-top:0;
+    }
 }
 
 /* Tables */
 table {
-  width:100%;
-  border: 5px solid rgba(0,0,0,0.25);
-  border-width: 5px 0;
+    width:100%;
+    border: 5px solid rgba(0,0,0,0.25);
+    border-width: 5px 0;
 
-  th {
-      font-weight:normal;
-  }
-
-  th,
-  td {
-    padding: rhythm(.5);
-    vertical-align:top;
-  }
-
-  thead {
-    border-bottom: 2px solid rgba(0,0,0,0.1);
-  }
-
-  tr + tr {
-    border-top: 1px dotted rgba(0,0,0,0.1);
-  }
-
-  tbody {
     th {
-      width: 30%;
+        font-weight:normal;
     }
-  }
+
+    th,
+    td {
+        padding: rhythm(.5);
+        vertical-align:top;
+    }
+
+    thead {
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    tr + tr {
+        border-top: 1px dotted rgba(0,0,0,0.1);
+    }
+
+    tbody {
+        th {
+            width: 30%;
+        }
+    }
 
 }
 
 /* Images */
 img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 /* Header */
 header[role="banner"] {
-  @include clearfix;
-  background-color: white;
-  background-color: rgba(white, .95);
-  padding-top: rhythm(1);
+    @include clearfix;
+    background-color: white;
+    background-color: rgba(white, .95);
+    padding-top: rhythm(1);
 
-  nav {
-      h1, ul, li {
-          margin:0;
-      }
+    nav {
+        h1, ul, li {
+            margin:0;
+        }
 
-      h1,ul {
-          text-align:center;
-      }
+        h1,ul {
+            text-align:center;
+        }
 
-      h1 {
-          @include adjust-font-size-to(46px);
-          @include adjust-leading-to(1,46px);
-      }
-
-      ul {
-          @include adjust-font-size-to(16px);
-          @include adjust-leading-to(1,16px);
-
-          li {
-              display:inline-block;
-              &:first-child:after {
-                  content: " / ";
-                  color: #bbb;
-                  color: rgba(black, .25);
-                  margin: 0 .25em;
-              }
-          }
-      }
-
-      @include susy-breakpoint(800px, 32) {
         h1 {
-          @include span(18 of 30);
-          text-align:left;
+            @include adjust-font-size-to(46px);
+            @include adjust-leading-to(1,46px);
         }
 
         ul {
-          @include span(last 12 of 30);
-          text-align:right;
+            @include adjust-font-size-to(16px);
+            @include adjust-leading-to(1,16px);
+
+            li {
+                display:inline-block;
+                &:first-child:after {
+                    content: " / ";
+                    color: #bbb;
+                    color: rgba(black, .25);
+                    margin: 0 .25em;
+                }
+            }
+        }
+
+        @include susy-breakpoint(800px, 32) {
+            h1 {
+                @include span(18 of 30);
+                text-align:left;
+            }
+
+            ul {
+                @include span(last 12 of 30);
+                text-align:right;
+            }
         }
     }
-  }
 
     @include pad(1);
     @include susy-breakpoint(800px, 32) {
@@ -328,134 +328,134 @@ div[role="main"] {
 
     }
 
-  article {
+    article {
 
-    body.program & {
+        body.program & {
 
-      > header {
-        color: #fff;
-        display:block;
-        background-color:rgba(black,.5);
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(1);
-
-        a {
-            &:link, &:visited {
-                color: #ddd;
-            }
-
-            &:hover, &:focus, &:active {
+            > header {
                 color: #fff;
-            }
-        }
+                display:block;
+                background-color:rgba(black,.5);
+                padding-top: rhythm(2);
+                padding-bottom: rhythm(1);
 
-      }
+                a {
+                    &:link, &:visited {
+                        color: #ddd;
+                    }
 
-    > header, section {
-            @include pad(1,1);
-
-            @include susy-breakpoint(800px, 32) {
-                @include pad(2,2);
-            }
-            @include susy-breakpoint(1200px, 32) {
-                @include pad(4,4);
-            }
-        }
-
-      section {
-        z-index:1000;
-        margin-bottom: rhythm(12);
-        padding-top: rhythm(1);
-        padding-bottom: rhythm(1);
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.95);
-        @include clearfix;
-
-        &:last-child {
-            margin-bottom:0;
-        }
-
-        header {
-
-            p {
-                color: #999;
-                @include adjust-font-size-to(16px);
-                @include adjust-leading-to(1,16px);
-            }
-
-        }
-        .content {
-            @include clearfix;
-            > :first-child {
-                margin-top:0;
-            }
-
-        }
-
-        @include susy-breakpoint(800px, 32) {
-            padding-top: rhythm(2);
-            margin-bottom: rhythm(18);
-
-            header {
-                @include span(10 of 28);
-            }
-            .content {
-                @include span(last 17 of 28);
-            }
-        }
-
-        @include susy-breakpoint(1200px, 32) {
-            padding-top: rhythm(4);
-            margin-bottom: rhythm(22);
-            header {
-                @include span(8 of 24);
-            }
-            .content {
-                @include span(last 15 of 24);
-            }
-        }
-
-
-        figure {
-            margin-top:0;
-
-            @include susy-breakpoint(600px, 32) {
-                @include span(last 4 of 12);
-                margin-left: span(1 of 32 wide);
-            }
-
-            &.feature,
-            &.normal {
-
-                float:none;
-                width: auto;
-                margin:0;
-            }
-
-            @include susy-breakpoint(600px, 32) {
-            &.normal {
-                .image {
-                    @include gallery(6 of 12);
-                }
-                figcaption {
-                    clear:both;
+                    &:hover, &:focus, &:active {
+                        color: #fff;
+                    }
                 }
 
             }
+
+            > header, section {
+                @include pad(1,1);
+
+                @include susy-breakpoint(800px, 32) {
+                    @include pad(2,2);
+                }
+                @include susy-breakpoint(1200px, 32) {
+                    @include pad(4,4);
+                }
+            }
+
+            section {
+                z-index:1000;
+                margin-bottom: rhythm(12);
+                padding-top: rhythm(1);
+                padding-bottom: rhythm(1);
+                background-color: #fff;
+                background-color: rgba(255,255,255,0.95);
+                @include clearfix;
+
+                &:last-child {
+                    margin-bottom:0;
+                }
+
+                header {
+
+                    p {
+                        color: #999;
+                        @include adjust-font-size-to(16px);
+                        @include adjust-leading-to(1,16px);
+                    }
+
+                }
+                .content {
+                    @include clearfix;
+                    > :first-child {
+                        margin-top:0;
+                    }
+
+                }
+
+                @include susy-breakpoint(800px, 32) {
+                    padding-top: rhythm(2);
+                    margin-bottom: rhythm(18);
+
+                    header {
+                        @include span(10 of 28);
+                    }
+                    .content {
+                        @include span(last 17 of 28);
+                    }
+                }
+
+                @include susy-breakpoint(1200px, 32) {
+                    padding-top: rhythm(4);
+                    margin-bottom: rhythm(22);
+                    header {
+                        @include span(8 of 24);
+                    }
+                    .content {
+                        @include span(last 15 of 24);
+                    }
+                }
+
+
+                figure {
+                    margin-top:0;
+
+                    @include susy-breakpoint(600px, 32) {
+                        @include span(last 4 of 12);
+                        margin-left: span(1 of 32 wide);
+                    }
+
+                    &.feature,
+                    &.normal {
+
+                        float:none;
+                        width: auto;
+                        margin:0;
+                    }
+
+                    @include susy-breakpoint(600px, 32) {
+                        &.normal {
+                            .image {
+                                @include gallery(6 of 12);
+                            }
+                            figcaption {
+                                clear:both;
+                            }
+
+                        }
+                    }
+                }
+
+                h2 {
+                    margin-top:0;
+                }
+
+                > :last-child {
+                    margin-bottom:0;
+                }
+
             }
         }
-
-        h2 {
-          margin-top:0;
-        }
-
-        > :last-child {
-            margin-bottom:0;
-        }
-
-      }
     }
-  }
 
     section {
 
@@ -488,14 +488,14 @@ div[role="main"] {
                 &##{$category} {
                     header{
                         @include background-image(
-                            linear-gradient(105deg, transparent 0, transparent 85%, rgba($overlay-color, .25) 85%),
-                            linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),
-                            linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .075) 90%),
-                            linear-gradient(30deg, transparent 0, transparent 9%, rgba(white, .125) 9%),
-                            linear-gradient(15deg, transparent 0, transparent 67%, rgba($overlay-color, .25) 85%),
-                            linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .05) 55%),
-                            linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .075) 80%),
-                            linear-gradient(left, rgba($overlay-color, .85), rgba($overlay-color, .85))
+                        linear-gradient(105deg, transparent 0, transparent 85%, rgba($overlay-color, .25) 85%),
+                        linear-gradient(135deg, transparent 0, transparent 10%, rgba(white, .125) 10%),
+                        linear-gradient(80deg, transparent 0, transparent 90%, rgba(white, .075) 90%),
+                        linear-gradient(30deg, transparent 0, transparent 9%, rgba(white, .125) 9%),
+                        linear-gradient(15deg, transparent 0, transparent 67%, rgba($overlay-color, .25) 85%),
+                        linear-gradient(145deg, transparent 0, transparent 55%, rgba(white, .05) 55%),
+                        linear-gradient(200deg, transparent 0, transparent 80%, rgba(white, .075) 80%),
+                        linear-gradient(left, rgba($overlay-color, .85), rgba($overlay-color, .85))
                         );
                     }
 
@@ -522,18 +522,18 @@ div[role="main"] {
 
             }
             @each $category in mission, support, people, structure, research, directions, nuts-and-bolts {
-            &##{$category} {
-                @include background(
+                &##{$category} {
+                    @include background(
                     url('../images/#{$category}-grayscale.jpg') top center no-repeat fixed
-                );
-                @include background-size(cover);
-            }
+                    );
+                    @include background-size(cover);
+                }
             }
         }
     }
 }
 
-  #category-nav {
+#category-nav {
     background-color: rgba(black,.75);
     display:block;
     width: 100%;
@@ -552,15 +552,15 @@ div[role="main"] {
             color: white;
         }
 
-      + a:before {
-          content: " | ";
-          color: #999;
-          color: rgba(white, .5);
-          padding: 0 .25em;
-          text-decoration:none;
-      }
+        + a:before {
+            content: " | ";
+            color: #999;
+            color: rgba(white, .5);
+            padding: 0 .25em;
+            text-decoration:none;
+        }
     }
-  }
+}
 
 #introduction {
     @include clearfix;
@@ -571,8 +571,8 @@ div[role="main"] {
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
-    padding-top: rhythm(1);
-    padding-bottom: rhythm(1);
+        padding-top: rhythm(1);
+        padding-bottom: rhythm(1);
 
         h1 {
             @include adjust-font-size-to(30px);
@@ -586,7 +586,7 @@ div[role="main"] {
         .content {
             @include span(17 of 28);
             :first-child {
-	            margin-top: 0;
+                margin-top: 0;
             }
 
         }
@@ -625,14 +625,14 @@ div[role="main"] {
     }
 }
 
-  #program-nav {
-      display:block;
-      @include clearfix;
-      &:after {
-          clear:both;
-      }
-      margin-bottom: rhythm(1, 20px);
-      @include adjust-font-size-to(20px);
+#program-nav {
+    display:block;
+    @include clearfix;
+    &:after {
+        clear:both;
+    }
+    margin-bottom: rhythm(1, 20px);
+    @include adjust-font-size-to(20px);
     a, :link {
         display: inline-block; /* non-flexbox browsers */
         @include display-flex(inline-flex);
@@ -661,67 +661,67 @@ div[role="main"] {
 
         color:white;
     }
-  }
+}
 
 @each $program in $programs {
-  body.#{$program} {
-    background-image: url('../images/#{$program}.jpg');
-    @include background-size(cover);
-    background-attachment: fixed;
-  }
+    body.#{$program} {
+        background-image: url('../images/#{$program}.jpg');
+        @include background-size(cover);
+        background-attachment: fixed;
+    }
 
-  a.#{$program} {
+    a.#{$program} {
 
-      &:link,
-      &:visited {
-          text-decoration:none;
-          @include background(
-             linear-gradient(top, rgba($link-color,.35), rgba($link-color, .75)),
-             url('../images/#{$program}-small-grayscale.jpg')
+        &:link,
+        &:visited {
+            text-decoration:none;
+            @include background(
+            linear-gradient(top, rgba($link-color,.35), rgba($link-color, .75)),
+            url('../images/#{$program}-small-grayscale.jpg')
             );
 
-          @include background-size(cover);
+            @include background-size(cover);
         }
-      &:hover,
-      &:focus,
-      &:active {
-           @include background(
-           linear-gradient(top, rgba($link-color,.5), rgba($link-color, .5)),
-           url('../images/#{$program}-small-grayscale.jpg')
+        &:hover,
+        &:focus,
+        &:active {
+            @include background(
+            linear-gradient(top, rgba($link-color,.5), rgba($link-color, .5)),
+            url('../images/#{$program}-small-grayscale.jpg')
             );
             @include background-size(cover);
 
-      }
+        }
 
-  }
+    }
 }
 
 #image-credits {
-  figure {
-    height: 250px;
-    text-align:center;
-    @include gallery(6 of 12 isolate);
-    @include susy-breakpoint(600px, 12) {
-        @include gallery(4 of 12 isolate);
-    }
+    figure {
+        height: 250px;
+        text-align:center;
+        @include gallery(6 of 12 isolate);
+        @include susy-breakpoint(600px, 12) {
+            @include gallery(4 of 12 isolate);
+        }
 
-    @include susy-breakpoint(800px, 12) {
-        @include gallery(3 of 12 isolate);
-    }
+        @include susy-breakpoint(800px, 12) {
+            @include gallery(3 of 12 isolate);
+        }
 
-    img {
-      display:block;
-      margin-left:auto;
-      margin-right:auto;
-      margin-bottom: rhythm(0.5);
+        img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom: rhythm(0.5);
+        }
     }
-  }
 }
 
 /* Footer */
 footer[role="contentinfo"] {
-  clear:both;
-  background-color: $accent-color;
+    clear:both;
+    background-color: $accent-color;
     padding-top: rhythm(1);
     padding-bottom: rhythm(1);
     color: white;
@@ -741,15 +741,15 @@ footer[role="contentinfo"] {
     }
 
 
-  h2 {
-    margin-top:0;
-    color: white;
-    color: rgba(white, .5);
-  }
+    h2 {
+        margin-top:0;
+        color: white;
+        color: rgba(white, .5);
+    }
 
-  > :last-child {
-      margin-bottom:0;
-  }
+    > :last-child {
+        margin-bottom:0;
+    }
 
 }
 
@@ -767,7 +767,7 @@ footer[role="contentinfo"] {
     cursor: pointer;
     color:  darken(#0cf,20%);
     &:hover {
-      color: #333;
+        color: #333;
     }
 }
 
@@ -776,23 +776,23 @@ footer[role="contentinfo"] {
 /* Directory styles */
 
 .record-info {
-  float:left;
-  margin-top: -25px;
-  margin-left: -20px;
-  width: 70%;
+    float:left;
+    margin-top: -25px;
+    margin-left: -20px;
+    width: 70%;
 }
 
 .profile-picture {
-  float:right;
-  margin-left: -100px;
-  margin-top: -63px;
-  width: 30%;
-  padding-bottom: 4em;
+    float:right;
+    margin-left: -100px;
+    margin-top: -63px;
+    width: 30%;
+    padding-bottom: 4em;
 }
 
 .page-content {
-  min-height: 60%;
-  margin-top: -50px;
+    min-height: 60%;
+    margin-top: -50px;
 }
 
 #records {
@@ -814,7 +814,7 @@ footer[role="contentinfo"] {
 #filters {
     list-style:none;
     margin-top: -15px;
- /*  font-size: 16px; */
+    /*  font-size: 16px; */
     padding-right: 10px;
 
     ul {
@@ -851,7 +851,7 @@ footer[role="contentinfo"] {
 }
 
 .is-checked {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* colors for different types of institutions */
@@ -865,8 +865,8 @@ footer[role="contentinfo"] {
 }
 
 .post-graduate {
-   background-color:   #BF7B33;
- }
+    background-color:   #BF7B33;
+}
 
 .other {
     background-color:  #2A9597;
