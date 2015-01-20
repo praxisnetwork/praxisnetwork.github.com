@@ -1,8 +1,8 @@
 ---
 layout: record
 status: publish
-permalink: posts/institutions/2014-11-18-miriam_posner
-title: Miriam Posner
+permalink: posts/institutions/2014-11-18-ucla_digital_humanities
+title: UCLA Digital Humanities
 categories: [institution, Undergraduate Program  Graduate Program]
 population: Undergraduate Program, Graduate Program
 other: 
