@@ -722,8 +722,8 @@
   #introduction {
     padding-left: 3.14465%;
     padding-right: 3.14465%;
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #introduction:before, #introduction:after {
     content: " ";
@@ -735,8 +735,8 @@
   #introduction {
     padding-left: 6.28931%;
     padding-right: 6.28931%;
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #introduction h1 {
     font-size: 1.875em;
@@ -762,8 +762,8 @@
   #introduction {
     padding-left: 12.57862%;
     padding-right: 12.57862%;
-    padding-top: 3.75em;
-    padding-bottom: 3.75em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #introduction h1 {
     width: 36.97479%;

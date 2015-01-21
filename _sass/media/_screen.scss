@@ -570,14 +570,14 @@ div[role="main"] {
 #introduction {
     @include clearfix;
     @include pad(1);
-    padding-top: rhythm(1);
-    padding-bottom: rhythm(1);
-
+    padding-top:0;
+    padding-bottom:0;
     @include susy-breakpoint(800px, 32) {
 
         @include pad(2);
-        padding-top: rhythm(1);
-        padding-bottom: rhythm(1);
+          padding-top:0;
+    padding-bottom:0;
+
 
         h1 {
             @include adjust-font-size-to(30px);
@@ -600,8 +600,8 @@ div[role="main"] {
 
     @include susy-breakpoint(1200px, 32) {
         @include pad(4,4);
-        padding-top: rhythm(2);
-        padding-bottom: rhythm(2);
+    padding-top:0;
+    padding-bottom:0;
 
         h1 {
             @include span(last 9 of 24);
