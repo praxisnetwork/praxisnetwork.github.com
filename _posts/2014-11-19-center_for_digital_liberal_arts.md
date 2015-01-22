@@ -11,4 +11,4 @@ website: http://www.oxy.edu/cdlr
 twitter: OxyCDLA
 ---
 
-A dialectical approach to digital culture. Connected learning through and beyond the curriculum. Digital scholarship across disciplinary contexts. 
+A dialectical approach to digital culture. Connected learning through and beyond the curriculum. Digital scholarship across disciplinary contexts.
