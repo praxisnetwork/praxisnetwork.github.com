@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: $font-family-default;
-    @include container(show);
+    @include container();
     /*@include susy-grid-background;*/
     background-color: white;
     color: #444;

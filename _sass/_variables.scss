@@ -10,13 +10,7 @@ $base-line-height: 30px;
 // Susy Variables
 $susy: (
   columns: 32,
-  debug: (
-    image: show,
-    color: rgba(blue, 0.5),
-    output: overlay,
-    toggle: top right,
-  ),
-);
+ );
 
 // Colors
 $dark-grey: rgba(0,0,0,0.7);

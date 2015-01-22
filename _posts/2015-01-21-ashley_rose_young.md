@@ -10,7 +10,7 @@ research: [Visualizations]
 
 program: PhD Lab in Digital Knowledge (Duke)
 website: sites.duke.edu/ashleyryoung
-twitter:  @ashleyyoung2010
+twitter:  ashleyyoung2010
 image: http://history.duke.edu/sites/history.duke.edu/files/styles/news_banner_image_280x100/public/field/image/Young1.jpg?itok=eC_ULMAr
 
 disciplinary_home: [History]

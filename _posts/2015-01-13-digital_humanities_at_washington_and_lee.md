@@ -3,6 +3,7 @@ layout: record
 status: publish
 permalink: posts/institutions/2015-01-13-digital_humanities_at_washington_and_lee
 title: Digital Humanities at Washington and Lee
+institution: Washington and Lee University
 categories: [institution, Undergraduate Program]
 population: Undergraduate Program
 other: 

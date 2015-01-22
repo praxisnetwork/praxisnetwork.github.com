@@ -9,7 +9,8 @@ layout: default
 <div class='content'>
 <div class="record-info">
     <ul>
-        {% if page.program %}<li>Program: <a href="/{{page.shortname}}.html">{{ page.program }}</a></li>{% endif %}
+      {% if page.program %}<li>Program: <a href="/{{page.shortname}}.html">{{ page.program }}</a></li>{% endif %}
+     <li>Institution: {{ page.institution }}</li>
     {% if page.disciplinary_home %} <li>Disciplinary Home: {{ page.disciplinary_home | join: ", " }}</li>{% endif %}
     {% if page.research %}<li>Research Focus: {{ page.research | join: ", " }}</li>{% endif %}
     {% if page.population %}<li>Program Type: {{page.population | remove:'Other Program'}} {%if page.other%} {{page.other}} {%endif%} </li>{% endif %}
