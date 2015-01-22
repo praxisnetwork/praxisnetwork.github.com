@@ -1297,22 +1297,13 @@
   /* Directory styles */
   .record-info {
     float: left;
-    margin-top: -25px;
-    margin-left: -20px;
     width: 70%;
   }
 
   .profile-picture {
     float: right;
-    margin-left: -100px;
-    margin-top: -63px;
     width: 30%;
-    padding-bottom: 4em;
-  }
-
-  .page-content {
-    min-height: 60%;
-    margin-top: -50px;
+    margin-bottom: 1.875em;
   }
 
   #records {
