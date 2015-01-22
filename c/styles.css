@@ -364,6 +364,21 @@
   }
 }
 @media only screen {
+  .program div[role="main"], .compare div[role="main"] {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .program div[role="main"], .compare div[role="main"] {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .program div[role="main"], .compare div[role="main"] {
+    padding-top: 0;
+  }
+}
+@media only screen {
   .compare div[role="main"] h1, .compare div[role="main"] .summary {
     padding-left: 3.14465%;
     padding-right: 3.14465%;
