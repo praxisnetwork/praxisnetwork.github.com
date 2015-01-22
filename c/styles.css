@@ -31,49 +31,6 @@
     display: block;
     clear: both;
   }
-  head {
-    display: block;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
-    color: #333;
-    background: rgba(255, 255, 255, 0.25);
-  }
-  head:before {
-    content: "|||";
-    display: block;
-    padding: 5px 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  head:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: red;
-  }
-  head:hover ~ body, head:hover ~ body body {
-    position: relative;
-  }
-  head:hover ~ body:before, head:hover ~ body body:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDBmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzRkNGRmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 255, 0.5)), color-stop(80%, rgba(77, 77, 255, 0.5)), color-stop(80%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 255, 0.5), rgba(77, 77, 255, 0.5) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 255, 0.5), rgba(77, 77, 255, 0.5) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(77, 77, 255, 0.5) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 3.14465%, 100% 30px;
-    background-origin: content-box, border-box;
-    background-clip: content-box, border-box;
-    background-position: left top;
-  }
 
   p, ul, ol, dl {
     margin-top: 1.875em;
