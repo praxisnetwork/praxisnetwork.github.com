@@ -1,13 +1,13 @@
 ---
 layout: record
 status: publish
-permalink: posts/institutions/2015-01-13-generally_digital:_digital_humanities_at_washington_and_lee
-title: Generally Digital: Digital Humanities at Washington and Lee
+permalink: posts/institutions/2015-01-13-digital_humanities_at_washington_and_lee
+title: Digital Humanities at Washington and Lee
 categories: [institution, Undergraduate Program]
 population: Undergraduate Program
 other: 
 website: http://digitalhumanities.wlu.edu/
-twitter: @WLUDH
+twitter: WLUDH
 ---
 
 The Digital Humanities Working group is a collective of teaching
