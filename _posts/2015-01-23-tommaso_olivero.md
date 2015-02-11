@@ -1,7 +1,7 @@
 ---
 layout: record
 status: publish
-permalink: posts/students/2015-01-23-tommaso
+permalink: posts/students/2015-01-23-tommaso_olivero
 title: Tommaso Olivero
 categories: [student, MA-MSc program (UCL), Digitization]
 
