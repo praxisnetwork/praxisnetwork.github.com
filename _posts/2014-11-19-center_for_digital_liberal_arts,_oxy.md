@@ -1,8 +1,8 @@
 ---
 layout: record
 status: publish
-permalink: posts/institutions/2014-11-19-center_for_digital_liberal_arts
-title: Center for Digital Liberal Arts
+permalink: posts/institutions/2014-11-19-center_for_digital_liberal_arts,_oxy
+title: Center for Digital Liberal Arts, Oxy
 institution: Occidental College
 categories: [institution, Undergraduate Program]
 population: Undergraduate Program

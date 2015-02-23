@@ -1,8 +1,8 @@
 ---
 layout: record
 status: publish
-permalink: posts/institutions/2015-02-03-learning_to_see_systems
-title: Learning to See Systems
+permalink: posts/institutions/2015-02-03-learning_to_see_systems,_ui-
+title: Learning to See Systems, UI-Urbana-Champaign
 institution: University of Illinois, Urbana-Champaign
 categories: [institution, Graduate Program]
 population: Graduate Program
