@@ -6,8 +6,8 @@ title: Center for Digital Liberal Arts
 institution: Occidental College
 categories: [institution, Undergraduate Program]
 population: Undergraduate Program
-other: 
-website: http://www.oxy.edu/cdlr
+other:
+website: http://oxy.edu/center-digital-liberal-arts
 twitter: OxyCDLA
 ---
 
