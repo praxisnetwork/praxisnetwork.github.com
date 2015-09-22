@@ -11,20 +11,23 @@ Dotenv.load
 SPREADSHEET_KEY      = ENV.fetch('SPREADSHEET_KEY', '')
 USER_EMAIL           = ENV.fetch('USER_EMAIL', '')
 USER_PASSWORD        = ENV.fetch('USER_PASSWORD', '')
+CLIENT_ID            = ENV.fetch('CLIENT_ID','')
+CLIENT_SECRET        = ENV.fetch('CLIENT_SECRET','')
 
 def login
   @client = Google::APIClient.new(
     :application_name => "Praxis Network Generator",
     :application_version => "1.0"
   )
-  auth = client.authorization
-  auth.client_id = "#{CLIENT_ID}"
+  auth = @client.authorization
+  auth.client_id = CLIENT_ID
   auth.client_secret = CLIENT_SECRET
 
   auth.scope =
     "https://www.googleapis.com/auth/drive " +
     "https://spreadsheets.google.com/feeds/"
   auth.redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
+  #`open #{auth.authorization_uri}`
   print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
   print("2. Enter the authorization code shown in the page: ")
   auth.code = $stdin.gets.chomp
