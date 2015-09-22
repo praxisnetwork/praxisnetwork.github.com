@@ -7,6 +7,6 @@ gem "pygments.rb"
 gem "rdiscount"
 gem "foreman"
 gem 'dotenv', '~> 0.11.1'
-gem 'google_drive', '~> 0.3.9'
+gem 'google_drive', '~> 1.0.1'
 gem 'rake', '~> 10.3.1'
 gem 'compass', '~> 1.0.0.rc1'
