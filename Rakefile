@@ -13,7 +13,29 @@ USER_EMAIL           = ENV.fetch('USER_EMAIL', '')
 USER_PASSWORD        = ENV.fetch('USER_PASSWORD', '')
 
 def login
-  @session ||= GoogleDrive.login(ENV['GOOGLE_USER'], ENV['GOOGLE_PASSWORD'])
+  @client = Google::APIClient.new(
+    :application_name => "Praxis Network Generator",
+    :application_version => "1.0"
+  )
+  auth = client.authorization
+  auth.client_id = "#{CLIENT_ID}"
+  auth.client_secret = CLIENT_SECRET
+
+  auth.scope =
+    "https://www.googleapis.com/auth/drive " +
+    "https://spreadsheets.google.com/feeds/"
+  auth.redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
+  print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
+  print("2. Enter the authorization code shown in the page: ")
+  auth.code = $stdin.gets.chomp
+  auth.fetch_access_token!
+  access_token = auth.access_token
+
+  @session = GoogleDrive.login_with_oauth(access_token)
+
+#@worksheet = @session.spreadsheet_by_key(SPREADSHEET_KEY).worksheets[0]
+
+  #@session ||= GoogleDrive.login(ENV['GOOGLE_USER'], ENV['GOOGLE_PASSWORD'])
 end
 
 def get_worksheet(key)
@@ -26,7 +48,7 @@ def over_rows(key)
   for row in 2..worksheet.num_rows
     yield(row)
   end
-end  
+end
 
 task :test do
   generate_institutions

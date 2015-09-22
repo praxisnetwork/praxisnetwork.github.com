@@ -33,3 +33,30 @@ session = GoogleDrive.login_with_oauth(access_token)
 
 p @worksheet
 
+#
+# 1. Make an authentication class that can return a worksheet
+# 2. Integrate in to the import:institutions task
+# 3. Integrate in to the import:sudents task
+#
+
+
+#module PraxisNetwork
+
+  #class Data
+
+    #attr_accessor :worksheet
+
+    #@@STUDENT_WORKSHEET_KEY = ''
+    #@@INSTITUTIONS_KEY = ''
+
+
+    #def initialize
+      #@client = ''
+    #end
+  #end
+#end
+
+
+#students = PraxisNetwork::Data.new
+#@worksheet = students.worksheet
+
