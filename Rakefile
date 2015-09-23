@@ -13,6 +13,7 @@ USER_EMAIL           = ENV.fetch('USER_EMAIL', '')
 USER_PASSWORD        = ENV.fetch('USER_PASSWORD', '')
 CLIENT_ID            = ENV.fetch('CLIENT_ID','')
 CLIENT_SECRET        = ENV.fetch('CLIENT_SECRET','')
+GOOGLE_REFRESH_TOKEN = ENV.fetch('GOOGLE_REFRESH_TOKEN', '')
 
 def login
   @client = Google::APIClient.new(
@@ -28,10 +29,20 @@ def login
     "https://spreadsheets.google.com/feeds/"
   auth.redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
   #`open #{auth.authorization_uri}`
-  print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
-  print("2. Enter the authorization code shown in the page: ")
-  auth.code = $stdin.gets.chomp
+  if GOOGLE_REFRESH_TOKEN == "0"
+    print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
+    print("2. Enter the authorization code shown in the page: ")
+    auth.code = $stdin.gets.chomp
+  end
+
+  auth.refresh_token = GOOGLE_REFRESH_TOKEN
   auth.fetch_access_token!
+
+  if GOOGLE_REFRESH_TOKEN == "0"
+    print("3. Save this refresh token: \n%s\n\n" % auth.refresh_token)
+    ENV['GOOGLE_REFRESH_TOKEN'] = auth.refresh_token #setting it here so it will work with editing env file this time...have to see whether variable setting at top from env will work with google fresh token or if need to directly code env['GOOGLE_REFRESH_TOKEN'] each time
+  end
+
   access_token = auth.access_token
 
   @session = GoogleDrive.login_with_oauth(access_token)
@@ -106,7 +117,7 @@ def make_name (string, date = Date.now)
   puts string
   d = parse_date(date)
   slug = string.to_s.gsub(/ /,"_").downcase
-  "#{d}-#{slug}" 
+  "#{d}-#{slug}"
 end
 
 def write_file(base_name, contents)
