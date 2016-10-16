@@ -150,7 +150,9 @@ DEPENDENCIES
   foreman
   google_drive (~> 0.3.9)
   jekyll
-  pygments.rb
   rake (~> 10.3.1)
   rdiscount
   susy
+
+BUNDLED WITH
+   1.13.5

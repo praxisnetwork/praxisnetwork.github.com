@@ -3,7 +3,6 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "susy"
 gem "breakpoint"
-gem "pygments.rb"
 gem "rdiscount"
 gem "foreman"
 gem 'dotenv', '~> 0.11.1'
