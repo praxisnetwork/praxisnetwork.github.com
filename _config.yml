@@ -1,7 +1,7 @@
 # standard jekyll configuration
 
 permalink: /:year/:month/:day/:title/
-highlighter: pygments
+highlighter: rouge
 #markdown: rdiscount
 exclude: ['readme.md', 'Rakefile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock',"README.md", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json", "lib"]
 
@@ -76,11 +76,11 @@ brock-iasc:
   research: 'Alongside their studies, many students participate in public projects, such as the <a href="http://ihistorytours.com/">Niagara 1812</a> historical project, which allows them to apply the skills they learn to projects with immediate public relevance.'
   support: 'As an academic program within Brock’s system, IASC has a hard budget line and is not supported by grants. At the same time, some of the program’s research activities are funded through a separate research allocation.'
   directions: 'The program may undergo a number of structural changes in the coming years, including launching a new stream specifically for game studies, in order to serve student needs as the program continues to evolve.'
-  structure: 'Students take a few core courses, and then craft their own cross-disciplinary path based on their interests. Many students also participate in internships at companies based at <a href="http://ngen-niagara.com/en/content/welcome/index/">nGen</a>, an area business incubator that partners with IASC.' 
+  structure: 'Students take a few core courses, and then craft their own cross-disciplinary path based on their interests. Many students also participate in internships at companies based at <a href="http://ngen-niagara.com/en/content/welcome/index/">nGen</a>, an area business incubator that partners with IASC.'
   nuts-and-bolts: 'Though it can be challenging, creating relationships across the university and the broader community opens up valuable opportunities and amplifies the strengths of each partner.'
 
 ## University of Canterbury Digital Humanities
-ucdh: 
+ucdh:
   mission: 'To create Digital Humanities pathways from undergraduate and graduate study to work-based internships, offering students the opportunity to apply their skills in real-world contexts while also increasing digital capabilities across the humanities and social sciences.'
   people: 'Students from a wide range of fields in the humanities and social sciences participate in various aspects of the program, from jointly-taught courses, to internships, to honors degrees and thesis work. The program is directed by James Smithies.'
   research: 'The core of the program is a year-long Honours degree blending the student’s home discipline with digital humanities methods. UCDH is also developing non-degree programs for undergraduate, master’s, and doctoral students wishing to incorporate digital approaches into their work.'
