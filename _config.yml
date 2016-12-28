@@ -1,6 +1,11 @@
 # standard jekyll configuration
 
-permalink: /:year/:month/:day/:title/
+# permalink: /:year/:month/:day/:title/
+github: [metadata]
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 highlighter: rouge
 #markdown: rdiscount
 exclude: ['readme.md', 'Rakefile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock',"README.md", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json", "lib"]
