@@ -118,7 +118,6 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rdiscount (2.1.7.1)
     redcarpet (3.2.0)
     retriable (1.4.1)
     safe_yaml (1.0.4)
@@ -150,9 +149,9 @@ DEPENDENCIES
   foreman
   google_drive (~> 0.3.9)
   jekyll
+  kramdown
   rake (~> 10.3.1)
-  rdiscount
   susy
 
 BUNDLED WITH
-   1.13.5
+   1.13.7
