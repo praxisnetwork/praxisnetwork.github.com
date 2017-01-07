@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "susy"
 gem "breakpoint"
-gem "rdiscount"
+gem "kramdown"
 gem "foreman"
 gem 'dotenv', '~> 0.11.1'
 gem 'google_drive', '~> 0.3.9'
