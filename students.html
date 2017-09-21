@@ -32,7 +32,7 @@ bodyclass: students
 
   <div id="records">
     {% for post in site.categories['student'] %}
-        <div class="{{ post.categories | join: ' ' }}" data-name="{{ post.title | downcase | replace: ' ', '_' }}">
+        <div class="{{ post.categories | downcase | join: ' ' }}" data-name="{{ post.title | downcase | replace: ' ', '_' }}">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
             </a>
         </div>
