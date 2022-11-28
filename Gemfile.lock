@@ -172,7 +172,7 @@ GEM
       thread_safe (~> 0.1)
     uber (0.1.0)
     webrick (1.7.0)
-    yajl-ruby (1.4.1)
+    yajl-ruby (1.4.3)
     zeitwerk (2.5.1)
 
 PLATFORMS
@@ -189,7 +189,7 @@ DEPENDENCIES
   kramdown-parser-gfm
   rake (~> 13.0)
   susy
-  yajl-ruby (~> 1.4.1)
+  yajl-ruby (~> 1.4.3)
 
 BUNDLED WITH
    1.13.7
